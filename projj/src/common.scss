@@ -1,0 +1,230 @@
+@import "./styles/font.scss";
+
+body {
+  font-family: "SUIT-Regular";
+
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+  &::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  &:link,
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    color: inherit;
+  }
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.lang-con {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  p {
+    margin: 0 1rem;
+  }
+}
+
+.header-con {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+}
+
+nav {
+  border: 1px solid;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin-top: 2rem;
+  background: #fff;
+}
+
+.main-top-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  h1,
+  h4,
+  p {
+    margin-block-start: 0;
+  }
+
+  h1 {
+    margin: 1rem auto;
+    font-size: 2rem;
+  }
+}
+
+.main-center-con {
+  display: grid;
+  // grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid;
+
+  div {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 500px;
+
+    &.stack-con {
+      padding: 0;
+      display: grid;
+      svg {
+        margin: 0 1rem;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-block-start: 0;
+        padding: 1rem 0;
+        li {
+          font-size: 1.3rem;
+          margin-block-start: 0;
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-block-start: 0;
+            li {
+              display: flex;
+              justify-content: center;
+              width: 100%;
+              text-align: left;
+              margin: 0.5rem auto;
+
+              span {
+                display: block;
+                margin: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  svg {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.works-con {
+  border: 1px solid;
+  display: grid;
+  // grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1rem auto;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+
+  &.app-con {
+    margin-top: 3rem;
+  }
+
+  h2.tit {
+    background: rgba(0, 0, 0, 0.23);
+    text-align: center;
+  }
+
+  .works {
+    border: 1px solid red;
+    height: 100%;
+    overflow: hidden;
+    padding: 0rem 0;
+
+    h4 {
+      color: #fff;
+    }
+
+    .desc {
+      display: none;
+    }
+
+    .desc-on {
+      display: flex;
+      background: rgba(48, 36, 42, 0.7);
+      color: #fff;
+      padding: 0.5rem;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+
+      .btn {
+        border: 1px solid;
+        width: 4rem;
+        height: 2rem;
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.works {
+  &.work-img {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+
+    background: url("https://corydalis.github.io/pt/img/ss1.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-center-con,
+  .works-con {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .main-center-con,
+  .works-con {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
