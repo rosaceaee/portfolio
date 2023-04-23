@@ -30,7 +30,7 @@ const ToggleItem = ({ descc, link, id }) => {
       {toggleThisElement && (
         <div className="desc-on">
           <h2>{descc}</h2>
-          <a href={"/" + link} className="btn">
+          <a href={link} target="_blank" className="btn">
             {" "}
             check
           </a>
