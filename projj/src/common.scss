@@ -95,12 +95,13 @@ nav {
   border: 1px solid;
 
   div {
-    border: 1px solid;
+    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    min-height: 500px;
+    min-height: 700px;
+    margin: 2rem 0;
 
     &.stack-con {
       padding: 0;
