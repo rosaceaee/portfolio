@@ -8,15 +8,17 @@ import {
 } from "react-router-dom";
 import * as Scroll from "react-scroll";
 import Header from "../Header";
-// import Lang from "../Lang";
 import worklists from "./worksimsi.json";
 import useMultilingual, { LanguageType } from "../useMultilingual";
+import Modal from "./Modal";
+
 const Works = (langlang) => {
   const [show, setShow] = useState(false);
   const aboutSection = useRef(null);
-  const test = (e) => {
+  const showDalDal = () => {
     setShow((show) => !show);
   };
+  const [showModal, setShowModal] = useState(false);
 
   const [lang, setLang] = useState("ko");
   const [sibal, setSibal] = useState([]);
@@ -26,26 +28,18 @@ const Works = (langlang) => {
   // console.log(aa);
 
   const Aa = Object.entries(m("WORKS"));
-  const worksTit = Object.entries(m("WORKS").one); // 사이트 제목
-  const Bb = JSON.stringify(Aa["one"]);
   const web = JSON.stringify(m("WORKS").yeombyung);
   const worksTit2 = Object.entries(m("WORKS").yeombyung);
   const strWorksTit2 = JSON.stringify(worksTit2);
   const wtf = Array.isArray(JSON.stringify(m("WORKS").yeombyung));
   let oh = worksTit2.map((itm) => itm[1].desc[0]);
   let urlLink = worksTit2.map((itm) => itm[1].link);
-  console.log(oh);
-  console.log(urlLink);
 
   let inputArray = [
     { id: 1, name: "name1", value: "value1" },
     { id: 2, name: "name2", value: "value2" },
   ];
 
-  let inputArray2 = [
-    { id: 1, name: "name1", value: "value1" },
-    { id: 2, name: "name2", value: "value2" },
-  ];
   let ids = inputArray.map((item) => item.id);
   let names = inputArray.map((item) => item.name);
   let values = inputArray.map((item) => item.value);
@@ -60,6 +54,11 @@ const Works = (langlang) => {
       behavior: "smooth",
     });
   };
+
+  const openModal = () => {
+    setShowModal((showModal) => !showModal);
+  };
+
   // no use - ToggleItem
   const ToggleItem = ({ descc, subDesc, etcDesc, link, id }) => {
     const [toggleThisElement, setToggleThisElement] = useState(false);
@@ -93,35 +92,45 @@ const Works = (langlang) => {
     );
   };
 
-  const ToggleItem2 = ({ id, descc, subDesc, etcDesc, link }) => {
+  const ToggleItem2 = ({ id, descc, subDesc, detailDesc, link, bg }) => {
     const [toggleThisElement, setToggleThisElement] = useState(false);
+
     return (
       <div
         className="works work-img"
         //  key={id}
         onClick={() => setToggleThisElement((prev) => !prev)}
       >
-        {/* 
-     <button
-       className="h-head"
-        onClick={() => setToggleThisElement((prev) => !prev)}
-     >
-        click this btn for toggle h-info block {id}
-      </button>
-            */}
-
         {toggleThisElement && (
           <>
-            <div className="desc-on">
-              {/* <h2> {m("WORKS").one[0]}</h2> <p> {Aa[0]} </p> */}
-              <span>{descc}</span>
-              <span>{link}</span>
-              <p>참여비율: {link}</p>
-              <a href={link} target="_blank" className="btn">
-                {" "}
-                check
-              </a>
-              <span>{etcDesc}</span>
+            <div
+              style={{
+                backgroundImage: `url(${bg})`,
+              }}
+              className="forCenter"
+            >
+              <div className="desc-on">
+                {/* <h2> {m("WORKS").one[0]}</h2> <p> {Aa[0]} </p> */}
+                <span>{descc}</span>
+                <p>참여비율:{subDesc} </p>
+                <p>{detailDesc}</p>
+                <a href={link} rel="noreferrer" target="_blank" className="btn">
+                  {" "}
+                  check
+                </a>
+
+                <div style={{ border: "1px solid red" }}>
+                  {showModal ? (
+                    <>
+                      <p onClick={openModal}>a</p>
+                      <Modal
+                        showModal={showModal}
+                        setShowModal={setShowModal}
+                      />
+                    </>
+                  ) : null}
+                </div>
+              </div>
             </div>
           </>
         )}
@@ -136,11 +145,7 @@ const Works = (langlang) => {
     return (
       <>
         {" "}
-        <div
-          style={{ border: "1px solid red" }}
-          className="set-lang-btn"
-          onClick={changeLang}
-        >
+        <div className="set-lang-btn" onClick={changeLang}>
           <button value="ko">il</button>
           <button value="en">iEE</button>
           <button value="ja">JA</button>
@@ -159,28 +164,26 @@ const Works = (langlang) => {
     return (
       <>
         <section style={{ border: "1px solid", height: "100vh" }}>
-          {/* <LangBtn setLang={setLang} /> 
-          <p style={{ border: "2px solid magenta" }}>{m("WORKS").one[1]}</p>
-          <p style={{ border: "2px solid magenta" }}>{m("WORKS").one[0]}</p>
-          
-          {Array.from(worksTit).map((row, id, link) => (
-              <ToggleItem2 key={id} descc={row[1]} link={link[6]} />
-            ))}
-
-            {Array.from(worksTit2).map((row, id, link) => (
-              <ToggleItem2 key={id} descc={row} link={link} />
-            ))}
-          */}
-
           <section className="works-con">
             <h2 className="tit">ㅇ</h2>
 
             {worksTit2 &&
-              worksTit2.map((a, id, b) => {
+              worksTit2.map((a, key) => {
+                const { yummy } = a;
                 return (
                   <>
-                    <div>
-                      <ToggleItem2 descc={a[1].desc[0]} link={a[1].link} />
+                    <div
+                      className="testCon"
+                      style={{ backgroundImage: `url(${a[1].bg})` }}
+                    >
+                      <ToggleItem2
+                        key={key}
+                        descc={a[1].desc[0]}
+                        link={a[1].link}
+                        subDesc={a[1].desc[2]}
+                        detailDesc={a[1].desc[3]}
+                        dd={a[1].render}
+                      />
                     </div>
                   </>
                 );
@@ -228,6 +231,7 @@ const Works = (langlang) => {
       <Header />
       <nav>
         <p>web</p>
+
         <p onClick={() => scrollDown(aboutSection)}>app </p>
       </nav>
       <main>
