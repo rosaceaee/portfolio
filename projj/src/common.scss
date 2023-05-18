@@ -174,6 +174,21 @@ nav {
   }
 }
 
+.designBg {
+  width: 100%;
+  height: 100%;
+  &.bookr {
+    background: url("/images/bookr_after.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  &.meta {
+    background: url("./images/meta1.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
 .works-con {
   border: 1px solid;
   display: grid;
@@ -185,6 +200,9 @@ nav {
   width: 100%;
   max-width: 1000px;
 
+  &.design-con {
+    margin: 4rem auto 3rem;
+  }
   &.app-con {
     margin-top: 3rem;
   }

@@ -164,6 +164,27 @@ const Works = (langlang) => {
     return (
       <>
         <section style={{ border: "1px solid", height: "100vh" }}>
+          <section className="works-con design-con">
+            <h2>디자인 관련</h2>
+            <div className="works work-img">
+              <div
+                style={{
+                  backgroundRepeat: "no-repeat",
+                }}
+                className="designBg bookr"
+              >
+                dd
+              </div>
+              <div
+                style={{
+                  backgroundRepeat: "no-repeat",
+                }}
+                className="designBg meta"
+              >
+                dd
+              </div>
+            </div>
+          </section>
           <section className="works-con">
             <h2 className="tit">ㅇ</h2>
 
