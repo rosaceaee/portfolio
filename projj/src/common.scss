@@ -183,13 +183,20 @@ nav {
   width: 100%;
   margin: 0 auto;
 
+  .me {
+    border: none;
+    display: flex;
+    h1.greeting {
+      font-size: 5rem;
+    }
+  }
+
   div {
     border: 1px solid #cec8e9;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    min-height: 500px;
 
     &.stack-con {
       padding: 0;

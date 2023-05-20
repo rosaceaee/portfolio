@@ -192,7 +192,15 @@ const Works = (langlang) => {
 
     return (
       <>
-        <section style={{ border: "1px solid", height: "100vh" }}>
+        {" "}
+        <LangBtn setLang={setLang} />
+        <Header />
+        <nav>
+          <p>web</p>
+
+          <p onClick={() => scrollDown(aboutSection)}>app </p>
+        </nav>
+        <section style={{ border: "1px solid" }}>
           <section className="works-con design-con">
             <div>
               <h2>디자인 관련</h2>
@@ -311,13 +319,6 @@ const Works = (langlang) => {
 
   return (
     <>
-      <LangBtn setLang={setLang} />
-      <Header />
-      <nav>
-        <p>web</p>
-
-        <p onClick={() => scrollDown(aboutSection)}>app </p>
-      </nav>
       <main>
         <Parent setLang={setLang} />
         {/*
