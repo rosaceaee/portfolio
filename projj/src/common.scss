@@ -5,6 +5,7 @@ body {
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
+  background: #68d89b;
 
   &::-webkit-scrollbar {
     /* WebKit */
@@ -39,6 +40,10 @@ ol {
   list-style: none;
 }
 
+main {
+  background: #252525;
+  color: #fff;
+}
 .lang-con {
   width: 100%;
   display: flex;
@@ -51,10 +56,21 @@ ol {
 
 .header-con {
   width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  outline: double 0.5rem #fff;
+  border-radius: 1rem;
+  margin: 3rem auto 2rem;
+
+  div {
+    cursor: pointer;
+    &:hover {
+      font-weight: 800;
+    }
+  }
 
   .left {
     left: 0;
@@ -63,6 +79,10 @@ ol {
   .right {
     right: 0;
   }
+}
+
+.dd {
+  font-family: "EF_YOONY";
 }
 
 .set-lang-btn {
@@ -115,11 +135,53 @@ nav {
   }
 }
 
+.spinner {
+  animation: rotate 2s linear infinite;
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+
+  &.path {
+    stroke: hsl(210, 70, 75);
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
 .main-center-con {
-  display: grid;
+  // display: grid;
   // grid-template-rows: 1fr 2fr 1fr;
-  grid-template-columns: repeat(3, 1fr);
+  // grid-template-columns: repeat(3, 1fr);
   border: 1px solid #cec8e9;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 
   div {
     border: 1px solid #cec8e9;
@@ -212,6 +274,14 @@ nav {
     text-align: center;
   }
 
+  .layout-con {
+    width: 100%;
+    max-width: 1000px;
+    img {
+      width: 100%;
+    }
+  }
+
   .works {
     height: 100%;
     overflow: hidden;
@@ -225,10 +295,9 @@ nav {
       position: fixed;
       top: 0;
       left: 0;
-      background: #333;
+      background: rgba(48, 36, 42, 0.7);
       width: 100vw;
       height: 100%;
-      background: #333;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -241,7 +310,7 @@ nav {
 
     .desc-on {
       display: flex;
-      background: rgba(48, 36, 42, 0.7);
+      // background: rgba(48, 36, 42, 0.7);
       color: #fff;
       padding: 0.5rem;
       height: 100vh;
@@ -251,7 +320,26 @@ nav {
       width: 100%;
       height: auto;
       align-self: center;
-
+      border: 1px solid;
+      max-width: 1200px;
+      .swiper-con {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        &.layout-con {
+          border: 2px solid red;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .layout-con {
+        width: 100%;
+        max-width: 1000px;
+        img {
+          width: 100%;
+        }
+      }
       .btn {
         border: 1px solid;
         width: 4rem;

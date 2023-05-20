@@ -26,6 +26,33 @@ const Main = () => {
       </>
     );
   }
+  document.addEventListener("DOMContentLoaded", function (event) {});
+
+  const Sibal = () => {
+    return (
+      <>
+        <div
+          style={{
+            position: "relative",
+            background: "#333",
+            width: "100%",
+            height: "100vh",
+          }}
+        >
+          <svg className="spinner" viewBox="0 0 50 50">
+            <circle
+              className="path"
+              cx="25"
+              cy="25"
+              r="20"
+              fill="#fff"
+              strokeWidth="5"
+            ></circle>
+          </svg>
+        </div>
+      </>
+    );
+  };
 
   function MainBox() {
     return (
@@ -38,6 +65,9 @@ const Main = () => {
           </section>
 
           <section className="main-center-con">
+            <div className="me">
+              <h1 className="greeting">안녕하세요!</h1>
+            </div>
             <div className="stack-con">
               <h3 style={{ fontWeight: "700" }}>
                 <svg
@@ -57,7 +87,7 @@ const Main = () => {
                   <p>Design with...</p>
                   <ul>
                     <li>
-                      <span>figma</span>
+                      <span></span>
                     </li>
                     <li>
                       <svg
@@ -70,7 +100,7 @@ const Main = () => {
                           d="M16,7H8A1,1,0,0,0,7,8v8a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V8A1,1,0,0,0,16,7Zm-1,8H9V9h6Zm6,3.28V5.72A2,2,0,1,0,18.28,3H5.72A2,2,0,1,0,3,5.72V18.28A2,2,0,1,0,5.72,21H18.28A2,2,0,1,0,21,18.28Zm-2,0a1.91,1.91,0,0,0-.72.72H5.72A1.91,1.91,0,0,0,5,18.28V5.72A1.91,1.91,0,0,0,5.72,5H18.28a1.91,1.91,0,0,0,.72.72Z"
                         ></path>
                       </svg>
-                      <span> Adobe photoshop</span>
+                      <span> Figma, Adobe photoshop</span>
                     </li>
                   </ul>
                   <ul>
@@ -120,10 +150,13 @@ const Main = () => {
                 </li>
               </ul>
             </div>
+            {/**
             <div>
               {" "}
               <p> {m("MAIN_TITLE")}</p>
             </div>
+
+            
             <div>
               <ul>
                 <li>
@@ -143,19 +176,37 @@ const Main = () => {
                   <span>Korean, English, Japanes</span>
                 </li>
               </ul>
-            </div>
+            </div>*/}
           </section>
         </main>
       </>
     );
   }
 
+  function BeforeShow() {
+    const [isHide, setIsHide] = useState(false);
+
+    // setTimeout(() => setIsHide(false), 1000);
+
+    useEffect(() => {
+      setInterval(() => {
+        setIsHide(true);
+      }, 100);
+    }, []);
+    return (
+      <main>
+        {!isHide ? <Sibal /> : <MainBox />}{" "}
+        <footer>
+          <h5>footer</h5>
+        </footer>
+      </main>
+    );
+  }
+
+  document.addEventListener("DOMContentLoaded", BeforeShow);
   return (
     <>
-      <MainBox />
-      <footer>
-        <h5>footer</h5>
-      </footer>
+      <BeforeShow />
     </>
   );
 };

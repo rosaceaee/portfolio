@@ -7,10 +7,13 @@ import {
   Link,
 } from "react-router-dom";
 import * as Scroll from "react-scroll";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import Header from "../Header";
 import worklists from "./worksimsi.json";
 import useMultilingual, { LanguageType } from "../useMultilingual";
 import Modal from "./Modal";
+import "swiper/css";
 
 const Works = (langlang) => {
   const [show, setShow] = useState(false);
@@ -111,6 +114,32 @@ const Works = (langlang) => {
             >
               <div className="desc-on">
                 {/* <h2> {m("WORKS").one[0]}</h2> <p> {Aa[0]} </p> */}
+                <div className="swiper-con">
+                  <Swiper
+                    spaceBetween={10}
+                    slidesPerView={1}
+                    onSwiper={(swiper) => console.log(swiper)}
+                  >
+                    <SwiperSlide>
+                      <img
+                        src="https://corydalis.github.io/pt/img/ss1.png"
+                        alt="img"
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img
+                        src="https://corydalis.github.io/pt/img/ss1.png"
+                        alt="img"
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img
+                        src="https://corydalis.github.io/pt/img/ss1.png"
+                        alt="img"
+                      />
+                    </SwiperSlide>
+                  </Swiper>
+                </div>
                 <span>{descc}</span>
                 <p>참여비율:{subDesc} </p>
                 <p>{detailDesc}</p>
@@ -165,15 +194,49 @@ const Works = (langlang) => {
       <>
         <section style={{ border: "1px solid", height: "100vh" }}>
           <section className="works-con design-con">
-            <h2>디자인 관련</h2>
+            <div>
+              <h2>디자인 관련</h2>
+              <p>회사 보안 상 상세한 내용은 기재하지 않았습니다.</p>
+            </div>
             <div className="works work-img">
               <div
                 style={{
                   backgroundRepeat: "no-repeat",
                 }}
                 className="designBg bookr"
+                //onClick={setShow((prev) => !prev)}
+                onClick={() => setShow((prev) => !prev)}
               >
-                dd
+                zzzzz
+                {show && (
+                  <div className="forCenter">
+                    <div className="desc-on">
+                      {/* <h2> {m("WORKS").one[0]}</h2> <p> {Aa[0]} </p> */}
+                      <div className="swiper-con layout-con">
+                        <Swiper
+                          spaceBetween={10}
+                          slidesPerView={1}
+                          onSwiper={(swiper) => console.log(swiper)}
+                        >
+                          <SwiperSlide>
+                            <img
+                              src={require("../images/bookr_before.png")}
+                              alt="img"
+                            />
+                            <h2>수정 전</h2>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <img
+                              src={require("../images/bookr_after.png")}
+                              alt="img"
+                            />
+                            <h2>수정 후</h2>
+                          </SwiperSlide>
+                        </Swiper>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
               <div
                 style={{
@@ -181,7 +244,7 @@ const Works = (langlang) => {
                 }}
                 className="designBg meta"
               >
-                dd
+                ddzz
               </div>
             </div>
           </section>
