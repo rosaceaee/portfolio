@@ -67,7 +67,7 @@ const Main = () => {
           <section className="main-center-con">
             <div className="me">
               <h1 className="greeting">Greetings!</h1>
-              <div style={{ display: "block", border: "none" }}>
+              <div style={{ display: "block" }}>
                 <p>퍼블리셔로 일하고 있는 장영주입니다.</p>
                 <p>주로 UI와 프론트 개발에 관심이 많습니다.</p>
                 <p>궁금한게 정말 많아요.</p>
