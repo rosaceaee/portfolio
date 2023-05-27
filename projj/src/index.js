@@ -11,14 +11,14 @@ import {
 import App from "./App";
 import Header from "./Header";
 import Works from "./pages/Works";
-import Main from "./Main";
+import NewMain from "./NewMain";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route exact path="/" element={<Main />} />
+      <Route exact path="/" element={<NewMain />} />
       <Route exact path="/works" element={<Works />} />
     </Routes>
   </BrowserRouter>
