@@ -194,7 +194,7 @@ const Works = (langlang) => {
       <>
         {" "}
         <LangBtn setLang={setLang} />
-        <Header />
+        {/* <Header /> */}
         <nav>
           <p>web</p>
 

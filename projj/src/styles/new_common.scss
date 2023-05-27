@@ -34,7 +34,22 @@ ol {
 }
 
 main {
-  background: #403a3a;
+  // background: #403a3a;
+  background-image: linear-gradient(
+    to bottom,
+    #36312c,
+    #35302b,
+    #352f2b,
+    #342e2a,
+    #332d2a,
+    #312b28,
+    #2f2927,
+    #2d2725,
+    #292422,
+    #25201e,
+    #221d1b,
+    #1e1a18
+  );
   color: #fff;
 }
 .lang-con {
