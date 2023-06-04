@@ -10,6 +10,8 @@ import Header from "./Header";
 import Works from "./pages/Works";
 import "./styles/new_common.scss";
 import { ReactComponent as Plant } from "./images/plant.svg";
+import { ReactComponent as GitHub } from "./images/github.svg";
+import { ReactComponent as Mail } from "./images/mail.svg";
 
 const NewMain = () => {
   const [lang, setLang] = useState("ko");
@@ -24,7 +26,9 @@ const NewMain = () => {
       behavior: "smooth",
     });
   };
+  const tabTop = useRef(null);
   const tabWork = useRef(null);
+  const tabBottom = useRef(null);
 
   function LangBoxx({ setLang }) {
     return (
@@ -80,13 +84,13 @@ const NewMain = () => {
           {/*<LangBoxx />*/}
           <section className="nav-wrap">
             <div className="left-nav">
-              <h3>Top</h3>
+              <h3 onClick={() => scrollDown(tabTop)}>Top</h3>
               <h3 onClick={() => scrollDown(tabWork)}>WORKS </h3>
-              <h3>Contact</h3>
+              <h3 onClick={() => scrollDown(tabBottom)}>Contact</h3>
             </div>
           </section>
           <section className="main-center-con">
-            <div className="me">
+            <div className="me" ref={tabTop}>
               <span>
                 {" "}
                 <h1 className="greeting">young joo Jang </h1>
@@ -141,6 +145,14 @@ const NewMain = () => {
           <section className="main-center-con worklist-con" ref={tabWork}>
             <Works />
           </section>
+          <footer ref={tabBottom}>
+            <a href="mail: liliaceaeeee@gmail.com" target="_blank">
+              <Mail />
+            </a>
+            <a href="https://github.com/rosaceaee/" target="_blank">
+              <GitHub />
+            </a>
+          </footer>
         </main>
       </>
     );

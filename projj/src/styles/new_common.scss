@@ -475,3 +475,14 @@ nav {
     max-width: 300px;
   }
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1rem 1rem;
+  }
+}
