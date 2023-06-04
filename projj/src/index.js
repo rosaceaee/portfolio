@@ -12,6 +12,7 @@ import App from "./App";
 import Header from "./Header";
 import Works from "./pages/Works";
 import NewMain from "./NewMain";
+import Test from "./pages/Test";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
@@ -20,6 +21,7 @@ root.render(
     <Routes>
       <Route exact path="/" element={<NewMain />} />
       <Route exact path="/works" element={<Works />} />
+      <Route exact path="/test" element={<Test />} />
     </Routes>
   </BrowserRouter>
 );

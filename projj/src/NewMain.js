@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from "react";
+import React, { useCallback, useRef, useState, useEffect } from "react";
 import {
   Redirect,
   useHistory,
@@ -17,6 +17,14 @@ const NewMain = () => {
     return value && setLang(value);
   };
 
+  const scrollDown = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+  const tabWork = useRef(null);
+
   function LangBoxx({ setLang }) {
     return (
       <>
@@ -28,7 +36,23 @@ const NewMain = () => {
       </>
     );
   }
-  document.addEventListener("DOMContentLoaded", function (event) {});
+  function height() {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    document.addEventListener("scroll", function () {
+      document.addEventListener("scroll", function () {
+        let current = document.documentElement.scrollTop;
+        let colorValue = Math.round(current / 30);
+        let box = document.getElementById("main");
+
+        box.style.background = `rgb(${colorValue + 40},${colorValue + 30},${
+          colorValue + 10
+        })`;
+      });
+
+      // box.style.backgroundImage = `linear-gradient(to bottom, ${colorValue})`;
+    });
+  }
+  document.addEventListener("DOMContentLoaded", height());
 
   const Sibal = () => {
     return (
@@ -59,19 +83,24 @@ const NewMain = () => {
   function MainBox() {
     return (
       <>
-        <main>
+        <main id="main">
           <LangBoxx />
-          <section>
+          <section className="nav-wrap">
             <div className="left-nav">
-              <h3>d</h3>
-              <h3>d</h3>
-              <h3>d</h3>
+              <h3>Top</h3>
+              <h3 onClick={() => scrollDown(tabWork)}>app </h3>
+              <h3>contact</h3>
             </div>
           </section>
           <section className="main-center-con">
             <div style={{ display: "flex", justifyContent: "center" }}>dd</div>
             <div className="me">
               <h1 className="greeting">web developer </h1>
+              <span>
+                who loves make anything <br />
+                who loves make anything who loves make anything
+              </span>
+
               <div style={{ display: "flex", justifyContent: "space-around" }}>
                 <h3>Working With...</h3>
                 <svg
@@ -110,7 +139,7 @@ const NewMain = () => {
               </div>
             </div>
           </section>
-          <section className="main-center-con worklist-con">
+          <section className="main-center-con worklist-con" ref={tabWork}>
             <p>dd</p>
             <Works />
           </section>

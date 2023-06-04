@@ -13,18 +13,16 @@ const AHH = {
     ko: {
       yeombyung: [
         {
+          key: 0,
           desc: [
             "학원 관리 페이지",
             "https://www.weibo.com",
             "디자인: 특정 추가 페이지만 디자인 \n, 유지보수 및 ui 퍼블리싱 100%",
             "학원의 관리자 페이지. \n React 기반으로 개발하였으며, 학원 특성상 태블릿을 주로 사용하므로 태블릿에 맞춘 반응형 레이아웃 유지보수에 중점적으로 참여.",
+            "https://corydalis.github.io/pt/img/ss1.png",
           ],
           link: "https://culp.cloubot.com/login",
-          go: ["ddddd"],
-          bg: "https://corydalis.github.io/pt/img/ss1.png",
-          render: (text, dd, idx) => {
-            return "<LucidDetail/>";
-          },
+          bg: [require("../images/bookr_after.png")],
         },
         {
           desc: [
@@ -32,6 +30,7 @@ const AHH = {
             "https://www.weibo.com",
             "유지보수 및 ui 퍼블리싱 100%(태블릿, 모바일)",
             "영어 교육용 웹앱. \n 프로젝트 투입 전에 이미 뼈대는 작업 되어있었으나 엉성한 레이아웃으로 데스크탑부터 태블릿, 모바일까지 모두 반응형 작업 진행.",
+            "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "https://epublic-phonics.cloubot.com/",
           go: ["ddddd"],
@@ -43,6 +42,7 @@ const AHH = {
             "https://www.weibo.com",
             "디자인: 레이아웃, 색상 선정 참여 나머지 부분은 외주 디자이너의 시안대로 진행, \n ui 퍼블리싱 100%(데스크톱, 태블릿, 모바일)",
             "영어 교육용 웹앱. \n React 기반으로 개발, ",
+            "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "https://epublic-phonics.cloubot.com/",
           go: ["ddddd"],
@@ -50,22 +50,48 @@ const AHH = {
         },
         {
           desc: [
+            "파란관세사무소",
+            "https://www.weibo.com",
+            "퍼블리싱 100%(데스크톱, 태블릿, 모바일)",
+            "자잘한 오류가 상당히 많아 유지보수 작업. 포털 사이트 리뉴얼과 고객사 전용 빌더 레이아웃, 기능(서버 디비에서 페이지로 ajax를 이용해 불러오는 등) 작업을 수행.            ",
+            "https://corydalis.github.io/pt/img/blue1.png",
+          ],
+          link: "http://bluecustoms.co.kr/",
+          go: ["ddddd"],
+          bg: "https://corydalis.github.io/pt/img/blue1.png",
+        },
+        {
+          desc: [
             "스펙토리",
             "https://www.weibo.com",
             "메인 플랫폼 사이트의 유지보수 작업",
+            "jsp, jQuery로 유지보수",
+            "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "https://www.googlre.com",
           go: ["ddddd"],
           bg: "https://corydalis.github.io/pt/img/spec1.png",
         },
         {
-          desc: ["서울여대 ", "https://www.weibo.com", "유지보수 참여"],
+          desc: [
+            "서울여대 ",
+            "https://www.weibo.com",
+            "유지보수 참여",
+            "jQuery로 유지보수",
+            "https://corydalis.github.io/pt/img/blue1.png",
+          ],
           link: "https://www.googlre.com",
           go: ["ddddd"],
           bg: "https://corydalis.github.io/pt/img/sw1.png",
         },
         {
-          desc: ["파트너즈 파크", "https://www.weibo.com", "유지보수 참여"],
+          desc: [
+            "파트너즈 파크",
+            "https://www.weibo.com",
+            "유지보수 참여",
+            "jQuery로 유지보수",
+            "https://corydalis.github.io/pt/img/blue1.png",
+          ],
           link: "https://www.googlre.com",
           go: ["ddddd"],
           bg: "https://corydalis.github.io/pt/img/part1.png",
@@ -75,9 +101,12 @@ const AHH = {
             "SSmedipia",
             "https://www.weibo.com",
             "디자인: 메인페이지, 서브페이지 레이아웃 참여, 퍼블리싱 및 유지보수 참여 100%",
+            "jQuery로 유지보수",
+            "https://corydalis.github.io/pt/img/ss1.png",
           ],
           link: "https://www.googlre.com",
           go: ["ddddd"],
+          bg: "https://corydalis.github.io/pt/img/ss1.png",
         },
         {
           desc: [
@@ -97,6 +126,18 @@ const AHH = {
           "디자인, 퍼블리싱 100%",
         ],
       },
+      imgs: [
+        {
+          desc: [
+            "https://corydalis.github.io/pt/img/blue1.png",
+            "https://corydalis.github.io/pt/img/blue1.png",
+          ],
+          descc: [
+            "https://corydalis.github.io/pt/img/blue1.png",
+            "https://corydalis.github.io/pt/img/blue1.png",
+          ],
+        },
+      ],
     },
     en: {
       one: ["generatingg", "한구거", "우아아악", "야아아압"],

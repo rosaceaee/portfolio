@@ -11,7 +11,8 @@
       ],
       "creator": ["뫄뫄 카페", "남위례역 몇번출구 "],
       "go": ["dd"],
-      "price": "2,500"
+      "price": "2,500",
+      "slideimg": "https://corydalis.github.io/pt/img/blue1.png"
     },
     {
       "title": "2",
@@ -89,6 +90,26 @@
       "desc": "파닉스몬스터",
       "creator": ["아", "에이"],
       "go": ["ddddd"]
+    }
+  ],
+  "img": [
+    {
+      "key": 0,
+      "slideimg": ["https://corydalis.github.io/pt/img/blue1.png"]
+    },
+    {
+      "key": 1,
+      "slideimg": ["https://corydalis.github.io/pt/img/ss1.png"]
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "image": ["https://corydalis.github.io/pt/img/blue1.png"]
+    },
+    {
+      "id": 2,
+      "image": ["https://corydalis.github.io/pt/img/ss1.png"]
     }
   ]
 }

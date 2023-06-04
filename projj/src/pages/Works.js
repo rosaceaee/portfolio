@@ -33,10 +33,15 @@ const Works = (langlang) => {
   const Aa = Object.entries(m("WORKS"));
   const web = JSON.stringify(m("WORKS").yeombyung);
   const worksTit2 = Object.entries(m("WORKS").yeombyung);
+  const slideImgs = Object.entries(m("WORKS").imgs);
   const strWorksTit2 = JSON.stringify(worksTit2);
   const wtf = Array.isArray(JSON.stringify(m("WORKS").yeombyung));
   let oh = worksTit2.map((itm) => itm[1].desc[0]);
   let urlLink = worksTit2.map((itm) => itm[1].link);
+  let oh2 = slideImgs.map((itm) => itm[1].descc);
+  console.log(worksTit2[0]);
+
+  const slidee = Object.entries(m("WORKS").yeombyung);
 
   let inputArray = [
     { id: 1, name: "name1", value: "value1" },
@@ -95,13 +100,21 @@ const Works = (langlang) => {
     );
   };
 
-  const ToggleItem2 = ({ id, descc, subDesc, detailDesc, link, bg }) => {
+  const ToggleItem2 = ({
+    id,
+    descc,
+    subDesc,
+    detailDesc,
+    link,
+    bg,
+    bgg,
+    key,
+  }) => {
     const [toggleThisElement, setToggleThisElement] = useState(false);
 
     return (
       <div
         className="works work-img"
-        //  key={id}
         onClick={() => setToggleThisElement((prev) => !prev)}
       >
         {toggleThisElement && (
@@ -114,35 +127,25 @@ const Works = (langlang) => {
             >
               <div className="desc-on">
                 {/* <h2> {m("WORKS").one[0]}</h2> <p> {Aa[0]} </p> */}
-                <div className="swiper-con">
-                  <Swiper
-                    spaceBetween={10}
-                    slidesPerView={1}
-                    onSwiper={(swiper) => console.log(swiper)}
-                  >
-                    <SwiperSlide>
-                      <img
-                        src="https://corydalis.github.io/pt/img/ss1.png"
-                        alt="img"
-                      />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img
-                        src="https://corydalis.github.io/pt/img/ss1.png"
-                        alt="img"
-                      />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img
-                        src="https://corydalis.github.io/pt/img/ss1.png"
-                        alt="img"
-                      />
-                    </SwiperSlide>
-                  </Swiper>
+                <div className="top-img-con">
+                  <div
+                    style={{
+                      backgroundImage: `url(${bgg})`,
+                    }}
+                  />
                 </div>
-                <span>{descc}</span>
+                <h1>
+                  {worksTit2[1].map((a, id) => {
+                    return (
+                      <>
+                        <span>{id}</span>
+                      </>
+                    );
+                  })}
+                </h1>
+                <h2>{descc}</h2>
                 <p>참여비율:{subDesc} </p>
-                <p>{detailDesc}</p>
+                <p className="descText">{detailDesc}</p>
                 <a href={link} rel="noreferrer" target="_blank" className="btn">
                   {" "}
                   check
@@ -166,8 +169,6 @@ const Works = (langlang) => {
       </div>
     );
   };
-
-  // console.log(changeLang);
   //const final = worklists.map(({id, name}: {id: string, name: string}) => ({id, name}));
 
   function LangBtn({ setLang }) {
@@ -201,67 +202,13 @@ const Works = (langlang) => {
           <p onClick={() => scrollDown(aboutSection)}>app </p>
         </nav>
         <section style={{ border: "1px solid" }}>
-          <section className="works-con design-con">
-            <div>
-              <h2>디자인 관련</h2>
-              <p>회사 보안 상 상세한 내용은 기재하지 않았습니다.</p>
-            </div>
-            <div className="works work-img">
-              <div
-                style={{
-                  backgroundRepeat: "no-repeat",
-                }}
-                className="designBg bookr"
-                //onClick={setShow((prev) => !prev)}
-                onClick={() => setShow((prev) => !prev)}
-              >
-                zzzzz
-                {show && (
-                  <div className="forCenter">
-                    <div className="desc-on">
-                      {/* <h2> {m("WORKS").one[0]}</h2> <p> {Aa[0]} </p> */}
-                      <div className="swiper-con layout-con">
-                        <Swiper
-                          spaceBetween={10}
-                          slidesPerView={1}
-                          onSwiper={(swiper) => console.log(swiper)}
-                        >
-                          <SwiperSlide>
-                            <img
-                              src={require("../images/bookr_before.png")}
-                              alt="img"
-                            />
-                            <h2>수정 전</h2>
-                          </SwiperSlide>
-                          <SwiperSlide>
-                            <img
-                              src={require("../images/bookr_after.png")}
-                              alt="img"
-                            />
-                            <h2>수정 후</h2>
-                          </SwiperSlide>
-                        </Swiper>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-              <div
-                style={{
-                  backgroundRepeat: "no-repeat",
-                }}
-                className="designBg meta"
-              >
-                ddzz
-              </div>
-            </div>
-          </section>
           <section className="works-con">
-            <h2 className="tit">ㅇ</h2>
+            <h2 className="tit">Web</h2>
 
             {worksTit2 &&
-              worksTit2.map((a, key) => {
+              worksTit2.map((a, b, key) => {
                 const { yummy } = a;
+
                 return (
                   <>
                     <div
@@ -275,6 +222,7 @@ const Works = (langlang) => {
                         subDesc={a[1].desc[2]}
                         detailDesc={a[1].desc[3]}
                         dd={a[1].render}
+                        bgg={a[1].bg}
                       />
                     </div>
                   </>
@@ -312,6 +260,76 @@ const Works = (langlang) => {
               );
             })}
           </section>
+
+          <section className="preview-con">
+            <div className="inner">
+              <div className="desc-wrap">
+                <h2>루시드 영어학원</h2>
+                <p>회사 보안 상 상세한 내용은 기재하지 않았습니다.</p>
+              </div>
+              <div className="swiper-wrap">
+                <Swiper
+                  spaceBetween={10}
+                  slidesPerView={1}
+                  onSwiper={(swiper) => console.log(swiper)}
+                >
+                  <SwiperSlide>
+                    <img src={require("../images/lucid1.jpeg")} alt="img" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={require("../images/lucid2.jpeg")} alt="img" />
+                  </SwiperSlide>
+                </Swiper>{" "}
+              </div>
+            </div>
+
+            <div className="inner">
+              <div className="desc-wrap">
+                <h2>meta exam</h2>
+                <p>영어 시험 웹앱 작업, 퍼블리싱 100% 참여</p>
+              </div>
+              <div className="swiper-wrap">
+                <Swiper
+                  spaceBetween={10}
+                  slidesPerView={1}
+                  onSwiper={(swiper) => console.log(swiper)}
+                >
+                  <SwiperSlide>
+                    <img src={require("../images/meta1.jpg")} alt="img" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={require("../images/meta2.jpg")} alt="img" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={require("../images/meta3.jpg")} alt="img" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={require("../images/meta4.jpg")} alt="img" />
+                  </SwiperSlide>
+                </Swiper>{" "}
+              </div>
+            </div>
+
+            <div className="inner">
+              <div className="desc-wrap">
+                <h2>phonics monster</h2>
+                <p>반응형 작업</p>
+              </div>
+              <div className="swiper-wrap">
+                <Swiper spaceBetween={10} slidesPerView={1}>
+                  <SwiperSlide>
+                    <img src={require("../images/pn1.png")} alt="img" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={require("../images/pm12.png")} alt="img" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={require("../images/pn8.png")} alt="img" />
+                  </SwiperSlide>
+                </Swiper>{" "}
+              </div>
+            </div>
+          </section>
         </section>
       </>
     );
@@ -319,7 +337,7 @@ const Works = (langlang) => {
 
   return (
     <>
-      <main>
+      <main id="worklist">
         <Parent setLang={setLang} />
         {/*
         <section style={{ border: "1px solid", height: "100vh" }}>

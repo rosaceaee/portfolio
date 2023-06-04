@@ -117,12 +117,20 @@ main {
 nav {
   border: 1px solid;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   position: sticky;
   top: 0;
   width: 100%;
   margin-top: 2rem;
-  background: #fff;
+  margin-bottom: 2rem;
+  background: #333;
+
+  p {
+    width: 100px;
+    padding: 1rem;
+    margin: 0 1rem;
+    text-align: center;
+  }
 }
 
 .main-top-con {
@@ -181,10 +189,18 @@ nav {
     stroke-dashoffset: -124;
   }
 }
+
+.nav-wrap {
+  position: fixed;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+}
+
 .left-nav {
   position: fixed;
   border: 1px solid;
-  left: 1rem;
+  left: 7rem;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -213,10 +229,10 @@ nav {
 
   div {
     border: 1px solid #cec8e9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
+    //  display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   height: auto;
 
     &.stack-con {
       padding: 0;
