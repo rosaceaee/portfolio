@@ -52,7 +52,7 @@ const NewMain = () => {
   }
   document.addEventListener("DOMContentLoaded", height());
 
-  const Sibal = () => {
+  const Landing = () => {
     return (
       <>
         <div
@@ -69,7 +69,7 @@ const NewMain = () => {
               cx="25"
               cy="25"
               r="20"
-              fill="#fff"
+              fill="#f0c66b"
               strokeWidth="5"
             ></circle>
           </svg>
@@ -86,7 +86,7 @@ const NewMain = () => {
           <section className="nav-wrap">
             <div className="left-nav">
               <h3>Top</h3>
-              <h3 onClick={() => scrollDown(tabWork)}>app </h3>
+              <h3 onClick={() => scrollDown(tabWork)}>WORKS </h3>
               <h3>Contact</h3>
             </div>
           </section>
@@ -157,9 +157,9 @@ const NewMain = () => {
     useEffect(() => {
       setInterval(() => {
         setIsHide(true);
-      }, 100);
+      }, 1500);
     }, []);
-    return <main id="main">{!isHide ? <Sibal /> : <MainBox />} </main>;
+    return <main id="main">{!isHide ? <Landing /> : <MainBox />} </main>;
   }
 
   document.addEventListener("DOMContentLoaded", BeforeShow);
