@@ -181,7 +181,7 @@ main {
   }
 
   div {
-    border: 1px solid #cec8e9;
+    // border: 1px solid #cec8e9;
     // display: flex;
     //  align-items: center;
     //  justify-content: center;
@@ -251,7 +251,7 @@ main {
 
 .preview-con {
   width: 100%;
-  margin: 0 auto 3rem;
+  margin: 2rem auto 3rem;
   width: 100%;
   max-width: 1400px;
   border-top-left-radius: 80px;
@@ -264,10 +264,11 @@ main {
     justify-content: space-around;
     grid-template-columns: 1fr 3fr;
     width: 100%;
+    margin: 2rem;
   }
 
   .swiper-wrap {
-    max-width: 700px;
+    max-width: 500px;
     align-self: center;
     justify-self: center;
     display: flex;
@@ -289,7 +290,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   margin: 1rem auto;
   gap: 1rem;
-  margin: 0 auto;
+  margin: 2rem auto;
   width: 100%;
   max-width: 1400px;
   padding: 2rem 3rem;
@@ -444,8 +445,7 @@ main {
 }
 
 @media (max-width: 1024px) {
-  .main-center-con,
-  .works-con {
+  .main-center-con {
     grid-template-columns: repeat(2, 1fr);
   }
 

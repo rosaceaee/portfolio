@@ -8,13 +8,15 @@ import {
 } from "react-router-dom";
 import * as Scroll from "react-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 import Header from "../Header";
 import worklists from "./worksimsi.json";
 import useMultilingual, { LanguageType } from "../useMultilingual";
 import Modal from "./Modal";
 import "swiper/css";
-
+import "swiper/scss/navigation";
+import "swiper/scss/pagination";
 const Works = (langlang) => {
   const [show, setShow] = useState(false);
   const aboutSection = useRef(null);
@@ -33,12 +35,10 @@ const Works = (langlang) => {
   const Aa = Object.entries(m("WORKS"));
   const web = JSON.stringify(m("WORKS").yeombyung);
   const worksTit2 = Object.entries(m("WORKS").yeombyung);
-  const slideImgs = Object.entries(m("WORKS").imgs);
   const strWorksTit2 = JSON.stringify(worksTit2);
   const wtf = Array.isArray(JSON.stringify(m("WORKS").yeombyung));
   let oh = worksTit2.map((itm) => itm[1].desc[0]);
   let urlLink = worksTit2.map((itm) => itm[1].link);
-  let oh2 = slideImgs.map((itm) => itm[1].descc);
   console.log(worksTit2[0]);
 
   const slidee = Object.entries(m("WORKS").yeombyung);
@@ -195,15 +195,14 @@ const Works = (langlang) => {
       <>
         {" "}
         <LangBtn setLang={setLang} />
-        {/* <Header /> */}
+        {/* <Header /> 
         <nav>
           <p>web</p>
-
           <p onClick={() => scrollDown(aboutSection)}>app </p>
-        </nav>
+        </nav>*/}
         <section style={{ border: "1px solid" }}>
           <section className="works-con">
-            <h2 className="tit">Web</h2>
+            <h2 className="tit">Works</h2>
 
             {worksTit2 &&
               worksTit2.map((a, b, key) => {
@@ -248,20 +247,8 @@ const Works = (langlang) => {
             })}
             */}
           </section>
-          <section className="works-con app-con" ref={aboutSection}>
-            <h2 className="tit">App</h2>
-            {worklists.app.map((a, id) => {
-              return (
-                <>
-                  <div className="works work-img">
-                    <ToggleItem id={id} descc={a.desc} />;
-                  </div>
-                </>
-              );
-            })}
-          </section>
 
-          <section className="preview-con">
+          <section className="preview-con" ref={aboutSection}>
             <div className="inner">
               <div className="desc-wrap">
                 <h2>루시드 영어학원</h2>
@@ -269,9 +256,11 @@ const Works = (langlang) => {
               </div>
               <div className="swiper-wrap">
                 <Swiper
+                  modules={[Navigation, Pagination]}
                   spaceBetween={10}
                   slidesPerView={1}
-                  onSwiper={(swiper) => console.log(swiper)}
+                  Navigation
+                  pagination={{ clickable: true }}
                 >
                   <SwiperSlide>
                     <img src={require("../images/lucid1.jpeg")} alt="img" />
@@ -290,9 +279,11 @@ const Works = (langlang) => {
               </div>
               <div className="swiper-wrap">
                 <Swiper
+                  modules={[Navigation, Pagination]}
                   spaceBetween={10}
                   slidesPerView={1}
-                  onSwiper={(swiper) => console.log(swiper)}
+                  Navigation
+                  pagination={{ clickable: true }}
                 >
                   <SwiperSlide>
                     <img src={require("../images/meta1.jpg")} alt="img" />
@@ -316,7 +307,13 @@ const Works = (langlang) => {
                 <p>반응형 작업</p>
               </div>
               <div className="swiper-wrap">
-                <Swiper spaceBetween={10} slidesPerView={1}>
+                <Swiper
+                  modules={[Navigation, Pagination]}
+                  spaceBetween={10}
+                  slidesPerView={1}
+                  Navigation
+                  pagination={{ clickable: true }}
+                >
                   <SwiperSlide>
                     <img src={require("../images/pn1.png")} alt="img" />
                   </SwiperSlide>

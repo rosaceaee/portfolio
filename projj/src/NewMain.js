@@ -84,24 +84,28 @@ const NewMain = () => {
     return (
       <>
         <main id="main">
-          <LangBoxx />
+          {/*<LangBoxx />*/}
           <section className="nav-wrap">
             <div className="left-nav">
               <h3>Top</h3>
               <h3 onClick={() => scrollDown(tabWork)}>app </h3>
-              <h3>contact</h3>
+              <h3>Contact</h3>
             </div>
           </section>
           <section className="main-center-con">
-            <div style={{ display: "flex", justifyContent: "center" }}>dd</div>
             <div className="me">
-              <h1 className="greeting">web developer </h1>
               <span>
-                who loves make anything <br />
-                who loves make anything who loves make anything
+                {" "}
+                <h1 className="greeting">web developer </h1>
+                <div style={{ display: "grid" }}>
+                  who loves make anything
+                  <span style={{ display: "block", textIndent: "1rem" }}>
+                    loves make anything
+                  </span>
+                </div>
               </span>
 
-              <div style={{ display: "flex", justifyContent: "space-around" }}>
+              <div className="skill-con">
                 <h3>Working With...</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +144,6 @@ const NewMain = () => {
             </div>
           </section>
           <section className="main-center-con worklist-con" ref={tabWork}>
-            <p>dd</p>
             <Works />
           </section>
         </main>
@@ -158,14 +161,7 @@ const NewMain = () => {
         setIsHide(true);
       }, 100);
     }, []);
-    return (
-      <main>
-        {!isHide ? <Sibal /> : <MainBox />}{" "}
-        <footer>
-          <h5>footer</h5>
-        </footer>
-      </main>
-    );
+    return <main>{!isHide ? <Sibal /> : <MainBox />} </main>;
   }
 
   document.addEventListener("DOMContentLoaded", BeforeShow);
