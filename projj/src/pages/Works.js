@@ -151,7 +151,7 @@ const Works = (langlang) => {
                   check
                 </a>
 
-                <div style={{ border: "1px solid red" }}>
+                <div style={{ border: "1px solid #F0C66B" }}>
                   {showModal ? (
                     <>
                       <p onClick={openModal}>a</p>
@@ -176,9 +176,9 @@ const Works = (langlang) => {
       <>
         {" "}
         <div className="set-lang-btn" onClick={changeLang}>
-          <button value="ko">il</button>
-          <button value="en">iEE</button>
-          <button value="ja">JA</button>
+          <button value="ko">Ko</button>
+          <button value="en">Eng</button>
+          <button value="ja">Ja</button>
         </div>
       </>
     );
@@ -200,7 +200,7 @@ const Works = (langlang) => {
           <p>web</p>
           <p onClick={() => scrollDown(aboutSection)}>app </p>
         </nav>*/}
-        <section style={{ border: "1px solid" }}>
+        <section>
           <section className="works-con">
             <h2 className="tit">Works</h2>
 

@@ -5,7 +5,8 @@ body {
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
-  background: #68d89b;
+  // background: #403a3a;
+  background: rgb(13, 83, 120);
 
   &::-webkit-scrollbar {
     /* WebKit */
@@ -189,12 +190,16 @@ nav {
   display: flex;
   flex-direction: column;
   align-self: center;
+  h3 {
+    cursor: pointer;
+  }
 }
+
 .main-center-con {
   // display: grid;
   // grid-template-rows: 1fr 2fr 1fr;
   // grid-template-columns: repeat(3, 1fr);
-  border: 1px solid #cec8e9;
+  //  border: 1px solid #cec8e9;
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
@@ -223,7 +228,7 @@ nav {
   }
 
   &.worklist-con {
-    margin: 2rem auto;
+    margin: 2rem auto 0;
     padding: 2rem 0;
   }
 

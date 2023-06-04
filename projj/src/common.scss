@@ -5,7 +5,6 @@ body {
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
-  background: #68d89b;
 
   &::-webkit-scrollbar {
     /* WebKit */
@@ -167,7 +166,7 @@ main {
   // display: grid;
   // grid-template-rows: 1fr 2fr 1fr;
   // grid-template-columns: repeat(3, 1fr);
-  border: 1px solid #cec8e9;
+  // border: 1px solid #cec8e9;
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -250,25 +249,30 @@ main {
 }
 
 .preview-con {
-  width: 100%;
   margin: 2rem auto 3rem;
   width: 100%;
-  max-width: 1400px;
-  border-top-left-radius: 80px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 20px;
+  max-width: 1500px;
 
   .inner {
     display: inline-grid;
     justify-content: space-around;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     width: 100%;
-    margin: 2rem;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    color: #333;
+    background: #fff;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+    .desc-wrap {
+      text-align: center;
+    }
   }
 
   .swiper-wrap {
-    max-width: 500px;
+    max-width: 600px;
     align-self: center;
     justify-self: center;
     display: flex;
@@ -298,6 +302,7 @@ main {
   border-top-right-radius: 15px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 20px;
+  background: #fff;
   //  background: #debc88;
 
   &.design-con {
@@ -308,8 +313,13 @@ main {
   }
 
   h2.tit {
-    background: rgba(0, 0, 0, 0.23);
+    background: #f0c66b;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
   }
 
   .layout-con {
@@ -426,7 +436,7 @@ main {
     //@debugbackground: url('https://corydalis.github.io/pt/img/ss1.png') no-repeat;
     background-size: cover;
     background-position: center center;
-    border: 3px solid #cec8e9;
+    border: 3px solid #f0c66b;
     opacity: 1;
     transition: all 0.3s ease;
     cursor: pointer;
