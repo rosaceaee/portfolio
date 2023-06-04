@@ -3,13 +3,13 @@ exports.__esModule = true;
 var AHH = {
     WORKS: {
         ko: {
-            yeombyung: [
+            langs: [
                 {
                     desc: [
                         "meta exam",
-                        "https://www.weibo.com",
+                        "",
                         "디자인: 특정 추가 페이지만 디자인 \n, 유지보수 및 ui 퍼블리싱 100%",
-                        "학원의 관리자 페이지. \n React 기반으로 개발하였으며, 학원 특성상 태블릿을 주로 사용하므로 태블릿에 맞춘 반응형 레이아웃 유지보수에 중점적으로 참여.",
+                        "영어 시험 웹앱. React 기반으로 개발하였으며, 학원 특성상 태블릿을 주로 사용하므로 태블릿에 맞춘 반응형 레이아웃 유지보수에 중점적으로 참여. 보안상으로 공개가 어려워 맨 아래 페이지에 슬라이드로 일부 게시함",
                         "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
                     ],
                     link: "https://culp.cloubot.com/login",
@@ -18,9 +18,9 @@ var AHH = {
                 {
                     desc: [
                         "파닉스 몬스터",
-                        "https://www.weibo.com",
+                        "",
                         "유지보수 및 ui 퍼블리싱 100%(태블릿, 모바일)",
-                        "영어 교육용 웹앱. \n 프로젝트 투입 전에 이미 뼈대는 작업 되어있었으나 엉성한 레이아웃으로 데스크탑부터 태블릿, 모바일까지 모두 반응형 작업 진행.",
+                        "영어 교육용 웹앱. \n 프로젝트 투입 전에 이미 뼈대는 작업 되어있었으나 엉성한 레이아웃으로 데스크탑부터 태블릿, 모바일까지 모두 반응형 작업 진행. 보안상으로 공개가 어려워 맨 아래 페이지에 슬라이드로 일부 게시함",
                         "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
                     ],
                     link: "https://epublic-phonics.cloubot.com/",
@@ -30,12 +30,12 @@ var AHH = {
                 {
                     desc: [
                         "루시드 영어학원",
-                        "https://www.weibo.com",
-                        "디자인: 레이아웃, 색상 선정 참여 나머지 부분은 외주 디자이너의 시안대로 진행, \n ui 퍼블리싱 100%(데스크톱, 태블릿, 모바일)",
+                        "",
+                        "디자인: 레이아웃, 색상 선정 참여 나머지 부분은 외주 디자이너의 시안대로 진행, \n ui 퍼블리싱 100%(데스크톱, 태블릿, 모바일). 보안상으로 공개가 어려워 맨 아래 페이지에 슬라이드로 일부 게시함",
                         "영어 교육용 웹앱. \n React 기반으로 개발, ",
                         "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
                     ],
-                    link: "https://epublic-phonics.cloubot.com/",
+                    link: "",
                     go: ["ddddd"],
                     bg: "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg"
                 },
@@ -59,7 +59,7 @@ var AHH = {
                         "jsp, jQuery로 유지보수",
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "https://www.spectory.net/",
                     go: ["ddddd"],
                     bg: "https://corydalis.github.io/pt/img/spec1.png"
                 },
@@ -71,19 +71,19 @@ var AHH = {
                         "jQuery로 유지보수",
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "https://childstudy.swu.ac.kr/",
                     go: ["ddddd"],
                     bg: "https://corydalis.github.io/pt/img/sw1.png"
                 },
                 {
                     desc: [
                         "파트너즈 파크",
-                        "https://www.weibo.com",
+                        "",
                         "유지보수 참여",
                         "jQuery로 유지보수",
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "https://www.partnerspark.co.kr/",
                     go: ["ddddd"],
                     bg: "https://corydalis.github.io/pt/img/part1.png"
                 },
@@ -95,7 +95,7 @@ var AHH = {
                         "jQuery로 유지보수",
                         "https://corydalis.github.io/pt/img/ss1.png",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "http://www.ssmedipia.com/m",
                     go: ["ddddd"],
                     bg: "https://corydalis.github.io/pt/img/ss1.png"
                 },
@@ -105,7 +105,7 @@ var AHH = {
                         "https://www.weibo.com",
                         "디자인: 메인페이지, 서브페이지 레이아웃 참여, 퍼블리싱 및 유지보수 참여 100%",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "http://www.spcdoor.com/",
                     go: ["ddddd"],
                     bg: "https://corydalis.github.io/pt/img/sp1.png"
                 },
@@ -131,13 +131,13 @@ var AHH = {
             ]
         },
         en: {
-            yeombyung: [
+            langs: [
                 {
                     desc: [
-                        "Learning manager site for English school",
+                        "Meta exam for English school",
                         "",
                         "Designed few pages, maintenance of UI structure",
-                        "Site for manage students in English school teachers built only React.js.",
+                        "Site for English exam in English school teachers built only React.js.",
                         "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
                     ],
                     link: "https://culp.cloubot.com/login",
@@ -163,9 +163,9 @@ var AHH = {
                         "  built only React.js.",
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
-                    link: "https://epublic-phonics.cloubot.com/",
+                    link: "",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/sea1.png"
+                    bg: "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg"
                 },
                 {
                     desc: [
@@ -181,13 +181,13 @@ var AHH = {
                 },
                 {
                     desc: [
-                        "스펙토리",
+                        "spectory",
                         "",
                         "Participated in layout design, and UI structure(desktop, tablet, mobile)",
                         "built in jsp, jQuery",
                         "",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "https://www.spectory.net/",
                     go: [""],
                     bg: "https://corydalis.github.io/pt/img/spec1.png"
                 },
@@ -199,7 +199,7 @@ var AHH = {
                         "built in JQuery, Css3",
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "https://childstudy.swu.ac.kr/",
                     go: [""],
                     bg: "https://corydalis.github.io/pt/img/sw1.png"
                 },
@@ -211,7 +211,7 @@ var AHH = {
                         "built in JQuery, Css3",
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "https://www.partnerspark.co.kr/",
                     go: [""],
                     bg: "https://corydalis.github.io/pt/img/part1.png"
                 },
@@ -223,7 +223,7 @@ var AHH = {
                         "built in JQuery, Css3",
                         "https://corydalis.github.io/pt/img/ss1.png",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "http://www.ssmedipia.com/",
                     go: [""],
                     bg: "https://corydalis.github.io/pt/img/ss1.png"
                 },
@@ -234,30 +234,20 @@ var AHH = {
                         "Participated in layout design, and UI structure(desktop, tablet, mobile)",
                         "built in JQuery, Css3",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "http://www.spcdoor.com/",
                     go: [""],
                     bg: "https://corydalis.github.io/pt/img/sp1.png"
                 },
             ]
         },
         ja: {
-            one: [
-                "英語学習のためのlms 管理者ページ",
-                "モンスター",
-                "クレオ",
-                "ルシド",
-                "ソウル女性大学校～科",
-                "パートナーズパーク",
-            ],
-            two: ["https://www.google.com", "https://www.google.com"],
-            three: ["構築", "유지보수 100%", "퍼블리싱, 유지보수 100%"],
-            yeombyung: [
+            langs: [
                 {
                     desc: [
-                        "英語学習のための教師向け管理者ページ",
+                        "Meta Exam",
                         "",
                         "デザイン：アプリ接続のページのみデザイン及びUI開発、メンテナンス",
-                        "塾の教師向けの管理ページ、REACTで開発、保安の上、詳しいイメージは下側のスライドでご覧することができます（lucid, meta）",
+                        "英語塾で行う英語試験サイトの制作、REACTで開発、保安の上、詳しいイメージは一番下側のスライドでご覧することができます（lucid, meta）",
                         "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
                     ],
                     link: "",
@@ -268,7 +258,7 @@ var AHH = {
                         "Phonics monster",
                         "",
                         "UIメンテナンスの作業",
-                        "英語教育のアプリ。REACTで開発。詳しいイメージは下側のスライドでご覧することができます（lucid, meta）",
+                        "英語教育のアプリ。REACTで開発。詳しいイメージは一番下側のスライドでご覧することができます（lucid, meta）",
                         "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
                     ],
                     link: "https://epublic-phonics.cloubot.com/",
@@ -283,7 +273,7 @@ var AHH = {
                         "英語教育のアプリ、REACTで開発",
                         "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
                     ],
-                    link: "https://epublic-phonics.cloubot.com/",
+                    link: "",
                     go: [""],
                     bg: "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg"
                 },
@@ -307,19 +297,19 @@ var AHH = {
                         "jsp, jQueryで開発",
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "https://www.spectory.net/",
                     go: [""],
                     bg: "https://corydalis.github.io/pt/img/spec1.png"
                 },
                 {
                     desc: [
                         "ソウル女子大学校",
-                        "https://www.weibo.com",
+                        "",
                         "UIメンテナンスで作業",
                         "jQueryで開発",
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "https://childstudy.swu.ac.kr/",
                     go: [""],
                     bg: "https://corydalis.github.io/pt/img/sw1.png"
                 },
@@ -331,7 +321,7 @@ var AHH = {
                         "jQueryで開発",
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "https://www.partnerspark.co.kr/",
                     go: [""],
                     bg: "https://corydalis.github.io/pt/img/part1.png"
                 },
@@ -343,7 +333,7 @@ var AHH = {
                         "jQueryで開発",
                         "https://corydalis.github.io/pt/img/ss1.png",
                     ],
-                    link: "https://www.googlre.com",
+                    link: "http://www.ssmedipia.com/",
                     go: [""],
                     bg: "https://corydalis.github.io/pt/img/ss1.png"
                 },

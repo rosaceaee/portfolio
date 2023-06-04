@@ -62,18 +62,12 @@ const NewMain = () => {
             background: "#333",
             width: "100%",
             height: "100vh",
+            display: "flex",
+            justifyContent: " center",
+            alignItems: "center",
           }}
         >
-          <svg className="spinner" viewBox="0 0 50 50">
-            <circle
-              className="path"
-              cx="25"
-              cy="25"
-              r="20"
-              fill="#f0c66b"
-              strokeWidth="5"
-            ></circle>
-          </svg>
+          <Plant style={{ width: "10%" }} />
         </div>
       </>
     );
@@ -95,12 +89,11 @@ const NewMain = () => {
             <div className="me">
               <span>
                 {" "}
-                <h1 className="greeting">web developer </h1>
-                <div style={{ display: "grid" }}>
-                  who loves make anything
-                  <span style={{ display: "block", textIndent: "1rem" }}>
-                    loves make anything
-                  </span>
+                <h1 className="greeting">young joo Jang </h1>
+                <div style={{ display: "grid", padding: "0 2rem" }}>
+                  web publisher, who loves make anything, especially UI design,
+                  development.
+                  <span style={{ display: "block", textIndent: "1rem" }}></span>
                   <div className="plant">
                     <Plant />
                   </div>

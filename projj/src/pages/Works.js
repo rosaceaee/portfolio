@@ -33,15 +33,15 @@ const Works = (langlang) => {
   // console.log(aa);
 
   const Aa = Object.entries(m("WORKS"));
-  const web = JSON.stringify(m("WORKS").yeombyung);
-  const worksTit2 = Object.entries(m("WORKS").yeombyung);
+  const web = JSON.stringify(m("WORKS").langs);
+  const worksTit2 = Object.entries(m("WORKS").langs);
   const strWorksTit2 = JSON.stringify(worksTit2);
-  const wtf = Array.isArray(JSON.stringify(m("WORKS").yeombyung));
+  const wtf = Array.isArray(JSON.stringify(m("WORKS").langs));
   let oh = worksTit2.map((itm) => itm[1].desc[0]);
   let urlLink = worksTit2.map((itm) => itm[1].link);
   console.log(worksTit2[0]);
 
-  const slidee = Object.entries(m("WORKS").yeombyung);
+  const slidee = Object.entries(m("WORKS").langs);
 
   let inputArray = [
     { id: 1, name: "name1", value: "value1" },
@@ -241,10 +241,20 @@ const Works = (langlang) => {
           </section>
 
           <section className="preview-con" ref={aboutSection}>
+            <h3 style={{ textAlign: "center", marginTop: "3rem" }}>
+              {" "}
+              일부 작업물은 보안상 공개가 어려워 스크린샷 일부로 대체합니다.
+            </h3>
+            {/*
+            <p style={{ textAlign: "center" }}>
+              Some works are replaced with some screenshots because they are
+              difficult to disclose for security reasons.
+            </p>
+            */}
             <div className="inner">
               <div className="desc-wrap">
                 <h2>루시드 영어학원</h2>
-                <p>회사 보안 상 상세한 내용은 기재하지 않았습니다.</p>
+                <p></p>
               </div>
               <div className="swiper-wrap">
                 <Swiper
