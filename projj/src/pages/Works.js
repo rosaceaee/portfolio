@@ -88,7 +88,7 @@ const Works = (langlang) => {
         {toggleThisElement && (
           <div className="desc-on">
             <h2>{descc}</h2>
-            <p>참여비율: {subDesc}</p>
+            <p>{subDesc}</p>
             <a href={link} target="_blank" className="btn">
               {" "}
               check
@@ -134,17 +134,9 @@ const Works = (langlang) => {
                     }}
                   />
                 </div>
-                <h1>
-                  {worksTit2[1].map((a, id) => {
-                    return (
-                      <>
-                        <span>{id}</span>
-                      </>
-                    );
-                  })}
-                </h1>
+
                 <h2>{descc}</h2>
-                <p>참여비율:{subDesc} </p>
+                <p>{subDesc} </p>
                 <p className="descText">{detailDesc}</p>
                 <a href={link} rel="noreferrer" target="_blank" className="btn">
                   {" "}

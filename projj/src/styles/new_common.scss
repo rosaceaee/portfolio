@@ -222,12 +222,24 @@ nav {
     h1.greeting {
       font-size: 5rem;
     }
+
+    .plant {
+      display: flex;
+      justify-content: end;
+      svg {
+        width: 300px;
+        height: 400px;
+      }
+    }
     .skill-con {
       display: flex;
       align-items: center;
       justify-content: center;
+
       svg {
         margin: 0 1.5rem;
+        width: 3rem;
+        height: 3rem;
       }
     }
   }
@@ -281,11 +293,6 @@ nav {
         }
       }
     }
-  }
-
-  svg {
-    width: 3rem;
-    height: 3rem;
   }
 }
 
@@ -378,17 +385,38 @@ nav {
   .nav-wrap {
     top: 0;
     height: auto;
+    z-index: 9999;
 
     .left-nav {
       flex-direction: row;
       top: 0;
       justify-content: space-around;
       width: 100%;
-      border: 2px solid;
+      border: 0;
       left: 0;
       background: #333;
       z-index: 9999;
     }
+  }
+
+  .main-center-con {
+    .me .plant svg {
+      width: 150px;
+      height: 200px;
+    }
+    .me {
+      .skill-con {
+        svg {
+          margin: 0 0.5rem;
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
+
+  .testCon {
+    margin: 2rem auto;
   }
 
   .works-con {
@@ -397,11 +425,18 @@ nav {
     padding: 0;
     border-radius: 0;
     margin: 2rem auto;
+    background: transparent;
+    border: none;
     .works {
+      &.work-img {
+        border: none;
+      }
       .desc-on {
+        max-width: 330px;
         .top-img-con {
           div {
             height: 300px;
+            background-size: contain;
           }
         }
       }
@@ -414,10 +449,12 @@ nav {
       display: block;
       width: 100%;
       margin: 2rem 0;
+      border-radius: 0;
     }
 
     .swiper-wrap {
       max-width: 300px;
+      z-index: 8;
     }
   }
 }

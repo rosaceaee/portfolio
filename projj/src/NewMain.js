@@ -9,6 +9,7 @@ import useMultilingual, { LanguageType } from "./useMultilingual";
 import Header from "./Header";
 import Works from "./pages/Works";
 import "./styles/new_common.scss";
+import { ReactComponent as Plant } from "./images/plant.svg";
 
 const NewMain = () => {
   const [lang, setLang] = useState("ko");
@@ -100,6 +101,9 @@ const NewMain = () => {
                   <span style={{ display: "block", textIndent: "1rem" }}>
                     loves make anything
                   </span>
+                  <div className="plant">
+                    <Plant />
+                  </div>
                 </div>
               </span>
 
