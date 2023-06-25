@@ -17,7 +17,7 @@ import Modal from "./Modal";
 import "swiper/css";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
-const Works = (langlang) => {
+const OldWorks = (langlang) => {
   const [show, setShow] = useState(false);
   const aboutSection = useRef(null);
   const showDalDal = () => {
@@ -26,6 +26,7 @@ const Works = (langlang) => {
   const [showModal, setShowModal] = useState(false);
 
   const [lang, setLang] = useState("ko");
+  const [sibal, setSibal] = useState([]);
   const m = useMultilingual(lang);
   const mm = useMultilingual;
   const aa = JSON.stringify(m);
@@ -35,10 +36,12 @@ const Works = (langlang) => {
   const web = JSON.stringify(m("WORKS").langs);
   const worksTit2 = Object.entries(m("WORKS").langs);
   const strWorksTit2 = JSON.stringify(worksTit2);
-  const arr = Array.isArray(JSON.stringify(m("WORKS").langs));
+  const wtf = Array.isArray(JSON.stringify(m("WORKS").langs));
   let oh = worksTit2.map((itm) => itm[1].desc[0]);
   let urlLink = worksTit2.map((itm) => itm[1].link);
   console.log(worksTit2[0]);
+
+  const slidee = Object.entries(m("WORKS").langs);
 
   let inputArray = [
     { id: 1, name: "name1", value: "value1" },
@@ -107,15 +110,30 @@ const Works = (langlang) => {
     bgg,
     key,
   }) => {
-    const [toggleThisElement, setToggleThisElement] = useState(true);
+    const [toggleThisElement, setToggleThisElement] = useState(false);
 
     return (
-      <div>
+      <div
+        className="works work-img"
+        onClick={() => setToggleThisElement((prev) => !prev)}
+      >
         {toggleThisElement && (
           <>
-            <div className="forCenter">
+            <div
+              style={{
+                backgroundImage: `url(${bg})`,
+              }}
+              className="forCenter"
+            >
               <div className="desc-on">
                 {/* <h2> {m("WORKS").one[0]}</h2> <p> {Aa[0]} </p> */}
+                <div className="top-img-con">
+                  <div
+                    style={{
+                      backgroundImage: `url(${bgg})`,
+                    }}
+                  />
+                </div>
 
                 <h2>{descc}</h2>
                 <p>{subDesc} </p>
@@ -125,7 +143,7 @@ const Works = (langlang) => {
                   Go
                 </a>
 
-                <div>
+                <div style={{ border: "1px solid #F0C66B" }}>
                   {showModal ? (
                     <>
                       <p onClick={openModal}>a</p>
@@ -175,18 +193,17 @@ const Works = (langlang) => {
           <p onClick={() => scrollDown(aboutSection)}>app </p>
         </nav>*/}
         <section style={{ margin: "0 1rem" }}>
-          <section className="works-container">
+          <section className="works-con">
             <h2 className="tit">Works</h2>
 
             {worksTit2 &&
               worksTit2.map((a, b, key) => {
                 return (
                   <>
-                    <div className="works-wrap">
-                      <div
-                        className="testCon"
-                        style={{ backgroundImage: `url(${a[1].bg})` }}
-                      ></div>
+                    <div
+                      className="testCon"
+                      style={{ backgroundImage: `url(${a[1].bg})` }}
+                    >
                       <ToggleItem2
                         key={key}
                         descc={a[1].desc[0]}
@@ -324,4 +341,4 @@ const Works = (langlang) => {
   );
 };
 
-export default Works;
+export default OldWorks;

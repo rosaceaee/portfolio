@@ -246,6 +246,7 @@ main {
   margin: 2rem auto 3rem;
   width: 100%;
   max-width: 1500px;
+  display: none;
 
   .inner {
     display: inline-grid;
@@ -256,10 +257,8 @@ main {
     padding: 2rem 0;
     color: #333;
     background: #fff;
-    border-top-left-radius: 80px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 20px;
+    border-radius: 15px;
+
     .desc-wrap {
       text-align: center;
     }
@@ -395,7 +394,7 @@ main {
         max-width: 1440px;
         margin: 0 auto;
         &.layout-con {
-          border: 2px solid red;
+          border: 2px solid rgb(13, 116, 153);
         }
         img {
           width: 100%;
@@ -415,6 +414,16 @@ main {
         padding: 0.5rem;
         text-align: center;
         font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background: rgb(13, 116, 153);
+          transition: all 0.3s ease-in-out;
+          color: #fff;
+        }
       }
     }
   }
@@ -424,7 +433,7 @@ main {
   &.work-img {
     width: 100%;
     height: 100%;
-    min-height: 200px;
+    min-height: 20rem;
     position: relative;
 
     //@debugbackground: url('https://corydalis.github.io/pt/img/ss1.png') no-repeat;
@@ -436,14 +445,14 @@ main {
     cursor: pointer;
     &:hover {
       transition: all 0.3s ease;
-      border: 3px solid red;
+      border: 3px solid rgb(13, 116, 153);
     }
   }
 }
 
 .testCon {
-  background-size: cover;
-  background-position: center center;
+  background-size: contain;
+  background-position: 100%;
   background-repeat: no-repeat;
   min-height: 200px;
 }
@@ -492,5 +501,63 @@ main {
       align-items: center;
       justify-content: center;
     }
+  }
+}
+
+.works-container {
+  margin: 0 2rem;
+  padding: 0 2rem;
+  .tit {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+  }
+  .works-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem auto;
+    background: #fff;
+    color: #333;
+    border-radius: 20px;
+  }
+
+  .testCon {
+    min-height: 25rem;
+    background-position: center center;
+    min-width: 20rem;
+    width: 34rem;
+    margin: 0 auto;
+  }
+
+  .forCenter {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .desc-on {
+    display: grid;
+    width: 100%;
+    text-align: center;
+    a {
+      width: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 0;
+      font-size: 1.2rem;
+      margin: 1rem auto;
+      background: #4db37d;
+      box-shadow: 0px 8px 6px 0px rgba(186, 185, 185, 0.96);
+      -webkit-box-shadow: 0px 8px 6px 0px rgba(186, 185, 185, 0.96);
+      -moz-box-shadow: 0px 8px 6px 0px rgba(186, 185, 185, 0.96);
+    }
+  }
+
+  .descText {
+    padding: 0 2rem;
+    max-width: 25rem;
+    margin: 0 auto;
+    text-align: left;
   }
 }

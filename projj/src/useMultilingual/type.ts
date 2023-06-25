@@ -6,8 +6,8 @@ const AHH = {
           desc: [
             "meta exam",
             "",
-            "디자인: 특정 추가 페이지만 디자인 \n, 유지보수 및 ui 퍼블리싱 100%",
-            "영어 시험 웹앱. React 기반으로 개발하였으며, 학원 특성상 태블릿을 주로 사용하므로 태블릿에 맞춘 반응형 레이아웃 유지보수에 중점적으로 참여. 보안상으로 공개가 어려워 맨 아래 페이지에 슬라이드로 일부 게시함",
+            "특정 추가 페이지만 디자인 \n, 유지보수 및 ui 퍼블리싱 100%",
+            "영어 시험 웹앱. React 기반으로 개발하였으며, 학원 특성상 태블릿을 주로 사용하므로 태블릿에 맞춘 반응형 레이아웃 유지보수에 중점적으로 참여. ",
             "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
           ],
           link: "https://culp.cloubot.com/login",
@@ -18,7 +18,7 @@ const AHH = {
             "파닉스 몬스터",
             "",
             "유지보수 및 ui 퍼블리싱 100%(태블릿, 모바일)",
-            "영어 교육용 웹앱. \n 프로젝트 투입 전에 이미 뼈대는 작업 되어있었으나 엉성한 레이아웃으로 데스크탑부터 태블릿, 모바일까지 모두 반응형 작업 진행. 보안상으로 공개가 어려워 맨 아래 페이지에 슬라이드로 일부 게시함",
+            "영어 교육용 웹앱. \n 프로젝트 투입 전에 이미 뼈대는 작업 되어있었으나 엉성한 레이아웃으로 데스크탑부터 태블릿, 모바일까지 모두 반응형 작업 진행.",
             "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
           ],
           link: "https://epublic-phonics.cloubot.com/",
@@ -29,8 +29,9 @@ const AHH = {
           desc: [
             "루시드 영어학원",
             "",
-            "디자인: 레이아웃, 색상 선정 참여 나머지 부분은 외주 디자이너의 시안대로 진행, \n ui 퍼블리싱 100%(데스크톱, 태블릿, 모바일). 보안상으로 공개가 어려워 맨 아래 페이지에 슬라이드로 일부 게시함",
             "영어 교육용 웹앱. \n React 기반으로 개발, ",
+            "디자인: 레이아웃, 색상 선정 참여 나머지 부분은 외주 디자이너의 시안대로 진행, \n ui 퍼블리싱 100%(데스크톱, 태블릿, 모바일)",
+
             "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
           ],
           link: "",
@@ -75,14 +76,14 @@ const AHH = {
         },
         {
           desc: [
-            "파트너즈 파크",
+            "해양수산창업콘테스트",
             "",
             "유지보수 참여",
             "jQuery로 유지보수",
-            "https://corydalis.github.io/pt/img/blue1.png",
+            "",
           ],
-          link: "https://www.partnerspark.co.kr/",
-          go: ["ddddd"],
+          link: "http://www.seastartup.kr/home/start.php",
+          go: [""],
           bg: "https://corydalis.github.io/pt/img/part1.png",
         },
         {
@@ -203,13 +204,13 @@ const AHH = {
         },
         {
           desc: [
-            "Partner's park",
-            "https://www.weibo.com",
+            "Contest of startup in Ministry of Oceans and Fisheries",
+            "",
             "Participated in UI maintenance",
             "built in JQuery, Css3",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
-          link: "https://www.partnerspark.co.kr/",
+          link: "http://www.seastartup.kr/home/start.php",
           go: [""],
           bg: "https://corydalis.github.io/pt/img/part1.png",
         },
@@ -244,7 +245,7 @@ const AHH = {
           desc: [
             "Meta Exam",
             "",
-            "デザイン：アプリ接続のページのみデザイン及びUI開発、メンテナンス",
+            "アプリ接続のページのみデザイン及びUI開発、メンテナンス",
             "英語塾で行う英語試験サイトの制作、REACTで開発、保安の上、詳しいイメージは一番下側のスライドでご覧することができます（lucid, meta）",
             "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
           ],
@@ -313,13 +314,13 @@ const AHH = {
         },
         {
           desc: [
-            "パートナズパーク",
+            "海洋水産部のコンペ",
             "",
             "UIメンテナンスで作業",
             "jQueryで開発",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
-          link: "https://www.partnerspark.co.kr/",
+          link: "http://www.seastartup.kr/home/start.php",
           go: [""],
           bg: "https://corydalis.github.io/pt/img/part1.png",
         },
