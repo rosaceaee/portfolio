@@ -99,7 +99,10 @@ const NewMain = () => {
           }}
         >
           {/*<Plant style={{ width: "10%" }} />*/}
-          <h1 className="focus-in-expand"> ASDFASDFASDF</h1>
+          <h1 className="focus-in-expand">
+            <Plant />
+            Loading...
+          </h1>
         </div>
       </>
     );
@@ -263,7 +266,7 @@ const NewMain = () => {
     useEffect(() => {
       setInterval(() => {
         setIsHide(true);
-      }, 200);
+      }, 2500);
     }, []);
     return <main id="main">{!isHide ? <Landing /> : <MainBox />} </main>;
   }
