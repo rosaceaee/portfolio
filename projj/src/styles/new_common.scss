@@ -471,6 +471,15 @@ nav {
 }
 
 @media screen and (max-width: 1280px) {
+  .focus-in-expand {
+    display: flex;
+    flex-direction: column;
+
+    .plantimg {
+      width: 5rem;
+      margin: 0 auto;
+    }
+  }
   .nav-wrap {
     top: 0;
     height: auto;
@@ -596,6 +605,16 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
+  .focus-in-expand {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+
+    .plantimg {
+      width: 3rem;
+      margin: 0 auto;
+    }
+  }
   .nav-wrap {
     top: 0;
     height: auto;

@@ -100,7 +100,7 @@ const NewMain = () => {
         >
           {/*<Plant style={{ width: "10%" }} />*/}
           <h1 className="focus-in-expand">
-            <Plant />
+            <Plant className="plantimg" />
             Loading...
           </h1>
         </div>
