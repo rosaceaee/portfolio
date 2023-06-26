@@ -85,7 +85,7 @@ var AHH = {
                     ],
                     link: "http://www.seastartup.kr/home/start.php",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/part1.png"
+                    bg: "https://corydalis.github.io/pt/img/sea1.png"
                 },
                 {
                     desc: [
