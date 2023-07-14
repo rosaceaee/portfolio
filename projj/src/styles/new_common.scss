@@ -11,6 +11,8 @@ body {
   // background: #403a3a;
   // background: rgb(13, 83, 120);
   background: #f8dfc5;
+  margin: 0;
+  padding: 0;
   &::-webkit-scrollbar {
     /* WebKit */
     width: 0;
@@ -223,7 +225,8 @@ nav {
   border: 2px solid red;
   padding: 0 3rem;
   position: relative;
-  left: 4rem;
+  left: 0;
+  top: 0;
 }
 
 .left-nav {
@@ -304,6 +307,8 @@ nav {
   &.worklist-con {
     margin: 0 auto 0;
     padding: 2rem 0;
+    max-width: 100%;
+    width: 100%;
 
     .add-slide-con {
       min-width: 20rem;

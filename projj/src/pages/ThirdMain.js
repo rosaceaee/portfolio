@@ -321,11 +321,15 @@ const ThirdMain = ({ langu }) => {
           direction={"horizontal"}
           slidesPerView={1}
           spaceBetween={30}
-          mousewheel={true}
+          mousewheel={{
+            sensitivity: 1,
+            releaseOnEdges: true,
+          }}
           pagination={{
             clickable: true,
           }}
-          modules={[Mousewheel, Pagination]}
+          Navigation={true}
+          modules={[Mousewheel, Navigation, Pagination]}
           className="main-swiper"
         >
           <SwiperSlide>
