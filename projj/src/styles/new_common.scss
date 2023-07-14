@@ -1,20 +1,16 @@
 @import "./font.scss";
 
 body {
+  * {
+    font-family: "SUIT-Regular";
+  }
   font-family: "SUIT-Regular";
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   // background: #403a3a;
   // background: rgb(13, 83, 120);
-  background-image: linear-gradient(
-    to right bottom,
-    #d7bced,
-    #c18dad,
-    #9e6570,
-    #71433b,
-    #412711
-  );
+  background: #f8dfc5;
   &::-webkit-scrollbar {
     /* WebKit */
     width: 0;
@@ -55,7 +51,7 @@ ol {
 main {
   // background: #403a3a;
 
-  color: #fff;
+  color: #242424;
 }
 .lang-con {
   width: 100%;
@@ -104,6 +100,7 @@ main {
   width: 10rem;
   margin-left: auto;
   margin-right: 3rem;
+  border: 1px solid;
 
   &.outline {
     // outline: double 1rem #252525;
@@ -120,7 +117,7 @@ main {
     cursor: pointer;
     outline: transparent;
     border: none;
-    color: #fff;
+    color: #242424;
     font-size: 1rem;
 
     &:hover {
@@ -205,16 +202,31 @@ nav {
   }
 }
 
+.maincon {
+  display: inline-grid;
+  justify-content: space-between;
+  grid-template-columns: auto 1fr auto;
+  width: 100%;
+  .main-swiper {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .nav-wrap {
-  position: fixed;
   height: 100vh;
   align-items: center;
   display: flex;
+  justify-content: center;
+  background: #f8dfc5;
+  z-index: 99;
+  border: 2px solid red;
+  padding: 0 3rem;
+  position: relative;
+  left: 4rem;
 }
 
 .left-nav {
-  position: fixed;
-  left: 4rem;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -236,22 +248,35 @@ nav {
   // grid-template-rows: 1fr 2fr 1fr;
   // grid-template-columns: repeat(3, 1fr);
   //  border: 1px solid #cec8e9;
-  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  height: auto;
+  height: 100%;
   overflow: auto;
+  background: orange;
 
   .me {
-    border: none;
-    display: grid;
+    background: #fff;
     height: 100vh;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
-    h1.greeting {
-      font-size: 5rem;
+    .greeting {
+      font-size: 2rem;
+      display: flex;
+      img {
+        transform: scale(0.5);
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .plant {
@@ -267,7 +292,7 @@ nav {
       align-items: center;
       text-align: center;
       justify-content: center;
-
+      font-size: 1rem;
       svg {
         margin: 0 1.5rem;
         width: 3rem;
@@ -279,6 +304,22 @@ nav {
   &.worklist-con {
     margin: 0 auto 0;
     padding: 2rem 0;
+
+    .add-slide-con {
+      min-width: 20rem;
+      display: block;
+      width: 34rem;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .swiper-wrapper {
+        img {
+        }
+      }
+    }
   }
 
   div {
@@ -728,6 +769,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   svg {
     width: 3rem;
     height: 3rem;

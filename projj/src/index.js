@@ -11,7 +11,7 @@ import {
 import App from "./App";
 import Header from "./Header";
 import Works from "./pages/Works";
-import NewMain from "./NewMain";
+import ThirdMain from "./pages/ThirdMain";
 import Test from "./pages/Test";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -19,9 +19,9 @@ const root = createRoot(rootElement);
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route exact path="/" element={<NewMain />} />
+      <Route exact path="/" element={<ThirdMain />} />
       <Route exact path="/works" element={<Works />} />
-      <Route exact path="/test" element={<Test />} />
+      <Route exact path="/en" element={<Test />} />
     </Routes>
   </BrowserRouter>
 );

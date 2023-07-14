@@ -3,6 +3,7 @@ const AHH = {
     ko: {
       langs: [
         {
+          key: 1,
           desc: [
             "meta exam",
             "",
@@ -84,7 +85,8 @@ const AHH = {
           ],
           link: "http://www.seastartup.kr/home/start.php",
           go: [""],
-          bg: "https://corydalis.github.io/pt/img/sea1.png",
+
+          bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png",
         },
         {
           desc: [
@@ -212,7 +214,7 @@ const AHH = {
           ],
           link: "http://www.seastartup.kr/home/start.php",
           go: [""],
-          bg: "https://corydalis.github.io/pt/img/part1.png",
+          bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png",
         },
         {
           desc: [
@@ -322,7 +324,7 @@ const AHH = {
           ],
           link: "http://www.seastartup.kr/home/start.php",
           go: [""],
-          bg: "https://corydalis.github.io/pt/img/part1.png",
+          bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png",
         },
         {
           desc: [

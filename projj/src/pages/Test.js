@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import Prop from "./Prop";
 const Test = () => {
   const ref = useRef();
   const getscroll = () => {
@@ -13,6 +14,7 @@ const Test = () => {
       <div style={{ height: "100vh", overflow: "scroll" }}>
         <div style={{ height: "100px", overflow: "hidden" }} ref={ref}>
           <h4>Hello</h4>
+          <Prop name="dd" color="blue" />
         </div>
       </div>
     </>
