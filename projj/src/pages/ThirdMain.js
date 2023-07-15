@@ -30,14 +30,20 @@ const ThirdMain = ({ langu }) => {
   const m = useMultilingual(lang);
   // console.log(aa);
 
+  const v = ["About", "Works"];
   const Aa = Object.entries(m("WORKS"));
   const web = JSON.stringify(m("WORKS").langs);
   const worksTit2 = Object.entries(m("WORKS").langs);
-  const strWorksTit2 = JSON.stringify(worksTit2);
-  const arr = Array.isArray(JSON.stringify(m("WORKS").langs));
+  const maindesc = Object.entries(m("ABOUT").langs);
+  const str_main = JSON.stringify(maindesc[0]);
+  const strWorksTit2 = JSON.stringify(maindesc[0]);
+
+  const arr = Array.isArray(JSON.stringify(m("ABOUT").langs));
+  console.log(typeof worksTit2);
+
   let oh = worksTit2.map((itm) => itm[1].desc[0]);
   let urlLink = worksTit2.map((itm) => itm[1].link);
-  console.log(worksTit2[0]);
+  // console.log(worksTit2[0]);
 
   let inputArray = [
     { id: 1, name: "name1", value: "value1" },
@@ -46,10 +52,6 @@ const ThirdMain = ({ langu }) => {
   const tabTop = useRef(null);
   const tabWork = useRef(null);
   const tabBottom = useRef(null);
-
-  let ids = inputArray.map((item) => item.id);
-  let names = inputArray.map((item) => item.name);
-  let values = inputArray.map((item) => item.value);
 
   const changeLang = ({ target: { value } }) => {
     return value && setLang(value);
@@ -77,8 +79,8 @@ const ThirdMain = ({ langu }) => {
               <div className="desc-on">
                 {/* <h2> {m("WORKS").one[0]}</h2> <p> {Aa[0]} </p> */}
                 <div className="add-slide-con">
-                  {descc === "meta exam" ? <MetaSlides /> : "nn"}
-                  {descc === "파닉스 몬스터" ? <Pm /> : ""}
+                  {descc === "Meta exam" ? <MetaSlides /> : "nn"}
+                  {descc === "Phonics monster" ? <Pm /> : ""}
                 </div>
                 <h2>{descc}</h2>
                 <p>{subDesc} </p>
@@ -103,6 +105,19 @@ const ThirdMain = ({ langu }) => {
             </div>
           </>
         )}
+      </div>
+    );
+  };
+
+  const Asdf = ({ name, infodesc, detailDesc, link }) => {
+    return (
+      <div>
+        <>
+          <div>
+            <p>{name}</p>
+            <p>{infodesc}</p>
+          </div>
+        </>
       </div>
     );
   };
@@ -165,88 +180,6 @@ const ThirdMain = ({ langu }) => {
                 })}
             </Masonry>
           </section>
-
-          <section className="preview-con" ref={aboutSection}>
-            <h3 style={{ textAlign: "center", marginTop: "3rem" }}>
-              {" "}
-              일부 작업물은 보안상 공개가 어려워 스크린샷 일부로 대체합니다.
-            </h3>
-            <div className="inner">
-              <div className="desc-wrap">
-                <h2>루시드 영어학원</h2>
-                <p></p>
-              </div>
-              <div className="swiper-wrap">
-                <Swiper
-                  modules={[Navigation, Pagination]}
-                  spaceBetween={10}
-                  slidesPerView={1}
-                  Navigation
-                  pagination={{ clickable: true }}
-                >
-                  <SwiperSlide>
-                    <img src={require("../images/lucid1.jpeg")} alt="img" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={require("../images/lucid2.jpeg")} alt="img" />
-                  </SwiperSlide>
-                </Swiper>{" "}
-              </div>
-            </div>
-            <div className="inner">
-              <div className="desc-wrap">
-                <h2>meta exam</h2>
-                <p>영어 시험 웹앱 작업, 퍼블리싱 100% 참여</p>
-              </div>
-              <div className="swiper-wrap">
-                <Swiper
-                  modules={[Navigation, Pagination]}
-                  spaceBetween={10}
-                  slidesPerView={1}
-                  Navigation
-                  pagination={{ clickable: true }}
-                >
-                  <SwiperSlide>
-                    <img src={require("../images/meta1.jpg")} alt="img" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={require("../images/meta2.jpg")} alt="img" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={require("../images/meta3.jpg")} alt="img" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={require("../images/meta4.jpg")} alt="img" />
-                  </SwiperSlide>
-                </Swiper>{" "}
-              </div>
-            </div>
-            <div className="inner">
-              <div className="desc-wrap">
-                <h2>phonics monster</h2>
-                <p>반응형 작업</p>
-              </div>
-              <div className="swiper-wrap">
-                <Swiper
-                  modules={[Navigation, Pagination]}
-                  spaceBetween={10}
-                  slidesPerView={1}
-                  Navigation
-                  pagination={{ clickable: true }}
-                >
-                  <SwiperSlide>
-                    <img src={require("../images/pn1.png")} alt="img" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={require("../images/pm12.png")} alt="img" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={require("../images/sea.png")} alt="img" />
-                  </SwiperSlide>
-                </Swiper>{" "}
-              </div>
-            </div>
-          </section>
         </section>
       </>
     );
@@ -303,6 +236,9 @@ const ThirdMain = ({ langu }) => {
       </>
     );
   }
+  const swiperRef = useRef();
+  const swipernavv = useRef();
+
   return (
     <>
       <main id="main" className="maincon">
@@ -310,10 +246,16 @@ const ThirdMain = ({ langu }) => {
         <section className="nav-wrap">
           {" "}
           <div className="left-nav">
-            <h3 onClick={() => scrollDown(tabTop)}>About</h3>
-            <h3 onClick={() => scrollDown(tabWork)}>WORKS </h3>
-            <h3 onClick={() => scrollDown(tabBottom)}>Contact</h3>{" "}
-            <LangBtn setLang={setLang} />
+            <div class="pagi" />
+            <LangBtn setLang={setLang} />{" "}
+            <div>
+              <button onClick={() => swiperRef.current?.slidePrev()}>
+                Prev
+              </button>
+              <button onClick={() => swiperRef.current?.slideNext()}>
+                Next
+              </button>
+            </div>
           </div>{" "}
         </section>
         {}
@@ -322,14 +264,22 @@ const ThirdMain = ({ langu }) => {
           slidesPerView={1}
           spaceBetween={30}
           mousewheel={{
+            forceToAxis: true,
             sensitivity: 1,
             releaseOnEdges: true,
           }}
           pagination={{
+            el: ".pagi",
             clickable: true,
+            renderBullet: (index, className) => {
+              return '<h3 class="' + className + '">' + v[index] + "</h3>";
+            },
           }}
           Navigation={true}
           modules={[Mousewheel, Navigation, Pagination]}
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           className="main-swiper"
         >
           <SwiperSlide>
@@ -344,8 +294,21 @@ const ThirdMain = ({ langu }) => {
                       alt="profileimg"
                     />
                     <div className="desc">
-                      {" "}
-                      <h1>young joo Jang</h1>
+                      {maindesc &&
+                        maindesc.map((a) => {
+                          return (
+                            <>
+                              {" "}
+                              <div className="works-wrap">
+                                <Asdf
+                                  name={a[1].desc[0]}
+                                  infodesc={a[1].desc[3]}
+                                />
+                                <h1>young joo Jang</h1>
+                              </div>{" "}
+                            </>
+                          );
+                        })}
                       <p>
                         만드는 것을 좋아하고, UI에 관심이 많은 웹 퍼블리셔. web
                         publisher, who loves make anything, especially UI

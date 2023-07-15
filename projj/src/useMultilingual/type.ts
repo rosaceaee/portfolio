@@ -5,7 +5,7 @@ const AHH = {
         {
           key: 1,
           desc: [
-            "meta exam",
+            "Meta exam",
             "",
             "특정 추가 페이지만 디자인 \n, 유지보수 및 ui 퍼블리싱 100%",
             "영어 시험 웹앱. React 기반으로 개발하였으며, 학원 특성상 태블릿을 주로 사용하므로 태블릿에 맞춘 반응형 레이아웃 유지보수에 중점적으로 참여. ",
@@ -16,7 +16,7 @@ const AHH = {
         },
         {
           desc: [
-            "파닉스 몬스터",
+            "Phonics monster",
             "",
             "유지보수 및 ui 퍼블리싱 100%(태블릿, 모바일)",
             "영어 교육용 웹앱. \n 프로젝트 투입 전에 이미 뼈대는 작업 되어있었으나 엉성한 레이아웃으로 데스크탑부터 태블릿, 모바일까지 모두 반응형 작업 진행.",
@@ -111,31 +111,12 @@ const AHH = {
           bg: "https://corydalis.github.io/pt/img/sp1.png",
         },
       ],
-      sibal: {
-        desc: [
-          "루시드 영어학원 웹앱",
-          "https://www.weibo.com",
-          "디자인, 퍼블리싱 100%",
-        ],
-      },
-      imgs: [
-        {
-          desc: [
-            "https://corydalis.github.io/pt/img/blue1.png",
-            "https://corydalis.github.io/pt/img/blue1.png",
-          ],
-          descc: [
-            "https://corydalis.github.io/pt/img/blue1.png",
-            "https://corydalis.github.io/pt/img/blue1.png",
-          ],
-        },
-      ],
     },
     en: {
       langs: [
         {
           desc: [
-            "Meta exam for English school",
+            "Meta exam",
             "",
             "Designed few pages, maintenance of UI structure",
             "Site for English exam in English school teachers built only React.js.",
@@ -245,7 +226,7 @@ const AHH = {
       langs: [
         {
           desc: [
-            "Meta Exam",
+            "Meta exam",
             "",
             "アプリ接続のページのみデザイン及びUI開発、メンテナンス",
             "英語塾で行う英語試験サイトの制作、REACTで開発、保安の上、詳しいイメージは一番下側のスライドでご覧することができます（lucid, meta）",
@@ -352,108 +333,44 @@ const AHH = {
       ],
     },
   },
-  WORKS_APP: {
+
+  ABOUT: {
     ko: {
-      one: ["앱1", "앱2", "우아아악", "야아아압"],
-      two: "ㅎㅎㅎㅎㅎㅎ",
-      three: "ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ",
-      yeombyung: [
+      langs: [
         {
-          desc: ["한국어앱", "https://www.weibo.com", "디자인, 퍼블리싱 100%"],
-          link: "https://www.google.com",
-          go: ["ddddd"],
-        },
-        {
-          desc: ["파트너즈파크", "https://www.weibo.com", "유지보수 참여"],
-          link: "https://www.googlre.com",
-          go: ["ddddd"],
-        },
-        {
-          desc: ["파트너즈파12크", "https://www.weibo.com", "유지보수 참여"],
-          link: "https://www.googlre.com",
-          go: ["ddddd"],
-        },
-        {
-          desc: ["파트너즈파33크", "https://www.weibo.com", "유지보수 참여"],
-          link: "https://www.googlre.com",
-          go: ["ddddd"],
-        },
-        {
-          desc: ["파트너즈44파크", "https://www.weibo.com", "유지보수 참여"],
-          link: "https://www.googlre.com",
-          go: ["ddddd"],
+          key: 1,
+          desc: [
+            "만드는 것을 좋아하는",
+            "young joo Jang",
+            "입니다.",
+            "UI디자인과 프론트엔드 개발에 관심이 많은",
+          ],
         },
       ],
     },
     en: {
-      one: "ee",
-      two: "eeeee",
-      three: "ee",
-      yeombyung: [
+      langs: [
         {
+          key: 1,
           desc: [
-            "eng App tit",
-            "https://www.weibo.com",
-            "디자인, 퍼블리싱 100%",
+            "making",
+            "young joo Jang",
+            "dd.",
+            "특정 추가 페이지만 디자인 \n, 유지보수 및 ui 퍼블리싱 100%",
           ],
-          link: "https://www.google.com",
-          go: ["ddddd"],
-        },
-        {
-          desc: ["파트너즈파크", "https://www.weibo.com", "유지보수 참여"],
-          link: "https://www.googlre.com",
-          go: ["ddddd"],
-        },
-        {
-          desc: ["파트너즈파12크", "https://www.weibo.com", "유지보수 참여"],
-          link: "https://www.googlre.com",
-          go: ["ddddd"],
-        },
-        {
-          desc: ["파트너즈파33크", "https://www.weibo.com", "유지보수 참여"],
-          link: "https://www.googlre.com",
-          go: ["ddddd"],
-        },
-        {
-          desc: ["파트너즈44파크", "https://www.weibo.com", "유지보수 참여"],
-          link: "https://www.googlre.com",
-          go: ["ddddd"],
         },
       ],
     },
     ja: {
-      one: "あ",
-      two: "ああああ",
-      three: "あああああああ",
-      yeombyung: [
+      langs: [
         {
+          key: 1,
           desc: [
-            "英語学習のためのlms 管理者ページ",
-            "https://www.weibo.com",
-            "디자인, 퍼블리싱 100%",
+            "モノづくり",
+            "young joo Jang",
+            "マークアップ・コーダー",
+            "UIとフロントエンド開発に興味深い",
           ],
-          link: "https://www.google.com",
-          go: ["ddddd"],
-        },
-        {
-          desc: ["파트너즈파크", "https://www.weibo.com", "유지보수 참여"],
-          link: "https://www.googlre.com",
-          go: ["ddddd"],
-        },
-        {
-          desc: ["파트너즈파12크", "https://www.weibo.com", "유지보수 참여"],
-          link: "https://www.googlre.com",
-          go: ["ddddd"],
-        },
-        {
-          desc: ["파트너즈파33크", "https://www.weibo.com", "유지보수 참여"],
-          link: "https://www.googlre.com",
-          go: ["ddddd"],
-        },
-        {
-          desc: ["파트너즈44파크", "https://www.weibo.com", "유지보수 참여"],
-          link: "https://www.googlre.com",
-          go: ["ddddd"],
         },
       ],
     },
