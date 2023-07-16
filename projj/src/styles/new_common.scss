@@ -317,6 +317,7 @@ nav {
       background: rgba(0, 0, 0, 0.3);
       color: #fff;
       grid-template-columns: 1fr auto;
+      height: 95%;
       img {
         transform: scale(0.5);
         max-width: 400px;
@@ -639,7 +640,7 @@ nav {
 @media screen and (max-width: 1700px) {
   .main-center-con {
     .me {
-      max-width: 1000px;
+      margin: 0 auto;
     }
   }
 }
@@ -647,18 +648,48 @@ nav {
 @media screen and (max-width: 1400px) {
   .main-center-con {
     &.top-main {
-      max-width: 900px;
+      //  max-width: 900px;
     }
   }
 }
 
 @media screen and (max-width: 1280px) {
+  .maincon {
+    display: block;
+    .nav-wrap {
+      .left-nav {
+        display: inline-flex;
+        position: fixed;
+      }
+      .set-lang-btn {
+        margin-top: 0;
+      }
+      .pagi {
+        display: inline-flex;
+        margin: 0;
+        justify-content: start;
+        .swiper-pagination-bullet {
+          max-width: 5rem;
+        }
+      }
+    }
+    .nextBtn {
+      margin: 0 auto;
+      svg {
+        max-width: 6rem !important;
+        max-height: 6rem !important;
+      }
+    }
+  }
+
   .main-center-con {
     &.top-main {
-      max-width: 900px;
+      //   max-width: 900px;
     }
     .me .greeting {
+      height: 100%;
       grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
     }
   }
 
@@ -700,26 +731,6 @@ nav {
       }
     }
   }
-  /*
-  .works-con {
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 900px;
-    padding: 0;
-    border-radius: 0;
-
-    .works {
-      .desc-on {
-        max-width: 700px;
-        margin: 0 1.5rem;
-        .top-img-con {
-          div {
-            height: 300px;
-          }
-        }
-      }
-    }
-  }
-  */
 
   .works-container {
     .works-wrap {
@@ -758,6 +769,39 @@ nav {
         .swiper-pagination-bullet {
           max-width: 5rem;
         }
+      }
+    }
+
+    .main-center-con {
+      .me {
+        .greeting {
+          img {
+            max-width: 10rem;
+            max-height: 10rem;
+            margin: 0 auto;
+            display: block;
+          }
+        }
+
+        .desc {
+          .about-wrap {
+            .aboutBox {
+              display: block;
+              margin-top: 3rem;
+              .wrap {
+                padding: 0 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .nextBtn {
+      margin: 0 auto;
+      svg {
+        max-width: 6rem !important;
+        max-height: 6rem !important;
       }
     }
   }
