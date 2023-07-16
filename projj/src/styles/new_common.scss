@@ -10,7 +10,15 @@ body {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   // background: #403a3a;
   // background: rgb(13, 83, 120);
-  background: #f8dfc5;
+  // background: #14303f;
+  background-image: linear-gradient(
+    to right top,
+    #14303f,
+    #344054,
+    #545166,
+    #736376,
+    #907683
+  );
   margin: 0;
   padding: 0;
   &::-webkit-scrollbar {
@@ -101,9 +109,9 @@ main {
   justify-content: space-around;
   width: 10rem;
   margin-left: auto;
-  margin-right: 3rem;
-  border: 1px solid;
+  margin-right: auto;
 
+  margin-top: 3rem;
   &.outline {
     // outline: double 1rem #252525;
     width: 100%;
@@ -119,7 +127,7 @@ main {
     cursor: pointer;
     outline: transparent;
     border: none;
-    color: #242424;
+    color: #fff;
     font-size: 1rem;
 
     &:hover {
@@ -207,7 +215,7 @@ nav {
 .maincon {
   display: inline-grid;
   justify-content: space-between;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr 5fr;
   width: 100%;
   .main-swiper {
     width: 100%;
@@ -220,15 +228,12 @@ nav {
   align-items: center;
   display: flex;
   justify-content: center;
-  background: #f8dfc5;
+  background: #14303f;
   z-index: 99;
   padding: 0 3rem;
   position: relative;
   left: 0;
   top: 0;
-  .set-lang-btn {
-    margin: 0 auto;
-  }
 
   .pagi {
     display: grid;
@@ -236,6 +241,8 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin: 2rem 0 0;
+
     .swiper-pagination-bullet {
       width: 100%;
       height: 100%;
@@ -267,6 +274,7 @@ nav {
   text-align: center;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
+  color: #fff;
 
   h3 {
     cursor: pointer;
@@ -289,10 +297,14 @@ nav {
   margin: 0 auto;
   height: 100%;
   overflow: auto;
-  background: orange;
+
+  &.top-main {
+    margin: 0;
+    max-width: 100%;
+    background: transparent;
+  }
 
   .me {
-    background: #fff;
     height: 100vh;
     align-items: center;
     width: 100%;
@@ -301,19 +313,37 @@ nav {
     justify-content: center;
     .greeting {
       font-size: 2rem;
-      display: flex;
+      display: grid;
+      background: rgba(0, 0, 0, 0.3);
+      color: #fff;
+      grid-template-columns: 1fr auto;
       img {
         transform: scale(0.5);
+        max-width: 400px;
+        max-height: 400px;
       }
       p {
         font-size: 1rem;
+        line-height: 1.8;
       }
       button {
         border: none;
         background: none;
-        position: absolute;
         cursor: pointer;
         right: 0;
+      }
+
+      div.nextBtn {
+        text-align: center;
+        &:before {
+          /*     content: "d";
+          position: absolute;
+          width: 100%;
+          background: #fff;
+          height: 1px;
+          left: 0;
+          */
+        }
       }
     }
 
@@ -325,28 +355,33 @@ nav {
       .about-wrap {
         .aboutBox {
           display: grid;
-          border: 1px solid;
           grid-template-columns: 1fr 2fr;
           align-items: center;
-          border: 1px solid;
           h2 {
             text-align: center;
+            margin-block-start: 0;
+            margin-block-end: 0;
+          }
+          .about-desc-wrap {
+            width: 100%;
+            max-width: 45rem;
           }
           .wrap {
             display: flex;
             align-items: center;
             flex-direction: column;
             .cirwrap {
-              border: 1px solid;
               display: flex;
               width: 100%;
-              justify-content: space-around;
+              max-width: 45rem;
+              justify-content: space-evenly;
+              margin: 1rem 0 0;
               .cir {
                 width: auto;
                 max-width: 200px;
                 background: orange;
-                border-radius: 50px;
-                padding: 1rem;
+                border-radius: 3rem;
+                padding: 0rem 2rem;
                 line-height: 1.5;
               }
             }
@@ -369,7 +404,7 @@ nav {
       text-align: center;
       justify-content: center;
       font-size: 1rem;
-      margin-top: 4rem;
+      margin-top: 1rem;
       svg {
         margin: 0 1.5rem;
         width: 3rem;
@@ -390,6 +425,11 @@ nav {
       display: block;
       width: 34rem;
       margin: 0 auto;
+      border-radius: 15px;
+
+      .meta-slide-wrap {
+        border-radius: 15px;
+      }
       img {
         width: 100%;
         margin: 0 auto;
@@ -579,9 +619,14 @@ nav {
   --delay: 0.5;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1940px) {
   .main-center-con {
-    max-width: 1200px;
+    max-width: 1800px;
+
+    &.top-main {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
   }
 
   .preview-con {
@@ -591,7 +636,32 @@ nav {
   }
 }
 
+@media screen and (max-width: 1700px) {
+  .main-center-con {
+    .me {
+      max-width: 1000px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .main-center-con {
+    &.top-main {
+      max-width: 900px;
+    }
+  }
+}
+
 @media screen and (max-width: 1280px) {
+  .main-center-con {
+    &.top-main {
+      max-width: 900px;
+    }
+    .me .greeting {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .focus-in-expand {
     display: flex;
     flex-direction: column;
@@ -674,6 +744,23 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
+  .maincon {
+    display: block;
+    .nav-wrap {
+      .left-nav {
+        display: inline-flex;
+        position: fixed;
+      }
+      .pagi {
+        display: inline-flex;
+        margin: 0;
+        justify-content: start;
+        .swiper-pagination-bullet {
+          max-width: 5rem;
+        }
+      }
+    }
+  }
   .works-con {
     grid-template-columns: 1fr 1fr;
     max-width: 800px;
@@ -683,6 +770,7 @@ nav {
 
   .set-lang-btn {
     margin-right: 0.5rem;
+    margin-top: 0;
   }
 
   .preview-con {
@@ -768,6 +856,15 @@ nav {
       }
     }
   }
+  .main-center-con .me {
+    display: block;
+  }
+  .main-center-con .me .desc {
+    display: block;
+    .about-wrap .aboutBox {
+      display: block;
+    }
+  }
 
   .testCon {
     margin: 2rem auto;
@@ -849,7 +946,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   svg {
     width: 3rem;
     height: 3rem;
