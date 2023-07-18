@@ -13,7 +13,6 @@ var AHH = {
                         "영어 시험 웹앱. React 기반으로 개발하였으며, 학원 특성상 태블릿을 주로 사용하므로 태블릿에 맞춘 반응형 레이아웃 유지보수에 중점적으로 참여. ",
                         "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
                     ],
-                    btnn: ["1", "2", "3"],
                     link: "https://culp.cloubot.com/login",
                     bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg"
                 },
@@ -26,7 +25,7 @@ var AHH = {
                         "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
                     ],
                     link: "https://epublic-phonics.cloubot.com/",
-                    go: ["ddddd"],
+                    go: [""],
                     bg: "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png"
                 },
                 {
@@ -38,7 +37,7 @@ var AHH = {
                         "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
                     ],
                     link: "",
-                    go: ["ddddd"],
+                    go: [""],
                     bg: "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg"
                 },
                 {
@@ -50,7 +49,7 @@ var AHH = {
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
                     link: "http://bluecustoms.co.kr/",
-                    go: ["ddddd"],
+                    go: [""],
                     bg: "https://corydalis.github.io/pt/img/blue1.png"
                 },
                 {
@@ -62,7 +61,7 @@ var AHH = {
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
                     link: "https://www.spectory.net/",
-                    go: ["ddddd"],
+                    go: [""],
                     bg: "https://corydalis.github.io/pt/img/spec1.png"
                 },
                 {
@@ -74,7 +73,7 @@ var AHH = {
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
                     link: "https://childstudy.swu.ac.kr/",
-                    go: ["ddddd"],
+                    go: [""],
                     bg: "https://corydalis.github.io/pt/img/sw1.png"
                 },
                 {
@@ -104,11 +103,21 @@ var AHH = {
                 {
                     desc: [
                         "공간산업 주식회사",
-                        "https://www.weibo.com",
+                        "",
                         "디자인: 메인페이지, 서브페이지 레이아웃 참여, 퍼블리싱 및 유지보수 참여 100%",
                     ],
                     link: "http://www.spcdoor.com/",
-                    go: ["ddddd"],
+                    go: [""],
+                    bg: "https://corydalis.github.io/pt/img/sp1.png"
+                },
+                {
+                    desc: [
+                        "크레오 영어학원 교육용 앱",
+                        "",
+                        "리액트 네이티브 기반으로 모든 페이지 퍼블리싱 100% 진행.",
+                    ],
+                    link: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
+                    go: [""],
                     bg: "https://corydalis.github.io/pt/img/sp1.png"
                 },
             ]
@@ -221,6 +230,16 @@ var AHH = {
                     go: [""],
                     bg: "https://corydalis.github.io/pt/img/sp1.png"
                 },
+                {
+                    desc: [
+                        "App for learning English Creo English school",
+                        "",
+                        "Based React-Native.js, developed the UI to all the pages",
+                    ],
+                    link: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
+                    go: [""],
+                    bg: "https://corydalis.github.io/pt/img/sp1.png"
+                },
             ]
         },
         ja: {
@@ -250,7 +269,7 @@ var AHH = {
                 },
                 {
                     desc: [
-                        "ルシど英語スクール",
+                        "ルシド英語スクール",
                         "",
                         "レイアウトデザイン及びUI開発の作業。",
                         "英語教育のアプリ、REACTで開発",
@@ -331,6 +350,16 @@ var AHH = {
                     go: [""],
                     bg: "https://corydalis.github.io/pt/img/sp1.png"
                 },
+                {
+                    desc: [
+                        "英語スクールの英語教育用アプリ",
+                        "",
+                        "React-Nativeで全てのページのUI開発",
+                    ],
+                    link: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
+                    go: [""],
+                    bg: "https://corydalis.github.io/pt/img/sp1.png"
+                },
             ]
         }
     },
@@ -362,7 +391,7 @@ var AHH = {
                         "flexible",
                         "patient",
                         "calm",
-                        "Who loves having various experience that haven't experienced before using new ways.",
+                        "Likes having various experience that haven't experienced before using new ways.",
                         "I'm interested in UI design, frontend development, and can handle flexibly between it.",
                         "And in out of the computer, I usually play a nintendo switch games(Zelda series), jogging and riding bycircle, hangout with my friends. Of course, Studying a development and design also!",
                     ]
