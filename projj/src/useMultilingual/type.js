@@ -21,7 +21,7 @@ var AHH = {
                         "Phonics monster",
                         "",
                         "유지보수 및 ui 퍼블리싱 100%(태블릿, 모바일)",
-                        "영어 교육용 웹앱. \n 프로젝트 투입 전에 이미 뼈대는 작업 되어있었으나 엉성한 레이아웃으로 데스크탑부터 태블릿, 모바일까지 모두 반응형 작업 진행.",
+                        "영어 교육용 웹앱. \n 프로젝트 투입 전에 이미 뼈대는 작업 되어있었으나 미완성된 레이아웃으로 데스크탑부터 태블릿, 모바일까지 모두 반응형 작업 진행.",
                         "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
                     ],
                     link: "https://epublic-phonics.cloubot.com/",
@@ -90,9 +90,9 @@ var AHH = {
                 },
                 {
                     desc: [
-                        "서울여대 ",
+                        "서울여대 아동학과",
                         "https://www.weibo.com",
-                        "유지보수 참여",
+                        "추가 요청으로 메인페이지, 학과소개 페이지 유지보수 참여",
                         "jQuery로 유지보수",
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
@@ -221,9 +221,9 @@ var AHH = {
                 },
                 {
                     desc: [
-                        "Seoul women's university ",
+                        "Childstudy Dept. of Seoul women's university ",
                         "",
-                        "Participated in UI maintenance",
+                        "Participated in UI maintenance of main page, some of detail pages",
                         "built in JQuery, Css3",
                         "https://corydalis.github.io/pt/img/blue1.png",
                     ],
@@ -353,7 +353,7 @@ var AHH = {
                 },
                 {
                     desc: [
-                        "ソウル女子大学校",
+                        "ソウル女子大学校 児童学科",
                         "",
                         "UIメンテナンスで作業",
                         "jQueryで開発",
