@@ -334,7 +334,7 @@ const ThirdMain = ({ langu }) => {
             <img src={require("../images/meta1.jpg")} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("../images/meta2.jpg")} alt="img" />
+            <img src={require("../images/creo.png")} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
             <img src={require("../images/meta3.jpg")} alt="img" />
