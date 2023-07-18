@@ -2,9 +2,8 @@
 
 body {
   * {
-    font-family: "ChosunGu";
+    font-family: "Arita-dotum-Medium";
   }
-  font-family: "ChosunGu";
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -755,6 +754,14 @@ nav {
       h1.greeting {
         font-size: 3.5rem;
         padding: 0 3rem;
+      }
+    }
+
+    &.worklist-con {
+      .desc-on {
+        h2 {
+          margin-top: 3rem;
+        }
       }
     }
   }

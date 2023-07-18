@@ -81,6 +81,7 @@ const ThirdMain = ({ langu }) => {
                 <div className="add-slide-con">
                   {descc === "Meta exam" ? <MetaSlides /> : ""}
                   {descc === "Phonics monster" ? <Pm /> : ""}
+                  {descc === "LMS" ? <Lms /> : ""}
                 </div>
                 <h2>{descc}</h2>
                 <p>{subDesc} </p>
@@ -296,7 +297,7 @@ const ThirdMain = ({ langu }) => {
                             style={{
                               backgroundImage:
                                 index < 2 ? "none" : `url(${a[1].bg})`,
-                              display: index < 2 ? "none" : "",
+                              display: index < 3 ? "none" : "",
                             }}
                           ></div>
                           <ToggleItem2
@@ -327,6 +328,7 @@ const ThirdMain = ({ langu }) => {
           modules={[Navigation, Pagination]}
           spaceBetween={10}
           slidesPerView={1}
+          autoHeight={true}
           navigation
           className="meta-slide-wrap"
         >
@@ -334,13 +336,16 @@ const ThirdMain = ({ langu }) => {
             <img src={require("../images/meta1.jpg")} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("../images/creo.png")} alt="img" />
+            <img src={require("../images/meta2.jpg")} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
             <img src={require("../images/meta3.jpg")} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
             <img src={require("../images/meta4.jpg")} alt="img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={require("../images/print_screenshot.png")} alt="img" />
           </SwiperSlide>
         </Swiper>{" "}
       </>
@@ -367,6 +372,28 @@ const ThirdMain = ({ langu }) => {
       </>
     );
   }
+
+  function Lms() {
+    return (
+      <>
+        <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={10}
+          slidesPerView={1}
+          navigation
+          className="meta-slide-wrap"
+        >
+          <SwiperSlide>
+            <img src={require("../images/1.png")} alt="img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={require("../images/bookr_after.png")} alt="img" />
+          </SwiperSlide>
+        </Swiper>{" "}
+      </>
+    );
+  }
+
   const swiperRef = useRef();
   const swipernavv = useRef();
   const [burger, setBurger] = useState(false);
