@@ -359,9 +359,9 @@ var AHH = {
                     desc: [
                         "young joo Jang",
                         "UI developer",
-                        "원만한",
-                        "끈기있는",
-                        "침착한",
+                        "flexible",
+                        "patient",
+                        "calm",
                         "Who loves having various experience that haven't experienced before using new ways.",
                         "I'm interested in UI design, frontend development, and can handle flexibly between it.",
                         "And in out of the computer, I usually play a nintendo switch games(Zelda series), jogging and riding bycircle, hangout with my friends. Of course, Studying a development and design also!",

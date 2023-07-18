@@ -336,6 +336,8 @@ nav {
 
       div.nextBtn {
         text-align: center;
+        display: flex;
+        align-items: center;
         &:before {
           /*     content: "d";
           position: absolute;
@@ -380,7 +382,7 @@ nav {
               .cir {
                 width: auto;
                 max-width: 200px;
-                background: orange;
+                background: rgba(0, 0, 0, 0.5);
                 border-radius: 3rem;
                 padding: 0rem 2rem;
                 line-height: 1.5;
@@ -419,12 +421,14 @@ nav {
     padding: 2rem 0;
     max-width: 100%;
     width: 100%;
+    min-height: 100vh;
+
     position: absolute;
 
     .add-slide-con {
       min-width: 20rem;
       display: block;
-      width: 34rem;
+      width: 100%;
       margin: 0 auto;
       border-radius: 15px;
 
@@ -620,6 +624,9 @@ nav {
   --delay: 0.5;
 }
 
+.burger {
+  display: none;
+}
 @media screen and (max-width: 1940px) {
   .main-center-con {
     max-width: 1800px;
@@ -663,6 +670,7 @@ nav {
       }
       .set-lang-btn {
         margin-top: 0;
+        margin-right: 0.5rem;
       }
       .pagi {
         display: inline-flex;
@@ -688,7 +696,6 @@ nav {
     }
     .me .greeting {
       height: 100%;
-      grid-template-columns: 1fr;
       grid-template-rows: 1fr;
     }
   }
@@ -706,7 +713,14 @@ nav {
     top: 0;
     height: auto;
     z-index: 9999;
-
+    footer {
+      svg {
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem 0.8rem;
+        display: flex;
+      }
+    }
     .left-nav {
       flex-direction: row;
       top: 0;
@@ -732,11 +746,6 @@ nav {
     }
   }
 
-  .works-container {
-    .works-wrap {
-      display: block;
-    }
-  }
   .preview-con {
     max-width: 900px;
     margin-top: 3rem;
@@ -749,9 +758,6 @@ nav {
       border-radius: 0;
     }
   }
-
-  .works-container {
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -761,6 +767,10 @@ nav {
       .left-nav {
         display: inline-flex;
         position: fixed;
+
+        .no {
+          display: block;
+        }
       }
       .pagi {
         display: inline-flex;
@@ -775,11 +785,13 @@ nav {
     .main-center-con {
       .me {
         .greeting {
+          grid-template-columns: 1fr;
           img {
             max-width: 10rem;
             max-height: 10rem;
             margin: 0 auto;
             display: block;
+            transform: scale(1);
           }
         }
 
@@ -787,7 +799,7 @@ nav {
           .about-wrap {
             .aboutBox {
               display: block;
-              margin-top: 3rem;
+              margin-top: 5rem;
               .wrap {
                 padding: 0 1rem;
               }
@@ -834,6 +846,7 @@ nav {
   .works-container {
     .works-wrap {
       padding: 0 1rem;
+      margin: 2rem auto;
     }
     .testCon {
       min-width: 15rem;
@@ -868,6 +881,92 @@ nav {
       margin: 0 auto;
     }
   }
+
+  .burger {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+
+    left: -4rem;
+    top: -5rem;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    div {
+      display: block;
+      position: fixed;
+      top: 1rem;
+      height: 10rem;
+      width: 10rem;
+      z-index: 999;
+
+      border-radius: 50%;
+      background: #39f;
+      opacity: 1;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
+    }
+
+    &:before {
+      content: "三";
+      top: 6.5rem;
+      color: #fff;
+      text-align: center;
+      left: 0;
+      position: relative;
+      font-size: 1.4rem;
+      left: 6rem;
+      z-index: 9999;
+      transform: skewY(211deg) scale(2);
+    }
+
+    &.open {
+      div {
+        background: #ffff;
+        &:before {
+          content: "Done";
+          top: 5.5rem;
+          color: #39f;
+          text-align: center;
+          left: 1rem;
+          position: relative;
+          font-size: 1.4rem;
+          font-weight: 700;
+        }
+      }
+      &:before {
+        content: "Choose the menu and language. ";
+        top: 7rem;
+        color: orange;
+        text-align: center;
+        left: 6rem;
+        font-size: 1rem;
+        position: absolute;
+        width: 100%;
+        transform: skewY(0) scale(1);
+      }
+    }
+  }
+
   .nav-wrap {
     top: 0;
     height: auto;
@@ -883,6 +982,10 @@ nav {
       background: #333;
       z-index: 9999;
     }
+  }
+
+  .main-center-con .me .greeting div.nextBtn {
+    display: none;
   }
 
   .main-center-con {
@@ -902,6 +1005,7 @@ nav {
   }
   .main-center-con .me {
     display: block;
+    min-height: 100vh;
   }
   .main-center-con .me .desc {
     display: block;
@@ -922,6 +1026,7 @@ nav {
     margin: 2rem auto;
     background: transparent;
     border: none;
+
     .works {
       &.work-img {
         border: none;
@@ -962,6 +1067,67 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
+  .maincon {
+    .hide {
+      display: none;
+    }
+
+    .burger {
+      position: absolute;
+      top: 0;
+      z-index: 99;
+      background: transparent;
+      border: none;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-wrap {
+      display: none;
+
+      &.active {
+        width: 100%;
+        z-index: 2;
+        .left-nav {
+          display: flex;
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100vh;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          align-items: center;
+
+          .pagi {
+            flex-direction: column;
+          }
+
+          .set-lang-btn {
+            margin: 4rem auto 1rem;
+          }
+        }
+      }
+      .burger {
+        display: block;
+      }
+
+      .no {
+        display: none;
+      }
+
+      .burger-wrap .left-nav {
+        display: none;
+      }
+
+      &.active {
+        display: inline-flex;
+        position: fixed;
+      }
+    }
+  }
   .works-con {
     max-width: 300px;
   }
