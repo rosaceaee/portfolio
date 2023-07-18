@@ -258,9 +258,9 @@ const ThirdMain = ({ langu }) => {
       <>
         {" "}
         <div className="set-lang-btn" onClick={changeLang}>
-          <button value="ko">Ko</button>
+          <button value="ko">한국어</button>
           <button value="en">Eng</button>
-          <button value="ja">Ja</button>
+          <button value="ja">日</button>
         </div>
       </>
     );
@@ -327,8 +327,7 @@ const ThirdMain = ({ langu }) => {
           modules={[Navigation, Pagination]}
           spaceBetween={10}
           slidesPerView={1}
-          Navigation
-          pagination={{ clickable: true }}
+          navigation
           className="meta-slide-wrap"
         >
           <SwiperSlide>
@@ -355,8 +354,7 @@ const ThirdMain = ({ langu }) => {
           modules={[Navigation, Pagination]}
           spaceBetween={10}
           slidesPerView={1}
-          Navigation
-          pagination={{ clickable: true }}
+          navigation
           className="meta-slide-wrap"
         >
           <SwiperSlide>
@@ -364,9 +362,6 @@ const ThirdMain = ({ langu }) => {
           </SwiperSlide>
           <SwiperSlide>
             <img src={require("../images/pm12.png")} alt="img" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={require("../images/sea.png")} alt="img" />
           </SwiperSlide>
         </Swiper>{" "}
       </>

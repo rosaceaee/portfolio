@@ -107,7 +107,7 @@ main {
 .set-lang-btn {
   display: flex;
   justify-content: space-around;
-  width: 10rem;
+  min-width: 12rem;
   margin-left: auto;
   margin-right: auto;
 
@@ -434,6 +434,15 @@ nav {
 
       .meta-slide-wrap {
         border-radius: 15px;
+        .swiper-wrapper {
+          align-items: center;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: orange;
+          background: rgba(255, 255, 255, 0.6);
+          padding: 0.4rem 1rem;
+        }
       }
       img {
         width: 100%;
@@ -844,6 +853,9 @@ nav {
   }
 
   .works-container {
+    .tit {
+      margin-top: 3.5rem;
+    }
     .works-wrap {
       padding: 0 1rem;
       margin: 2rem auto;
@@ -958,7 +970,7 @@ nav {
         top: 7rem;
         color: orange;
         text-align: center;
-        left: 6rem;
+        left: 7rem;
         font-size: 1rem;
         position: absolute;
         width: 100%;
@@ -970,7 +982,7 @@ nav {
   .nav-wrap {
     top: 0;
     height: auto;
-    z-index: 9999;
+    z-index: 9997;
 
     .left-nav {
       flex-direction: row;
@@ -981,6 +993,13 @@ nav {
       left: 0;
       background: #333;
       z-index: 9999;
+
+      .set-lang-btn {
+        button {
+          z-index: 9999;
+          margin: 0 0rem;
+        }
+      }
     }
   }
 
@@ -1009,6 +1028,8 @@ nav {
   }
   .main-center-con .me .desc {
     display: block;
+    min-height: 100vh;
+    overflow: hidden;
     .about-wrap .aboutBox {
       display: block;
     }
@@ -1128,6 +1149,29 @@ nav {
       }
     }
   }
+
+  .main-center-con {
+    .me {
+      .greeting {
+        height: auto;
+      }
+      .desc {
+        .about-wrap {
+          .aboutBox {
+            .about-desc-wrap {
+              line-height: 1.8;
+            }
+
+            h2 {
+              font-size: 1.7rem;
+              margin-top: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .works-con {
     max-width: 300px;
   }
@@ -1148,6 +1192,40 @@ nav {
 
     p {
       line-height: 1.65;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-center-con {
+    .me {
+      .greeting {
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      .desc {
+        .about-wrap {
+          .aboutBox {
+            .wrap {
+              .cirwrap {
+                .cir {
+                  padding: 0 1rem;
+                  width: 100%;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.worklist-con {
+      .add-slide-con {
+        min-width: 13rem;
+      }
     }
   }
 }
