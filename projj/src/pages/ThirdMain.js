@@ -347,6 +347,9 @@ const ThirdMain = ({ langu }) => {
           <SwiperSlide>
             <img src={require("../images/print_screenshot.png")} alt="img" />
           </SwiperSlide>
+          <SwiperSlide style={{ display: "none" }}>
+            <img src={require("../images/creo.png")} alt="img" />
+          </SwiperSlide>
         </Swiper>{" "}
       </>
     );
