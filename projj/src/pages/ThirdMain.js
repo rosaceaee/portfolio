@@ -412,6 +412,7 @@ const ThirdMain = ({ langu }) => {
           direction={"horizontal"}
           slidesPerView={1}
           spaceBetween={30}
+          allowTouchMove={false}
           mousewheel={{
             forceToAxis: true,
             sensitivity: 1,
