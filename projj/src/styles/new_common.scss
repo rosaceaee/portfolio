@@ -1237,6 +1237,9 @@ nav {
     &.worklist-con {
       .add-slide-con {
         min-width: 13rem;
+        .meta-slide-wrap {
+          margin-top: 2rem;
+        }
       }
     }
   }
