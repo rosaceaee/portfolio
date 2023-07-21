@@ -19,8 +19,9 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import { ReactComponent as GitHub } from "../images/github.svg";
 import { ReactComponent as Mail } from "../images/mail.svg";
+import "../styles/new_common.scss";
 
-const ThirdMain = ({ langu }) => {
+const Main = ({ langu }) => {
   const [show, setShow] = useState(false);
   const aboutSection = useRef(null);
   const showDalDal = () => {
@@ -421,10 +422,6 @@ const ThirdMain = ({ langu }) => {
               <a href="https://github.com/rosaceaee/" target="_blank">
                 <GitHub />
               </a>
-              <a href="mail: liliaceaeeee@gmail.com" target="_blank">
-                {" "}
-                <Mail />
-              </a>
             </footer>
           </div>
           {/*<div>
@@ -561,4 +558,4 @@ const ThirdMain = ({ langu }) => {
   );
 };
 
-export default ThirdMain;
+export default Main;

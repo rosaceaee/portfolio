@@ -9,19 +9,16 @@ import {
   Link,
 } from "react-router-dom";
 import App from "./App";
-import Header from "./Header";
 import Works from "./pages/Works";
-import ThirdMain from "./pages/ThirdMain";
-import Test from "./pages/Test";
+import Main from "./pages/Main";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route exact path="/" element={<ThirdMain />} />
+      <Route exact path="/" element={<Main />} />
       <Route exact path="/works" element={<Works />} />
-      <Route exact path="/en" element={<Test />} />
     </Routes>
   </BrowserRouter>
 );

@@ -5,15 +5,14 @@ import {
   useRouteMatch,
   useLocation,
 } from "react-router-dom";
-import useMultilingual, { LanguageType } from "./useMultilingual";
-import Header from "./Header";
-import Works from "./pages/Works";
-import "./styles/new_common.scss";
+import useMultilingual, { LanguageType } from "../useMultilingual";
+import Header from "../Header";
+import Works from "../pages/Works";
 import { ReactComponent as Plant } from "./images/plant.svg";
 import { ReactComponent as GitHub } from "./images/github.svg";
 import { ReactComponent as Mail } from "./images/mail.svg";
 
-const NewMain = () => {
+const NewMain_oldold = () => {
   const [isHide, setIsHide] = useState(false);
 
   const [lang, setLang] = useState("ko");
@@ -275,4 +274,4 @@ const NewMain = () => {
   );
 };
 
-export default NewMain;
+export default NewMain_oldold;

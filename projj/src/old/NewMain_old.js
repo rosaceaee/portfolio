@@ -6,20 +6,20 @@ import {
   useLocation,
   Link,
 } from "react-router-dom";
-import useMultilingual, { LanguageType } from "./useMultilingual";
+import useMultilingual, { LanguageType } from "../useMultilingual";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Scrollbar, A11y } from "swiper";
 import "swiper/css";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 
-import Works from "./pages/Works";
+import Works from "../pages/Works";
 import "./styles/new_common.scss";
 import { ReactComponent as Plant } from "./images/plant.svg";
 import { ReactComponent as GitHub } from "./images/github.svg";
 import { ReactComponent as Mail } from "./images/mail.svg";
-import { Parent } from "./pages/Works";
-const NewMain = () => {
+import { Parent } from "../pages/Works";
+const NewMain_old = () => {
   const [lang, setLang] = useState("ko");
   const m = useMultilingual(lang);
   const worksTit2 = Object.entries(m("WORKS").langs);
@@ -341,4 +341,4 @@ const NewMain = () => {
   );
 };
 
-export default NewMain;
+export default NewMain_old;

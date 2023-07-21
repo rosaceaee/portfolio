@@ -1,3 +1,7 @@
+// // // //
+// no-use //
+// // // //
+
 @import "./styles/font.scss";
 
 body {
@@ -20,6 +24,7 @@ body {
   height: 100vh;
   color: #fff;
 }
+
 a {
   text-decoration: none;
   &:link,
@@ -34,6 +39,7 @@ a {
 ul {
   padding-inline-start: 0px;
 }
+
 ul,
 ol {
   list-style: none;
@@ -42,15 +48,6 @@ ol {
 main {
   // background: #403a3a;
   color: #fff;
-}
-.lang-con {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  p {
-    margin: 0 1rem;
-  }
 }
 
 .header-con {
