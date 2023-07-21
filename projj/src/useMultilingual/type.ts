@@ -7,7 +7,7 @@ const AHH = {
           desc: [
             "Meta exam",
             "",
-            "특정 추가 페이지만 디자인 \n, 유지보수 및 ui 퍼블리싱 100%",
+            "React.js, Sass기반으로 특정 추가 페이지만 디자인 \n, 유지보수 및 ui 퍼블리싱 100%",
             "영어 시험 웹앱. React 기반으로 개발하였으며, 학원 특성상 태블릿을 주로 사용하므로 태블릿에 맞춘 반응형 레이아웃 유지보수에 중점적으로 참여. ",
             "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
           ],
@@ -30,8 +30,8 @@ const AHH = {
           desc: [
             "LMS",
             "",
-            "Learning Manage System 페이지. 영어학원의 강사용, 학생용 관리자 웹,앱.  ",
-            "ui 퍼블리싱 80%(데스크톱, 태블릿, 모바일), 유지보수 작업",
+            "Learning Manage System 페이지. 영어학원의 강사용, 학생용 관리자 웹,앱.",
+            "React.js, Sass기반으로 ui 퍼블리싱 80%(데스크톱, 태블릿, 모바일), 유지보수 작업",
             "",
           ],
           link: "https://culp.cloubot.com/login",
@@ -42,7 +42,7 @@ const AHH = {
           desc: [
             "루시드 영어학원",
             "",
-            "영어 교육용 웹앱. \n React 기반으로 개발, ",
+            "영어 교육용 앱. \n React.js, React-native, Sass로 개발. 웹앱과 앱 모두 작업",
             "디자인: 레이아웃, 색상 선정 참여 나머지 부분은 외주 디자이너의 시안대로 진행, \n ui 퍼블리싱 100%(데스크톱, 태블릿, 모바일)",
             "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
           ],
@@ -54,15 +54,14 @@ const AHH = {
           desc: [
             "크레오 영어학원 교육용 앱",
             "",
-            "리액트 네이티브 기반으로 모든 페이지 퍼블리싱 100% 진행.",
-            "",
+            "리액트 네이티브 기반으로 모든 페이지 퍼블리싱 100% 진행",
+            "Sass, React, React-native로 작업(웹앱, 안드로이드 앱 작업)",
             "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
           ],
           link: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
           go: [""],
           bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
         },
-
         {
           desc: [
             "파란관세사무소",
@@ -120,7 +119,7 @@ const AHH = {
             "jQuery로 유지보수",
             "https://corydalis.github.io/pt/img/ss1.png",
           ],
-          link: "http://www.ssmedipia.com/m",
+          link: "http://www.ssmedipia.com/",
           go: ["ddddd"],
           bg: "https://corydalis.github.io/pt/img/ss1.png",
         },
@@ -165,7 +164,8 @@ const AHH = {
           desc: [
             "LMS",
             "",
-            "App for learning English Creo English school(Learning Manage System page). Based React-Native.js, maintained the UI to all the pages",
+            "App for learning English Creo English school(Learning Manage System page).",
+            "Developed React-Native.js, maintained the UI to all the pages",
           ],
           link: "https://culp.cloubot.com/login",
           go: [""],
@@ -175,8 +175,8 @@ const AHH = {
           desc: [
             "Lucid English",
             "",
-            "Participated in layout design, and UI structure(desktop, tablet, mobile)",
-            "  built only React.js.",
+            "Participated in Responsive and layout design, UI structure(desktop, tablet, mobile)",
+            "Developed in React.js, React-native, Sass. (Web app and Android app)",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "https://play.google.com/store/apps/details?id=com.culpmobile.lucid",
@@ -185,10 +185,10 @@ const AHH = {
         },
         {
           desc: [
-            "English learning app for Creo english",
+            "English learning app for Creo english school",
             "",
-            "English learning tool for Creo english, Based React-Native.js, developed the UI to all the pages",
-            "",
+            "English learning tool for Creo english school",
+            "Developed the UI to all the pages with Sass, React, React-Native. (Web app and Android app)",
             "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
           ],
           link: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
@@ -199,8 +199,8 @@ const AHH = {
           desc: [
             "Paran customs office",
             "",
-            "Participated in layout design, and UI structure(desktop, tablet, mobile)",
-            "built in JQuery, Css3",
+            "customs office in korea. Participated in responsive and layout design(desktop, tablet, mobile)",
+            "Developed using JQuery, Css3, Bootstrap",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "http://bluecustoms.co.kr/",
@@ -209,10 +209,10 @@ const AHH = {
         },
         {
           desc: [
-            "spectory",
+            "Spectory",
             "",
-            "Participated in layout design, and UI structure(desktop, tablet, mobile)",
-            "built in jsp, jQuery",
+            "Platform site for compParticipated in layout design, and UI structure(desktop, tablet, mobile)",
+            "Developed using Jsp, jQuery",
             "",
           ],
           link: "https://www.spectory.net/",
@@ -224,7 +224,7 @@ const AHH = {
             "Childstudy Dept. of Seoul women's university ",
             "",
             "Participated in UI maintenance of main page, some of detail pages",
-            "built in JQuery, Css3",
+            "Developed using JQuery, Css3, Bootstrap",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "https://childstudy.swu.ac.kr/",
@@ -235,8 +235,8 @@ const AHH = {
           desc: [
             "Contest of startup in Ministry of Oceans and Fisheries",
             "",
-            "Participated in UI maintenance",
-            "built in JQuery, Css3",
+            "Site for national contest. Participated in UI maintenance",
+            "Developed using JQuery, Css3",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "http://www.seastartup.kr/home/start.php",
@@ -247,8 +247,8 @@ const AHH = {
           desc: [
             "SSmedipia",
             "",
-            "Participated in layout design, and UI structure(desktop, tablet, mobile)",
-            "built in JQuery, Css3",
+            "The company about blood clotting diagnostic equipment. Participated in responsive and layout design, UI structure(desktop, tablet, mobile)",
+            "Developed using JQuery, Css3, Bootstrap",
             "https://corydalis.github.io/pt/img/ss1.png",
           ],
           link: "http://www.ssmedipia.com/",
@@ -259,8 +259,8 @@ const AHH = {
           desc: [
             "Gonggan instructure Inc.",
             "",
-            "Participated in layout design, and UI structure(desktop, tablet, mobile)",
-            "built in JQuery, Css3",
+            "The company to supply doors for various industry. Participated in layout design, and UI structure(desktop, tablet, mobile)",
+            "Developed using JQuery, Css3, Bootstrap",
           ],
           link: "http://www.spcdoor.com/",
           go: [""],
@@ -275,7 +275,7 @@ const AHH = {
             "Meta exam",
             "",
             "アプリ接続のページのみデザイン及びUI開発、メンテナンス",
-            "英語塾で行う英語試験サイトの制作、REACTで開発、保安の上、詳しいイメージは一番下側のスライドでご覧することができます（lucid, meta）",
+            "英語塾で行う英語試験サイトの制作、REACT・SASSでUI開発",
             "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
           ],
           link: "",
@@ -286,7 +286,7 @@ const AHH = {
             "Phonics monster",
             "",
             "UIメンテナンスの作業",
-            "英語教育のアプリ。REACTで開発。詳しいイメージは一番下側のスライドでご覧することができます（lucid, meta）",
+            "英語発音教育のアプリ。REACT・SASSでUI作業。主に全てのレスポンシブ100%作業",
             "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
           ],
           link: "https://epublic-phonics.cloubot.com/",
@@ -297,7 +297,8 @@ const AHH = {
           desc: [
             "LMS",
             "",
-            "英語塾の教師・学生向け管理者ページ。ReactでUI開発及びメンテ",
+            "英語塾の教師・学生向け管理者ページ(Learning manage system)",
+            "React・SASSでUI開発及びメンテナンス",
           ],
           link: "https://culp.cloubot.com/login",
           go: [""],
@@ -307,7 +308,7 @@ const AHH = {
           desc: [
             "ルシド英語スクール",
             "",
-            "レイアウトデザイン及びUI開発の作業。",
+            "REACT・SASSを基づいてレイアウトデザイン、レスポンシブデザイン及びUI開発の作業。",
             "英語教育のアプリ、REACTで開発",
             "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
           ],
@@ -331,8 +332,8 @@ const AHH = {
           desc: [
             "パラン関税事務所",
             "",
-            "レイアウトデザイン及びUI開発の作業。",
-            "JQueryで開発",
+            "関税事務所のサイト。パランは韓国語で「青」の意味で、カラーも同じく青色で選択。メインカラーデザイン・レイアウトデザイン及びUI開発の作業。",
+            "CSS3・Bootstrap・JQueryで開発",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "http://bluecustoms.co.kr/",
@@ -343,8 +344,8 @@ const AHH = {
           desc: [
             "スペックトリ",
             "",
-            "UIメンテナンスで作業",
-            "jsp, jQueryで開発",
+            "コンペのまとめサイト。他に提供してるホームページビルダーのサービスもメンテナンスも担当。UIメンテナンス、レスポンシブデザイン作業",
+            "Jsp, JQueryで開発",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "https://www.spectory.net/",
@@ -355,8 +356,8 @@ const AHH = {
           desc: [
             "ソウル女子大学校 児童学科",
             "",
-            "UIメンテナンスで作業",
-            "jQueryで開発",
+            "主にメンテナンス担当。メイン、学科紹介ページのUIメンテナンス作業",
+            "CSS3・Bootstrap・JQueryで開発",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "https://childstudy.swu.ac.kr/",
@@ -367,8 +368,8 @@ const AHH = {
           desc: [
             "海洋水産部のコンペ",
             "",
-            "UIメンテナンスで作業",
-            "jQueryで開発",
+            "サイトのリニューアル・UIメンテナンス作業",
+            "JQueryで開発",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "http://www.seastartup.kr/home/start.php",
@@ -379,8 +380,8 @@ const AHH = {
           desc: [
             "SSmedipia",
             "",
-            "レイアウトデザイン及びUIメンテナンスで作業",
-            "jQueryで開発",
+            "血液に関する企業で、レスポンシブ・レイアウトデザイン及びUIメンテナンスで作業",
+            "CSS3・Bootstrap・JQueryで開発",
             "https://corydalis.github.io/pt/img/ss1.png",
           ],
           link: "http://www.ssmedipia.com/",
@@ -390,9 +391,9 @@ const AHH = {
         {
           desc: [
             "コンガン産業株式会社",
-            "https://www.weibo.com",
-            "レイアウトデザイン及びUIメンテナンスで作業",
-            "jQueryで開発",
+            "",
+            "産業用ドア制作企業、レイアウトデザイン及びUIメンテナンスで作業",
+            "CSS3・Bootstrap・JQueryで開発",
           ],
           link: "https://www.googlre.com",
           go: [""],
@@ -423,7 +424,7 @@ const AHH = {
     en: {
       langs: [
         {
-          key: 1,
+          key: 2,
           desc: [
             "young joo Jang",
             "UI developer",
@@ -440,7 +441,7 @@ const AHH = {
     ja: {
       langs: [
         {
-          key: 1,
+          key: 3,
           desc: [
             "young joo Jang",
             "マークアップエンジニア・コーダー",

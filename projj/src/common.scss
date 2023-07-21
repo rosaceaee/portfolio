@@ -556,7 +556,11 @@ main {
       -moz-box-shadow: 0px 8px 6px 0px rgba(186, 185, 185, 0.96);
     }
     p {
-      padding: 0 2rem;
+      padding: 0 0rem;
+      max-width: 21rem;
+      width: 100%;
+      margin: 0 auto 1rem;
+      text-align: left;
     }
   }
 
