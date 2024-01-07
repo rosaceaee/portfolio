@@ -6,11 +6,8 @@ import {
   useLocation,
   Link,
 } from "react-router-dom";
-import * as Scroll from "react-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Scrollbar, A11y } from "swiper";
-import Header from "../Header";
-import worklists from "./worksimsi.json";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import useMultilingual, { LanguageType } from "../useMultilingual";
 import Modal from "./Modal";
@@ -21,7 +18,7 @@ import { ReactComponent as GitHub } from "../images/github.svg";
 import { ReactComponent as Mail } from "../images/mail.svg";
 import "../styles/new_common.scss";
 
-const Main = ({ langu }) => {
+const Main = () => {
   const [show, setShow] = useState(false);
   const aboutSection = useRef(null);
   const showDalDal = () => {
@@ -34,17 +31,8 @@ const Main = ({ langu }) => {
   // console.log(aa);
 
   const v = ["About", "Works"];
-  const Aa = Object.entries(m("WORKS"));
-  const web = JSON.stringify(m("WORKS").langs);
   const worksTit2 = Object.entries(m("WORKS").langs);
   const maindesc = Object.entries(m("ABOUT").langs);
-  const str_main = JSON.stringify(maindesc[0]);
-  const strWorksTit2 = JSON.stringify(maindesc[0]);
-  const arr = Array.isArray(JSON.stringify(m("ABOUT").langs));
-
-  let oh = worksTit2.map((itm) => itm[1].desc[0]);
-  let urlLink = worksTit2.map((itm) => itm[1].link);
-  // console.log(worksTit2[0]);
 
   let inputArray = [
     { id: 1, name: "name1", value: "value1" },
@@ -111,7 +99,7 @@ const Main = ({ langu }) => {
     );
   };
 
-  const Asdf = ({
+  const Greeting = ({
     name,
     position,
     infodesc,
@@ -268,11 +256,7 @@ const Main = ({ langu }) => {
     );
   }
 
-  function Parent({ setLang }) {
-    const mapper = new Map([
-      ["1", "a"],
-      ["2", "b"],
-    ]);
+  function Parent() {
     // console.log(Array.from(mapper.values()));
 
     return (
@@ -473,7 +457,7 @@ const Main = ({ langu }) => {
                             {" "}
                             <div className="about-wrap">
                               {" "}
-                              <Asdf
+                              <Greeting
                                 name={a[1].desc[0]}
                                 position={a[1].desc[1]}
                                 infodesc={a[1].desc[2]}

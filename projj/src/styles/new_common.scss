@@ -967,7 +967,7 @@ nav {
       div {
         background: #ffff;
         &:before {
-          content: "Done";
+          content: "X";
           top: 5.5rem;
           color: #39f;
           text-align: center;
@@ -978,7 +978,7 @@ nav {
         }
       }
       &:before {
-        content: "Choose the menu and language. ";
+        content: "메뉴 혹은 언어를 선택해주세요.";
         top: 7rem;
         color: orange;
         text-align: center;
