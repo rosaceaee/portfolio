@@ -436,6 +436,9 @@ const Main = () => {
               return '<h3 class="' + className + '">' + v[index] + "</h3>";
             },
           }}
+          onActiveIndexChange={(swiper) => {
+            setBurger((prev) => !prev);
+          }}
           Navigation={true}
           modules={[Mousewheel, Navigation, Pagination]}
           onBeforeInit={(swiper) => {
