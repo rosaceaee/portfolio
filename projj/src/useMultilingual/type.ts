@@ -64,6 +64,28 @@ const AHH = {
         },
         {
           desc: [
+            "개인 페이지: 인터렉티브 디자인 구현",
+            "",
+            "주로 랜딩 페이지에서 사용되는 애니메이션 효과 적용",
+            "",
+            "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
+          ],
+          link: "https://rosaceaee.github.io/sample-for-port/",
+          bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
+        },
+        {
+          desc: [
+            "개인 페이지: 간단한 영단어 기록단어장",
+            "",
+            "간단한 기능으로 알파벳 별 영어단어 기록할 수 있는 페이지 구현",
+            "",
+            "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
+          ],
+          link: "https://rosaceaee.github.io/studyLang_en/",
+          bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
+        },
+        {
+          desc: [
             "파란관세사무소",
             "https://www.weibo.com",
             "퍼블리싱 100%(데스크톱, 태블릿, 모바일)",
@@ -274,7 +296,7 @@ const AHH = {
           desc: [
             "Meta exam",
             "",
-            "アプリ接続のページのみデザイン及びUI開発、メンテナンス",
+            "(内部方針で外部からアクセスが不可ですのでご了承ください) アプリ接続のページのみデザイン及びUI開発、メンテナンス,",
             "英語塾で行う英語試験サイトの制作、REACT・SASSでUI開発",
             "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
           ],
@@ -285,7 +307,7 @@ const AHH = {
           desc: [
             "Phonics monster",
             "",
-            "UIメンテナンスの作業",
+            "(内部方針で外部からアクセスが不可ですのでご了承ください) UIメンテナンスの作業",
             "英語発音教育のアプリ。REACT・SASSでUI作業。主に全てのレスポンシブ100%作業",
             "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
           ],
@@ -297,12 +319,13 @@ const AHH = {
           desc: [
             "LMS",
             "",
-            "英語塾の教師・学生向け管理者ページ(Learning manage system)",
+            "(内部方針で外部からアクセスが不可ですのでご了承ください) 英語塾の教師・学生向け管理者ページ(Learning manage system)",
             "React・SASSでUI開発及びメンテナンス",
+            "https://rosaceaee.github.io/static/media/1.6ab6e2c6b7b236116320.png",
           ],
           link: "https://culp.cloubot.com/login",
           go: [""],
-          bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
+          bg: "https://rosaceaee.github.io/static/media/1.6ab6e2c6b7b236116320.png",
         },
         {
           desc: [

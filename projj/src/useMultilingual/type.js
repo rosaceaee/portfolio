@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var AHH = {
     WORKS: {
         ko: {
@@ -14,7 +14,7 @@ var AHH = {
                         "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
                     ],
                     link: "https://culp.cloubot.com/login",
-                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg"
+                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
                 },
                 {
                     desc: [
@@ -26,7 +26,7 @@ var AHH = {
                     ],
                     link: "https://epublic-phonics.cloubot.com/",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png"
+                    bg: "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
                 },
                 {
                     desc: [
@@ -38,7 +38,7 @@ var AHH = {
                     ],
                     link: "https://culp.cloubot.com/login",
                     go: [""],
-                    bg: ""
+                    bg: "",
                 },
                 {
                     desc: [
@@ -50,7 +50,7 @@ var AHH = {
                     ],
                     link: "https://play.google.com/store/apps/details?id=com.culpmobile.lucid",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg"
+                    bg: "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
                 },
                 {
                     desc: [
@@ -62,7 +62,29 @@ var AHH = {
                     ],
                     link: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png"
+                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
+                },
+                {
+                    desc: [
+                        "개인 페이지: 인터렉티브 디자인 구현",
+                        "",
+                        "주로 랜딩 페이지에서 사용되는 애니메이션 효과 적용",
+                        "",
+                        "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
+                    ],
+                    link: "https://rosaceaee.github.io/sample-for-port/",
+                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
+                },
+                {
+                    desc: [
+                        "개인 페이지: 간단한 영단어 기록단어장",
+                        "",
+                        "주로 랜딩 페이지에서 사용되는 애니메이션 효과 적용",
+                        "",
+                        "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
+                    ],
+                    link: "https://rosaceaee.github.io/studyLang_en/",
+                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
                 },
                 {
                     desc: [
@@ -74,7 +96,7 @@ var AHH = {
                     ],
                     link: "http://bluecustoms.co.kr/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/blue1.png"
+                    bg: "https://corydalis.github.io/pt/img/blue1.png",
                 },
                 {
                     desc: [
@@ -86,7 +108,7 @@ var AHH = {
                     ],
                     link: "https://www.spectory.net/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/spec1.png"
+                    bg: "https://corydalis.github.io/pt/img/spec1.png",
                 },
                 {
                     desc: [
@@ -98,7 +120,7 @@ var AHH = {
                     ],
                     link: "https://childstudy.swu.ac.kr/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/sw1.png"
+                    bg: "https://corydalis.github.io/pt/img/sw1.png",
                 },
                 {
                     desc: [
@@ -110,7 +132,7 @@ var AHH = {
                     ],
                     link: "http://www.seastartup.kr/home/start.php",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png"
+                    bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png",
                 },
                 {
                     desc: [
@@ -122,7 +144,7 @@ var AHH = {
                     ],
                     link: "http://www.ssmedipia.com/",
                     go: ["ddddd"],
-                    bg: "https://corydalis.github.io/pt/img/ss1.png"
+                    bg: "https://corydalis.github.io/pt/img/ss1.png",
                 },
                 {
                     desc: [
@@ -132,9 +154,9 @@ var AHH = {
                     ],
                     link: "http://www.spcdoor.com/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/sp1.png"
+                    bg: "https://corydalis.github.io/pt/img/sp1.png",
                 },
-            ]
+            ],
         },
         en: {
             langs: [
@@ -147,7 +169,7 @@ var AHH = {
                         "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
                     ],
                     link: "https://culp.cloubot.com/login",
-                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg"
+                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
                 },
                 {
                     desc: [
@@ -159,7 +181,7 @@ var AHH = {
                     ],
                     link: "https://epublic-phonics.cloubot.com/",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png"
+                    bg: "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
                 },
                 {
                     desc: [
@@ -170,7 +192,7 @@ var AHH = {
                     ],
                     link: "https://culp.cloubot.com/login",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png"
+                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
                 },
                 {
                     desc: [
@@ -182,7 +204,7 @@ var AHH = {
                     ],
                     link: "https://play.google.com/store/apps/details?id=com.culpmobile.lucid",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg"
+                    bg: "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
                 },
                 {
                     desc: [
@@ -194,7 +216,7 @@ var AHH = {
                     ],
                     link: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png"
+                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
                 },
                 {
                     desc: [
@@ -206,7 +228,7 @@ var AHH = {
                     ],
                     link: "http://bluecustoms.co.kr/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/blue1.png"
+                    bg: "https://corydalis.github.io/pt/img/blue1.png",
                 },
                 {
                     desc: [
@@ -218,7 +240,7 @@ var AHH = {
                     ],
                     link: "https://www.spectory.net/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/spec1.png"
+                    bg: "https://corydalis.github.io/pt/img/spec1.png",
                 },
                 {
                     desc: [
@@ -230,7 +252,7 @@ var AHH = {
                     ],
                     link: "https://childstudy.swu.ac.kr/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/sw1.png"
+                    bg: "https://corydalis.github.io/pt/img/sw1.png",
                 },
                 {
                     desc: [
@@ -242,7 +264,7 @@ var AHH = {
                     ],
                     link: "http://www.seastartup.kr/home/start.php",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png"
+                    bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png",
                 },
                 {
                     desc: [
@@ -254,7 +276,7 @@ var AHH = {
                     ],
                     link: "http://www.ssmedipia.com/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/ss1.png"
+                    bg: "https://corydalis.github.io/pt/img/ss1.png",
                 },
                 {
                     desc: [
@@ -265,9 +287,9 @@ var AHH = {
                     ],
                     link: "http://www.spcdoor.com/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/sp1.png"
+                    bg: "https://corydalis.github.io/pt/img/sp1.png",
                 },
-            ]
+            ],
         },
         ja: {
             langs: [
@@ -275,35 +297,36 @@ var AHH = {
                     desc: [
                         "Meta exam",
                         "",
-                        "アプリ接続のページのみデザイン及びUI開発、メンテナンス",
+                        "(内部方針で外部からアクセスが不可ですのでご了承ください) アプリ接続のページのみデザイン及びUI開発、メンテナンス,",
                         "英語塾で行う英語試験サイトの制作、REACT・SASSでUI開発",
                         "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
                     ],
                     link: "",
-                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg"
+                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
                 },
                 {
                     desc: [
                         "Phonics monster",
                         "",
-                        "UIメンテナンスの作業",
+                        "(内部方針で外部からアクセスが不可ですのでご了承ください) UIメンテナンスの作業",
                         "英語発音教育のアプリ。REACT・SASSでUI作業。主に全てのレスポンシブ100%作業",
                         "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
                     ],
                     link: "https://epublic-phonics.cloubot.com/",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png"
+                    bg: "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
                 },
                 {
                     desc: [
                         "LMS",
                         "",
-                        "英語塾の教師・学生向け管理者ページ(Learning manage system)",
+                        "(内部方針で外部からアクセスが不可ですのでご了承ください) 英語塾の教師・学生向け管理者ページ(Learning manage system)",
                         "React・SASSでUI開発及びメンテナンス",
+                        "https://rosaceaee.github.io/static/media/1.6ab6e2c6b7b236116320.png",
                     ],
                     link: "https://culp.cloubot.com/login",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png"
+                    bg: "https://rosaceaee.github.io/static/media/1.6ab6e2c6b7b236116320.png",
                 },
                 {
                     desc: [
@@ -315,7 +338,7 @@ var AHH = {
                     ],
                     link: "https://play.google.com/store/apps/details?id=com.culpmobile.lucid",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg"
+                    bg: "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
                 },
                 {
                     desc: [
@@ -327,7 +350,7 @@ var AHH = {
                     ],
                     link: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png"
+                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
                 },
                 {
                     desc: [
@@ -339,7 +362,7 @@ var AHH = {
                     ],
                     link: "http://bluecustoms.co.kr/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/blue1.png"
+                    bg: "https://corydalis.github.io/pt/img/blue1.png",
                 },
                 {
                     desc: [
@@ -351,7 +374,7 @@ var AHH = {
                     ],
                     link: "https://www.spectory.net/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/spec1.png"
+                    bg: "https://corydalis.github.io/pt/img/spec1.png",
                 },
                 {
                     desc: [
@@ -363,7 +386,7 @@ var AHH = {
                     ],
                     link: "https://childstudy.swu.ac.kr/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/sw1.png"
+                    bg: "https://corydalis.github.io/pt/img/sw1.png",
                 },
                 {
                     desc: [
@@ -375,7 +398,7 @@ var AHH = {
                     ],
                     link: "http://www.seastartup.kr/home/start.php",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png"
+                    bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png",
                 },
                 {
                     desc: [
@@ -387,7 +410,7 @@ var AHH = {
                     ],
                     link: "http://www.ssmedipia.com/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/ss1.png"
+                    bg: "https://corydalis.github.io/pt/img/ss1.png",
                 },
                 {
                     desc: [
@@ -398,10 +421,10 @@ var AHH = {
                     ],
                     link: "https://www.googlre.com",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/sp1.png"
+                    bg: "https://corydalis.github.io/pt/img/sp1.png",
                 },
-            ]
-        }
+            ],
+        },
     },
     ABOUT: {
         ko: {
@@ -417,9 +440,9 @@ var AHH = {
                         "고여있는 것보다 접해보지 못한 다양한 경험을 하는 것을 좋아합니다. ",
                         "IT업계에서 근무하는 동안 UI디자인과 프론트엔드 개발에 관심이 많아 디자인과 개발 사이에서 유연하게 대응할 수 있습니다.",
                         "쉬는 날에는 주로 닌텐도 스위치게임을, 조깅 혹은 자전거 라이딩을, 친구들과 산책을 하며 재충전의 시간을 가지고 있습니다! 물론 mdn 문서를 보며 개발공부도 꾸준히 하고있습니다. ",
-                    ]
+                    ],
                 },
-            ]
+            ],
         },
         en: {
             langs: [
@@ -434,9 +457,9 @@ var AHH = {
                         "Likes having various experience that haven't experienced before using new ways.",
                         "I'm interested in UI design, frontend development, and can handle flexibly between it.",
                         "And in out of the computer, I usually play a nintendo switch games(Zelda series), jogging and riding bycircle, hangout with my friends. Of course, Studying a development and design also!",
-                    ]
+                    ],
                 },
-            ]
+            ],
         },
         ja: {
             langs: [
@@ -451,10 +474,10 @@ var AHH = {
                         "接したことがなかった多様な経験をすることが好きです。",
                         "UIデザインとフロントエンド開発に興味深くて、今までマークアップ開発とフロントエンド開発の間で働いた経験を基づいて両方対応することができます。",
                         "休みにはNintendo Switchゲーム（ゼルダシリーズ）をプレイしたり、ジョギングや自転車でらいでぃんぐをしたり、友達とお出かけをして楽しく休みます！もちろん、開発とデザインの勉強も！",
-                    ]
+                    ],
                 },
-            ]
-        }
-    }
+            ],
+        },
+    },
 };
-exports["default"] = AHH;
+exports.default = AHH;
