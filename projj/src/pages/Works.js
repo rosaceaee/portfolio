@@ -9,8 +9,6 @@ import {
 import * as Scroll from "react-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Scrollbar, A11y } from "swiper";
-import Header from "../Header";
-import worklists from "./worksimsi.json";
 import useMultilingual, { LanguageType } from "../useMultilingual";
 import Modal from "./Modal";
 import "swiper/css";
@@ -28,23 +26,8 @@ const Works = ({ langu }) => {
   const m = useMultilingual(lang);
   // console.log(aa);
 
-  const Aa = Object.entries(m("WORKS"));
-  const web = JSON.stringify(m("WORKS").langs);
   const worksTit2 = Object.entries(m("WORKS").langs);
-  const strWorksTit2 = JSON.stringify(worksTit2);
-  const arr = Array.isArray(JSON.stringify(m("WORKS").langs));
-  let oh = worksTit2.map((itm) => itm[1].desc[0]);
-  let urlLink = worksTit2.map((itm) => itm[1].link);
   console.log(worksTit2[0]);
-
-  let inputArray = [
-    { id: 1, name: "name1", value: "value1" },
-    { id: 2, name: "name2", value: "value2" },
-  ];
-
-  let ids = inputArray.map((item) => item.id);
-  let names = inputArray.map((item) => item.name);
-  let values = inputArray.map((item) => item.value);
 
   const changeLang = ({ target: { value } }) => {
     return value && setLang(value);
