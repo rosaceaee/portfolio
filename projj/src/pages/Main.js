@@ -250,7 +250,7 @@ const Main = () => {
         <div className="set-lang-btn" onClick={changeLang}>
           <button value="ko">한국어</button>
           <button value="en">Eng</button>
-          <button value="ja">日</button>
+          <button value="ja">日本語</button>
         </div>
       </>
     );

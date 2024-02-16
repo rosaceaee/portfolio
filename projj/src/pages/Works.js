@@ -58,6 +58,7 @@ const Works = ({ langu }) => {
                 <h2>{descc}</h2>
                 <p>{subDesc} </p>
                 <p className="descText">{detailDesc}</p>
+
                 <a href={link} rel="noreferrer" target="_blank" className="btn">
                   {" "}
                   Go
