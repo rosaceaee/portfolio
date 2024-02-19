@@ -443,9 +443,11 @@ nav {
         }
         .swiper-button-prev,
         .swiper-button-next {
-          color: orange;
-          background: rgba(255, 255, 255, 0.6);
-          padding: 0.4rem 1rem;
+          padding: 0.5rem 1rem;
+          background: rgba(0, 0, 0, 0.4);
+          color: beige;
+          border-radius: 50%;
+          font-size: 1rem !important;
         }
       }
       img {
