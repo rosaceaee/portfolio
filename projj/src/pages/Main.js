@@ -71,6 +71,15 @@ const Main = () => {
                   {descc === "Meta exam" ? <MetaSlides /> : ""}
                   {descc === "Phonics monster" ? <Pm /> : ""}
                   {descc === "LMS" ? <Lms /> : ""}
+                  {[
+                    "영어단어장",
+                    "Vocabulary note",
+                    "簡単な英語単語ツール",
+                  ].includes(descc) ? (
+                    <VocaPrivate />
+                  ) : (
+                    ""
+                  )}
                 </div>
                 <h2>{descc}</h2>
                 <p>{subDesc} </p>
@@ -257,8 +266,6 @@ const Main = () => {
   }
 
   function Parent() {
-    // console.log(Array.from(mapper.values()));
-
     return (
       <>
         {" "}
@@ -281,8 +288,8 @@ const Main = () => {
                             // style={{ backgroundImage: `url(${a[1].bg})` }}
                             style={{
                               backgroundImage:
-                                index < 2 ? "none" : `url(${a[1].bg})`,
-                              display: index < 3 ? "none" : "",
+                                index < 5 ? "none" : `url(${a[1].bg})`,
+                              display: index < 5 ? "none" : "",
                             }}
                           ></div>
                           <ToggleItem2
@@ -376,6 +383,27 @@ const Main = () => {
           </SwiperSlide>
           <SwiperSlide>
             <img src={require("../images/bookr_after.png")} alt="img" />
+          </SwiperSlide>
+        </Swiper>{" "}
+      </>
+    );
+  }
+
+  function VocaPrivate() {
+    return (
+      <>
+        <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={10}
+          slidesPerView={1}
+          navigation
+          className="meta-slide-wrap"
+        >
+          <SwiperSlide>
+            <img src={require("../images/priv1.png")} alt="img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={require("../images/priv2.png")} alt="img" />
           </SwiperSlide>
         </Swiper>{" "}
       </>

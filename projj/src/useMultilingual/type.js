@@ -5,16 +5,28 @@ var AHH = {
         ko: {
             langs: [
                 {
+                    key: 0,
+                    desc: [
+                        "영어단어장",
+                        "",
+                        "React.js, Sass",
+                        "개인 토이프로젝트, 예상 주요타겟은 기초 영단어를 공부하는 중노년층이며 계속 추가 기능 개발진행중, 모바일 화면에서만 확인 가능.",
+                        "",
+                    ],
+                    link: "https://rosaceaee.github.io/studyLang_en/",
+                    bg: "",
+                },
+                {
                     key: 1,
                     desc: [
                         "Meta exam",
                         "",
                         "React.js, Sass기반으로 특정 추가 페이지만 디자인 \n, 유지보수 및 ui 퍼블리싱 100%",
                         "영어 시험 웹앱. React 기반으로 개발하였으며, 학원 특성상 태블릿을 주로 사용하므로 태블릿에 맞춘 반응형 레이아웃 유지보수에 중점적으로 참여. ",
-                        "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
+                        "",
                     ],
                     link: "https://culp.cloubot.com/login",
-                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
+                    bg: "",
                 },
                 {
                     desc: [
@@ -162,6 +174,17 @@ var AHH = {
             langs: [
                 {
                     desc: [
+                        "Vocabulary note",
+                        "",
+                        "React.js, Sass",
+                        "Personal Toy Project, expected main target is middle-aged studying basic English words and still developing add-ons, only on mobile screen.(Only for korean)",
+                        "",
+                    ],
+                    link: "https://rosaceaee.github.io/studyLang_en/",
+                    bg: "",
+                },
+                {
+                    desc: [
                         "Meta exam",
                         "",
                         "Designed few pages, developed all the UI pages(including responsive work), maintenance of UI structure",
@@ -293,6 +316,17 @@ var AHH = {
         },
         ja: {
             langs: [
+                {
+                    desc: [
+                        "簡単な英語単語ツール",
+                        "",
+                        "React.js, Sass",
+                        "個人プロジェクト。使用対象は基礎的な英語単語の勉強をしているお年寄りさんで、他の技能も追加予定。スマートフォンのみ使用可能(韓国語のみ提供してます)",
+                        "",
+                    ],
+                    link: "https://rosaceaee.github.io/studyLang_en/",
+                    bg: "",
+                },
                 {
                     desc: [
                         "Meta exam",
