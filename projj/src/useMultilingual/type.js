@@ -54,18 +54,6 @@ var AHH = {
                 },
                 {
                     desc: [
-                        "루시드 영어학원",
-                        "",
-                        "영어 교육용 앱. \n React.js, React-native, Sass로 개발. 웹앱과 앱 모두 작업",
-                        "디자인: 레이아웃, 색상 선정 참여 나머지 부분은 외주 디자이너의 시안대로 진행, \n ui 퍼블리싱 100%(데스크톱, 태블릿, 모바일)",
-                        "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
-                    ],
-                    link: "https://play.google.com/store/apps/details?id=com.culpmobile.lucid",
-                    go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
-                },
-                {
-                    desc: [
                         "크레오 영어학원 교육용 앱",
                         "",
                         "리액트 네이티브 기반으로 모든 페이지 퍼블리싱 100% 진행",
@@ -75,28 +63,6 @@ var AHH = {
                     link: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
                     go: [""],
                     bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
-                },
-                {
-                    desc: [
-                        "개인 페이지: 인터렉티브 디자인 구현",
-                        "",
-                        "주로 랜딩 페이지에서 사용되는 애니메이션 효과 간단하게 적용",
-                        "",
-                        "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
-                    ],
-                    link: "https://rosaceaee.github.io/sample-for-port/",
-                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
-                },
-                {
-                    desc: [
-                        "개인 페이지: 간단한 영단어 기록단어장",
-                        "",
-                        "(스마트폰 기기에서만 확인가능) 간단한 기능으로 알파벳 별 영어단어 기록할 수 있는 페이지 구현",
-                        "",
-                        "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
-                    ],
-                    link: "https://rosaceaee.github.io/studyLang_en/",
-                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
                 },
                 {
                     desc: [
@@ -216,18 +182,6 @@ var AHH = {
                     link: "https://culp.cloubot.com/login",
                     go: [""],
                     bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
-                },
-                {
-                    desc: [
-                        "Lucid English",
-                        "",
-                        "Participated in Responsive and layout design, UI structure(desktop, tablet, mobile)",
-                        "Developed in React.js, React-native, Sass. (Web app and Android app)",
-                        "https://corydalis.github.io/pt/img/blue1.png",
-                    ],
-                    link: "https://play.google.com/store/apps/details?id=com.culpmobile.lucid",
-                    go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
                 },
                 {
                     desc: [
@@ -361,18 +315,6 @@ var AHH = {
                     link: "https://culp.cloubot.com/login",
                     go: [""],
                     bg: "https://rosaceaee.github.io/static/media/1.6ab6e2c6b7b236116320.png",
-                },
-                {
-                    desc: [
-                        "ルシド英語スクール",
-                        "",
-                        "REACT・SASSを基づいてレイアウトデザイン、レスポンシブデザイン及びUI開発の作業。",
-                        "英語教育のアプリ、REACTで開発",
-                        "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
-                    ],
-                    link: "https://play.google.com/store/apps/details?id=com.culpmobile.lucid",
-                    go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/lucid1.fe2744fd89cc3e97aed3.jpeg",
                 },
                 {
                     desc: [

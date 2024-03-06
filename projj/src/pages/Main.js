@@ -288,8 +288,8 @@ const Main = () => {
                             // style={{ backgroundImage: `url(${a[1].bg})` }}
                             style={{
                               backgroundImage:
-                                index < 5 ? "none" : `url(${a[1].bg})`,
-                              display: index < 5 ? "none" : "",
+                                index < 4 ? "none" : `url(${a[1].bg})`,
+                              display: index < 4 ? "none" : "",
                             }}
                           ></div>
                           <ToggleItem2
