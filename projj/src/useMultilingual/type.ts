@@ -7,8 +7,8 @@ const AHH = {
           desc: [
             "영어단어장",
             "",
-            "React.js, Sass",
             "개인 토이프로젝트, 예상 주요타겟은 기초 영단어를 공부하는 중노년층이며 계속 추가 기능 개발진행중, 모바일 화면에서만 확인 가능.",
+            "React, SASS",
             "",
           ],
           link: "https://rosaceaee.github.io/studyLang_en/",
@@ -19,11 +19,11 @@ const AHH = {
           desc: [
             "Meta exam",
             "",
-            "React.js, Sass기반으로 특정 추가 페이지만 디자인 \n, 유지보수 및 ui 퍼블리싱 100%",
+            "React, Sass기반으로 특정 추가 페이지만 디자인 \n, 유지보수 및 ui 퍼블리싱 100%",
             "영어 시험 웹앱. React 기반으로 개발하였으며, 학원 특성상 태블릿을 주로 사용하므로 태블릿에 맞춘 반응형 레이아웃 유지보수에 중점적으로 참여. ",
             "",
           ],
-          link: "https://culp.cloubot.com/login",
+          link: "https://metaexam-lexile.com/meta-login",
           bg: "",
         },
         {
@@ -65,7 +65,7 @@ const AHH = {
         {
           desc: [
             "파란관세사무소",
-            "https://www.weibo.com",
+            "",
             "퍼블리싱 100%(데스크톱, 태블릿, 모바일)",
             "자잘한 오류가 상당히 많아 유지보수 작업. 포털 사이트 리뉴얼과 고객사 전용 빌더 레이아웃, 기능(서버 디비에서 페이지로 ajax를 이용해 불러오는 등) 작업을 수행.            ",
             "https://corydalis.github.io/pt/img/blue1.png",
@@ -77,9 +77,9 @@ const AHH = {
         {
           desc: [
             "스펙토리",
-            "https://www.weibo.com",
+            "",
             "메인 플랫폼 사이트의 유지보수 작업",
-            "jsp, jQuery로 유지보수",
+            " jQuery로 유지보수",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "https://www.spectory.net/",
@@ -89,7 +89,7 @@ const AHH = {
         {
           desc: [
             "서울여대 아동학과",
-            "https://www.weibo.com",
+            "",
             "추가 요청으로 메인페이지, 학과소개 페이지 유지보수 참여",
             "jQuery로 유지보수",
             "https://corydalis.github.io/pt/img/blue1.png",
@@ -114,7 +114,7 @@ const AHH = {
         {
           desc: [
             "SSmedipia",
-            "https://www.weibo.com",
+            "",
             "디자인: 메인페이지, 서브페이지 레이아웃 참여, 퍼블리싱 및 유지보수 참여 100%",
             "jQuery로 유지보수",
             "https://corydalis.github.io/pt/img/ss1.png",
@@ -139,10 +139,11 @@ const AHH = {
       langs: [
         {
           desc: [
-            "Vocabulary note",
+            "Vocabulary note(private)",
             "",
-            "React.js, Sass",
             "Personal Toy Project, expected main target is middle-aged studying basic English words and still developing add-ons, only on mobile screen.(Only for korean)",
+            "with React, SASS",
+
             "",
           ],
           link: "https://rosaceaee.github.io/studyLang_en/",
@@ -156,7 +157,7 @@ const AHH = {
             "Site for English exam in English school teachers built only React.js.",
             "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
           ],
-          link: "https://culp.cloubot.com/login",
+          link: "https://metaexam-lexile.com/meta-login",
           bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
         },
         {
@@ -273,8 +274,8 @@ const AHH = {
           desc: [
             "簡単な英語単語ツール",
             "",
-            "React.js, Sass",
             "個人プロジェクト。使用対象は基礎的な英語単語の勉強をしているお年寄りさんで、他の技能も追加予定。スマートフォンのみ使用可能(韓国語のみ提供してます)",
+            "React, SASSで設計・実装",
             "",
           ],
           link: "https://rosaceaee.github.io/studyLang_en/",
@@ -284,19 +285,19 @@ const AHH = {
           desc: [
             "Meta exam",
             "",
-            "(内部方針で外部からアクセスが不可ですのでご了承ください) アプリ接続のページのみデザイン及びUI開発、メンテナンス,",
-            "英語塾で行う英語試験サイトの制作、REACT・SASSでUI開発",
+            "(内部方針で外部からアクセスが不可ですのでご了承ください) 英語塾で行う英語試験ページ。PCとタブレットPCのスクリーンに最適化。全体ページのUI実装、メンテナンス,テスト",
+            "REACT・SASSでUI開発",
             "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
           ],
-          link: "",
+          link: "https://metaexam-lexile.com/meta-login",
           bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
         },
         {
           desc: [
             "Phonics monster",
             "",
-            "(内部方針で外部からアクセスが不可ですのでご了承ください) UIメンテナンスの作業",
-            "英語発音教育のアプリ。REACT・SASSでUI作業。主に全てのレスポンシブ100%作業",
+            "(内部方針で外部からアクセスが不可ですのでご了承ください) 英語発音教育のアプリ。UIメンテナンス",
+            "REACT・SASSでUI作業。主に全てのページのレスポンシブ実装・一部メンテナンス",
             "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
           ],
           link: "https://epublic-phonics.cloubot.com/",
@@ -308,7 +309,7 @@ const AHH = {
             "LMS",
             "",
             "(内部方針で外部からアクセスが不可ですのでご了承ください) 英語塾の教師・学生向け管理者ページ(Learning manage system)",
-            "React・SASSでUI開発及びメンテナンス",
+            "React・SASSでUI開発及びメンテナンス(UIライブラリーとしてAntd(antDesign)使用)",
             "https://rosaceaee.github.io/static/media/1.6ab6e2c6b7b236116320.png",
           ],
           link: "https://culp.cloubot.com/login",
@@ -319,8 +320,8 @@ const AHH = {
           desc: [
             "English learning app for Creo english",
             "",
-            "Creo英語スクールの英語教育用アプリ。Learning Manage System（管理者ページ）。React-Nativeで全てのページのUI開発",
-            "",
+            "Creo英語塾の学生向け英語教育用アプリ。Webサイトも含め全てのページのUIメンテナンス",
+            "React・CSS・SASS使用、React-NativeはUIメンテナンスのみ",
             "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
           ],
           link: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
@@ -332,8 +333,8 @@ const AHH = {
           desc: [
             "パラン関税事務所",
             "",
-            "関税事務所のサイト。パランは韓国語で「青」の意味で、カラーも同じく青色で選択。メインカラーデザイン・レイアウトデザイン及びUI開発の作業。",
-            "CSS3・Bootstrap・JQueryで開発",
+            "関税事務所のサイト。パランは韓国語で「青」の意味で、カラーも同じく青色で選択。メインカラーデザイン・レイアウトデザイン及びUI実装。",
+            "CSS・Bootstrap・JQueryで開発",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "http://bluecustoms.co.kr/",
@@ -344,8 +345,8 @@ const AHH = {
           desc: [
             "スペックトリ",
             "",
-            "コンペのまとめサイト。他に提供してるホームページビルダーのサービスもメンテナンスも担当。UIメンテナンス、レスポンシブデザイン作業",
-            "Jsp, JQueryで開発",
+            "韓国国内の公募展をまとめたサイト。提供してるホームページビルダーのサービスもメンテナンスも担当。UIメンテナンス、レスポンシブのリニューアル",
+            "CSS・JQueryで開発",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "https://www.spectory.net/",
@@ -357,7 +358,7 @@ const AHH = {
             "ソウル女子大学校 児童学科",
             "",
             "主にメンテナンス担当。メイン、学科紹介ページのUIメンテナンス作業",
-            "CSS3・Bootstrap・JQueryで開発",
+            "CSS・Bootstrap・JQueryでメンテナンス",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "https://childstudy.swu.ac.kr/",
@@ -366,10 +367,10 @@ const AHH = {
         },
         {
           desc: [
-            "海洋水産部のコンペ",
+            "韓国海洋水産部の公募展サイト",
             "",
             "サイトのリニューアル・UIメンテナンス作業",
-            "JQueryで開発",
+            "CSS・JQueryで一部実装及びメンテナンス",
             "https://corydalis.github.io/pt/img/blue1.png",
           ],
           link: "http://www.seastartup.kr/home/start.php",
@@ -380,8 +381,8 @@ const AHH = {
           desc: [
             "SSmedipia",
             "",
-            "血液に関する企業で、レスポンシブ・レイアウトデザイン及びUIメンテナンスで作業",
-            "CSS3・Bootstrap・JQueryで開発",
+            "血液に関する韓国国内企業で、レスポンシブ・レイアウトデザイン及びUIメンテナンス",
+            "CSS・Bootstrap・JQueryで開発",
             "https://corydalis.github.io/pt/img/ss1.png",
           ],
           link: "http://www.ssmedipia.com/",
@@ -392,10 +393,10 @@ const AHH = {
           desc: [
             "コンガン産業株式会社",
             "",
-            "産業用ドア制作企業、レイアウトデザイン及びUIメンテナンスで作業",
-            "CSS3・Bootstrap・JQueryで開発",
+            "産業用ドア制作企業、レイアウトデザイン及びUIメンテナンス",
+            "CSS・Bootstrap・JQueryで開発",
           ],
-          link: "https://www.googlre.com",
+          link: "http://www.spcdoor.com/",
           go: [""],
           bg: "https://corydalis.github.io/pt/img/sp1.png",
         },
