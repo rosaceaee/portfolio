@@ -48,7 +48,7 @@ var AHH = {
                         "css의 미디어쿼리 작업",
                         "",
                     ],
-                    link: "https://culp.cloubot.com/login",
+                    link: "https://www.redcross.or.kr/main/main.do",
                     go: [""],
                     bg: "",
                 },
@@ -148,138 +148,6 @@ var AHH = {
                 },
             ],
         },
-        en: {
-            langs: [
-                {
-                    desc: [
-                        "Vocabulary note(private)",
-                        "",
-                        "Personal Toy Project, expected main target is middle-aged studying basic English words and still developing add-ons, only on mobile screen.(Only for korean)",
-                        "with React, SASS",
-                        "",
-                    ],
-                    link: "https://rosaceaee.github.io/studyLang_en/",
-                    bg: "",
-                },
-                {
-                    desc: [
-                        "Meta exam",
-                        "",
-                        "Designed few pages, developed all the UI pages(including responsive work), maintenance of UI structure",
-                        "Site for English exam in English school teachers built only React.js.",
-                        "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
-                    ],
-                    link: "https://metaexam-lexile.com/meta-login",
-                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
-                },
-                {
-                    desc: [
-                        "Phonics monster",
-                        "",
-                        "maintenance of UI structure, responsive design",
-                        "Web and Mobile App for English learning. Participated in maintanance of UI(responsive)",
-                        "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
-                    ],
-                    link: "https://epublic-phonics.cloubot.com/",
-                    go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
-                },
-                {
-                    desc: [
-                        "LMS",
-                        "",
-                        "App for learning English Creo English school(Learning Manage System page).",
-                        "Developed React-Native.js, maintained the UI to all the pages",
-                    ],
-                    link: "https://culp.cloubot.com/login",
-                    go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
-                },
-                {
-                    desc: [
-                        "English learning app for Creo english school",
-                        "",
-                        "English learning tool for Creo english school",
-                        "Developed the UI to all the pages with Sass, React, React-Native. (Web app and Android app)",
-                        "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
-                    ],
-                    link: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
-                    go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
-                },
-                {
-                    desc: [
-                        "Paran customs office",
-                        "",
-                        "customs office in korea. Participated in responsive and layout design(desktop, tablet, mobile)",
-                        "Developed using JQuery, Css3, Bootstrap",
-                        "https://corydalis.github.io/pt/img/blue1.png",
-                    ],
-                    link: "http://bluecustoms.co.kr/",
-                    go: [""],
-                    bg: "https://corydalis.github.io/pt/img/blue1.png",
-                },
-                {
-                    desc: [
-                        "Spectory",
-                        "",
-                        "Platform site for compParticipated in layout design, and UI structure(desktop, tablet, mobile)",
-                        "Developed using Jsp, jQuery",
-                        "",
-                    ],
-                    link: "https://www.spectory.net/",
-                    go: [""],
-                    bg: "https://corydalis.github.io/pt/img/spec1.png",
-                },
-                {
-                    desc: [
-                        "Childstudy Dept. of Seoul women's university ",
-                        "",
-                        "Participated in UI maintenance of main page, some of detail pages",
-                        "Developed using JQuery, Css3, Bootstrap",
-                        "https://corydalis.github.io/pt/img/blue1.png",
-                    ],
-                    link: "https://childstudy.swu.ac.kr/",
-                    go: [""],
-                    bg: "https://corydalis.github.io/pt/img/sw1.png",
-                },
-                {
-                    desc: [
-                        "Contest of startup in Ministry of Oceans and Fisheries",
-                        "",
-                        "Site for national contest. Participated in UI maintenance",
-                        "Developed using JQuery, Css3",
-                        "https://corydalis.github.io/pt/img/blue1.png",
-                    ],
-                    link: "http://www.seastartup.kr/home/start.php",
-                    go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png",
-                },
-                {
-                    desc: [
-                        "SSmedipia",
-                        "",
-                        "The company about blood clotting diagnostic equipment. Participated in responsive and layout design, UI structure(desktop, tablet, mobile)",
-                        "Developed using JQuery, Css3, Bootstrap",
-                        "https://corydalis.github.io/pt/img/ss1.png",
-                    ],
-                    link: "http://www.ssmedipia.com/",
-                    go: [""],
-                    bg: "https://corydalis.github.io/pt/img/ss1.png",
-                },
-                {
-                    desc: [
-                        "Gonggan instructure Inc.",
-                        "",
-                        "The company to supply doors for various industry. Participated in layout design, and UI structure(desktop, tablet, mobile)",
-                        "Developed using JQuery, Css3, Bootstrap",
-                    ],
-                    link: "http://www.spcdoor.com/",
-                    go: [""],
-                    bg: "https://corydalis.github.io/pt/img/sp1.png",
-                },
-            ],
-        },
         ja: {
             langs: [
                 {
@@ -315,6 +183,18 @@ var AHH = {
                     link: "https://epublic-phonics.cloubot.com/",
                     go: [""],
                     bg: "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
+                },
+                {
+                    desc: [
+                        "大韓赤十字社",
+                        "",
+                        "サイトのモバイルページ最適化",
+                        "HTML,CSS",
+                        "",
+                    ],
+                    link: "https://www.redcross.or.kr/main/main.do",
+                    go: [""],
+                    bg: "",
                 },
                 {
                     desc: [
@@ -428,23 +308,6 @@ var AHH = {
                         "고여있는 것보다 접해보지 못한 다양한 경험을 하는 것을 좋아합니다. ",
                         "IT업계에서 근무하는 동안 UI디자인과 프론트엔드 개발에 관심이 많아 디자인과 개발 사이에서 유연하게 대응할 수 있습니다.",
                         "쉬는 날에는 주로 닌텐도 스위치게임을, 조깅 혹은 자전거 라이딩을, 친구들과 산책을 하며 재충전의 시간을 가지고 있습니다! 물론 mdn 문서를 보며 개발공부도 꾸준히 하고있습니다. ",
-                    ],
-                },
-            ],
-        },
-        en: {
-            langs: [
-                {
-                    key: 2,
-                    desc: [
-                        "young joo Jang",
-                        "UI developer",
-                        "flexible",
-                        "patient",
-                        "calm",
-                        "Likes having various experience that haven't experienced before using new ways.",
-                        "I'm interested in UI design, frontend development, and can handle flexibly between it.",
-                        "And in out of the computer, I usually play a nintendo switch games(Zelda series), jogging and riding bycircle, hangout with my friends. Of course, Studying a development and design also!",
                     ],
                 },
             ],

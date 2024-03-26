@@ -1,26 +1,19 @@
 import React, { useCallback, useRef, useState, useEffect } from "react";
-import {
-  Redirect,
-  useHistory,
-  useRouteMatch,
-  useLocation,
-  Link,
-} from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Scrollbar, A11y } from "swiper";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import useMultilingual, { LanguageType } from "../useMultilingual";
-import Modal from "./Modal";
+
 import "swiper/css";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
-import { ReactComponent as GitHub } from "../images/github.svg";
-import { ReactComponent as Mail } from "../images/mail.svg";
 import "../styles/new_common.scss";
+
+import Modal from "./Modal";
+import { ReactComponent as GitHub } from "../images/github.svg";
 
 const Main = () => {
   const [show, setShow] = useState(false);
-  const aboutSection = useRef(null);
   const showDalDal = () => {
     setShow((show) => !show);
   };
@@ -30,29 +23,38 @@ const Main = () => {
 
   const [lang, setLang] = useState("ko");
   const m = useMultilingual(lang);
-  // console.log(aa);
 
   const v = ["About", "Works"];
   const worksTit2 = Object.entries(m("WORKS").langs);
   const maindesc = Object.entries(m("ABOUT").langs);
 
-  let inputArray = [
-    { id: 1, name: "name1", value: "value1" },
-    { id: 2, name: "name2", value: "value2" },
-  ];
   const tabTop = useRef(null);
   const tabWork = useRef(null);
-  const tabBottom = useRef(null);
 
   const changeLang = ({ target: { value } }) => {
     return value && setLang(value);
   };
+  function LangBtn({ lang }) {
+    return (
+      <>
+        {" "}
+        <div className="set-lang-btn" onClick={changeLang}>
+          <button value="ko">한국어</button>
+          <button value="ja">日本語</button>
+        </div>
+      </>
+    );
+  }
 
   const scrollDown = (ref) => {
     window.scrollTo({
       top: ref.current.offsetTop,
       behavior: "smooth",
     });
+  };
+
+  const burgerr = () => {
+    setBurger((prev) => !prev);
   };
 
   const openModal = () => {
@@ -73,7 +75,6 @@ const Main = () => {
                   {descc === "Meta exam" ? <MetaSlides /> : ""}
                   {descc === "Phonics monster" ? <Pm /> : ""}
                   {descc === "LMS" ? <Lms /> : ""}
-                  {descc === "대한적십자사" ? <Red /> : ""}
 
                   {[
                     "영어단어장",
@@ -81,6 +82,11 @@ const Main = () => {
                     "簡単な英語単語ツール",
                   ].includes(descc) ? (
                     <VocaPrivate />
+                  ) : (
+                    ""
+                  )}
+                  {["대한적십자사", "大韓赤十字社"].includes(descc) ? (
+                    <Red />
                   ) : (
                     ""
                   )}
@@ -256,19 +262,6 @@ const Main = () => {
     );
   };
 
-  function LangBtn({ lang }) {
-    return (
-      <>
-        {" "}
-        <div className="set-lang-btn" onClick={changeLang}>
-          <button value="ko">한국어</button>
-          <button value="en">Eng</button>
-          <button value="ja">日本語</button>
-        </div>
-      </>
-    );
-  }
-
   function Parent() {
     return (
       <>
@@ -318,6 +311,9 @@ const Main = () => {
     );
   }
 
+  {
+    /* works - 슬라이드 시작 */
+  }
   function MetaSlides() {
     return (
       <>
@@ -442,9 +438,6 @@ const Main = () => {
     );
   }
 
-  const burgerr = () => {
-    setBurger((prev) => !prev);
-  };
   return (
     <>
       <main id="main" className="maincon">
