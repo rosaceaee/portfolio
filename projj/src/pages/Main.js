@@ -25,6 +25,8 @@ const Main = () => {
     setShow((show) => !show);
   };
   const [showModal, setShowModal] = useState(false);
+  const swiperRef = useRef();
+  const [burger, setBurger] = useState(false);
 
   const [lang, setLang] = useState("ko");
   const m = useMultilingual(lang);
@@ -71,6 +73,8 @@ const Main = () => {
                   {descc === "Meta exam" ? <MetaSlides /> : ""}
                   {descc === "Phonics monster" ? <Pm /> : ""}
                   {descc === "LMS" ? <Lms /> : ""}
+                  {descc === "대한적십자사" ? <Red /> : ""}
+
                   {[
                     "영어단어장",
                     "Vocabulary note",
@@ -288,14 +292,15 @@ const Main = () => {
                             // style={{ backgroundImage: `url(${a[1].bg})` }}
                             style={{
                               backgroundImage:
-                                index < 4 ? "none" : `url(${a[1].bg})`,
-                              display: index < 4 ? "none" : "",
+                                index < 5 ? "none" : `url(${a[1].bg})`,
+                              display: index < 5 ? "none" : "",
                             }}
                           ></div>
                           <ToggleItem2
                             key={key}
                             descc={a[1].desc[0]}
                             link={a[1].link}
+                            skill={a[1].skill}
                             subDesc={a[1].desc[2]}
                             detailDesc={a[1].desc[3]}
                             dd={a[1].render}
@@ -313,7 +318,7 @@ const Main = () => {
     );
   }
 
-  function MetaSlides(e) {
+  function MetaSlides() {
     return (
       <>
         <Swiper
@@ -410,12 +415,34 @@ const Main = () => {
     );
   }
 
-  const swiperRef = useRef();
-  const swipernavv = useRef();
-  const [burger, setBurger] = useState(false);
+  function Red() {
+    return (
+      <>
+        <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={10}
+          slidesPerView={1}
+          navigation
+          className="meta-slide-wrap"
+        >
+          <SwiperSlide>
+            <img src={require("../images/red0.png")} alt="img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={require("../images/red1.png")} alt="img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={require("../images/red2.png")} alt="img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={require("../images/red3.png")} alt="img" />
+          </SwiperSlide>
+        </Swiper>{" "}
+      </>
+    );
+  }
 
   const burgerr = () => {
-    //take current value of responsive and flip it
     setBurger((prev) => !prev);
   };
   return (

@@ -40,6 +40,18 @@ const AHH = {
         },
         {
           desc: [
+            "대한적십자사",
+            "",
+            "대한적십자사 사이트 내 특정 페이지 모바일 웹 최적화 작업",
+            "css의 미디어쿼리 작업",
+            "",
+          ],
+          link: "https://culp.cloubot.com/login",
+          go: [""],
+          bg: "",
+        },
+        {
+          desc: [
             "LMS",
             "",
             "Learning Manage System 페이지. 영어학원의 강사용, 학생용 관리자 웹,앱.",
