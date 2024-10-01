@@ -7,7 +7,7 @@ const AHH = {
           desc: [
             "현대차 N브랜드 사이트 리뉴얼 구축",
             "",
-            "개인 토이프로젝트, 예상 주요타겟은 기초 영단어를 공부하는 중노년층이며 계속 추가 기능 개발진행중, 모바일 화면에서만 확인 가능.",
+            "마크업 및 ui 스크립트를 포함한 퍼블리싱 구축 참여",
             "Html, css, js",
             "",
           ],
@@ -20,10 +20,10 @@ const AHH = {
             "LG전자 Global One Platform UI/UX 개선",
             "",
             "LG전자 글로벌 사이트(타이완, 헝가리, 오스트리아)의 UI/UX 개선 작업 참여. ",
-            "Pug, Scss",
+            "Pug, SASS",
             "",
           ],
-          link: "https://www.lg.com/jp/",
+          link: "https://www.lg.com/global/",
           bg: "",
         },
         {
@@ -66,35 +66,11 @@ const AHH = {
           desc: [
             "대한적십자사",
             "",
-            "대한적십자사 사이트 내 특정 페이지 모바일 웹 최적화 작업",
+            "대한적십자사 사이트 내 특정 페이지 모바일 웹 최적화 유지보수",
             "css의 미디어쿼리 작업",
             "",
           ],
           link: "https://www.redcross.or.kr/main/main.do",
-          go: [""],
-          bg: "",
-        },
-        {
-          desc: [
-            "잡코리아",
-            "",
-            "대한적십자사 사이트 내 특정 페이지 모바일 웹 최적화 작업",
-            "css의 미디어쿼리 작업",
-            "",
-          ],
-          link: "https://www.redcross.or.kr/main/main.do",
-          go: [""],
-          bg: "",
-        },
-        {
-          desc: [
-            "LMS",
-            "",
-            "Learning Manage System 페이지. 영어학원의 강사용, 학생용 관리자 웹,앱.",
-            "React.js, Sass기반으로 ui 퍼블리싱 80%(데스크톱, 태블릿, 모바일), 유지보수 작업",
-            "",
-          ],
-          link: "https://culp.cloubot.com/login",
           go: [""],
           bg: "",
         },
@@ -186,6 +162,30 @@ const AHH = {
     ja: {
       langs: [
         {
+          key: "",
+          desc: [
+            "Hyundai Nブランドウェブサイトのリニューアルの立ち上げ",
+            "",
+            "",
+            "Html, css, js",
+            "",
+          ],
+          link: "https://www.hyundai-n.com/",
+          bg: "",
+        },
+        {
+          key: "",
+          desc: [
+            "G電子 Global One Platform UI/UX（台湾・ハンガリー・オーストリア）立ち上げ",
+            "",
+            " ",
+            "Pug, SASS",
+            "",
+          ],
+          link: "https://www.lg.com/global/",
+          bg: "",
+        },
+        {
           desc: [
             "簡単な英語単語ツール",
             "",
@@ -230,18 +230,6 @@ const AHH = {
           link: "https://www.redcross.or.kr/main/main.do",
           go: [""],
           bg: "",
-        },
-        {
-          desc: [
-            "LMS",
-            "",
-            "(内部方針で外部からアクセスが不可ですのでご了承ください) 英語塾の教師・学生向け管理者ページ(Learning manage system)",
-            "React・SASSでUI開発及びメンテナンス(UIライブラリーとしてAntd(antDesign)使用)",
-            "https://rosaceaee.github.io/static/media/1.6ab6e2c6b7b236116320.png",
-          ],
-          link: "https://culp.cloubot.com/login",
-          go: [""],
-          bg: "https://rosaceaee.github.io/static/media/1.6ab6e2c6b7b236116320.png",
         },
         {
           desc: [

@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 var AHH = {
     WORKS: {
         ko: {
@@ -9,12 +9,12 @@ var AHH = {
                     desc: [
                         "현대차 N브랜드 사이트 리뉴얼 구축",
                         "",
-                        "개인 토이프로젝트, 예상 주요타겟은 기초 영단어를 공부하는 중노년층이며 계속 추가 기능 개발진행중, 모바일 화면에서만 확인 가능.",
+                        "마크업 및 ui 스크립트를 포함한 퍼블리싱 구축 참여",
                         "Html, css, js",
                         "",
                     ],
                     link: "https://www.hyundai-n.com/",
-                    bg: "",
+                    bg: ""
                 },
                 {
                     key: "",
@@ -22,11 +22,11 @@ var AHH = {
                         "LG전자 Global One Platform UI/UX 개선",
                         "",
                         "LG전자 글로벌 사이트(타이완, 헝가리, 오스트리아)의 UI/UX 개선 작업 참여. ",
-                        "Pug, Scss",
+                        "Pug, SASS",
                         "",
                     ],
-                    link: "https://www.lg.com/jp/",
-                    bg: "",
+                    link: "https://www.lg.com/global/",
+                    bg: ""
                 },
                 {
                     key: 0,
@@ -38,7 +38,7 @@ var AHH = {
                         "",
                     ],
                     link: "https://rosaceaee.github.io/studyLang_en/",
-                    bg: "",
+                    bg: ""
                 },
                 {
                     key: 1,
@@ -50,7 +50,7 @@ var AHH = {
                         "",
                     ],
                     link: "https://metaexam-lexile.com/meta-login",
-                    bg: "",
+                    bg: ""
                 },
                 {
                     desc: [
@@ -62,31 +62,19 @@ var AHH = {
                     ],
                     link: "https://epublic-phonics.cloubot.com/",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
+                    bg: "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png"
                 },
                 {
                     desc: [
                         "대한적십자사",
                         "",
-                        "대한적십자사 사이트 내 특정 페이지 모바일 웹 최적화 작업",
+                        "대한적십자사 사이트 내 특정 페이지 모바일 웹 최적화 유지보수",
                         "css의 미디어쿼리 작업",
                         "",
                     ],
                     link: "https://www.redcross.or.kr/main/main.do",
                     go: [""],
-                    bg: "",
-                },
-                {
-                    desc: [
-                        "LMS",
-                        "",
-                        "Learning Manage System 페이지. 영어학원의 강사용, 학생용 관리자 웹,앱.",
-                        "React.js, Sass기반으로 ui 퍼블리싱 80%(데스크톱, 태블릿, 모바일), 유지보수 작업",
-                        "",
-                    ],
-                    link: "https://culp.cloubot.com/login",
-                    go: [""],
-                    bg: "",
+                    bg: ""
                 },
                 {
                     desc: [
@@ -98,7 +86,7 @@ var AHH = {
                     ],
                     link: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
+                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png"
                 },
                 {
                     desc: [
@@ -110,7 +98,7 @@ var AHH = {
                     ],
                     link: "http://bluecustoms.co.kr/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/blue1.png",
+                    bg: "https://corydalis.github.io/pt/img/blue1.png"
                 },
                 {
                     desc: [
@@ -122,7 +110,7 @@ var AHH = {
                     ],
                     link: "https://www.spectory.net/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/spec1.png",
+                    bg: "https://corydalis.github.io/pt/img/spec1.png"
                 },
                 {
                     desc: [
@@ -134,7 +122,7 @@ var AHH = {
                     ],
                     link: "https://childstudy.swu.ac.kr/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/sw1.png",
+                    bg: "https://corydalis.github.io/pt/img/sw1.png"
                 },
                 {
                     desc: [
@@ -146,7 +134,7 @@ var AHH = {
                     ],
                     link: "http://www.seastartup.kr/home/start.php",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png",
+                    bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png"
                 },
                 {
                     desc: [
@@ -158,7 +146,7 @@ var AHH = {
                     ],
                     link: "http://www.ssmedipia.com/",
                     go: ["ddddd"],
-                    bg: "https://corydalis.github.io/pt/img/ss1.png",
+                    bg: "https://corydalis.github.io/pt/img/ss1.png"
                 },
                 {
                     desc: [
@@ -168,12 +156,36 @@ var AHH = {
                     ],
                     link: "http://www.spcdoor.com/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/sp1.png",
+                    bg: "https://corydalis.github.io/pt/img/sp1.png"
                 },
-            ],
+            ]
         },
         ja: {
             langs: [
+                {
+                    key: "",
+                    desc: [
+                        "Hyundai Nブランドウェブサイトのリニューアルの立ち上げ",
+                        "",
+                        "",
+                        "Html, css, js",
+                        "",
+                    ],
+                    link: "https://www.hyundai-n.com/",
+                    bg: ""
+                },
+                {
+                    key: "",
+                    desc: [
+                        "G電子 Global One Platform UI/UX（台湾・ハンガリー・オーストリア）立ち上げ",
+                        "",
+                        " ",
+                        "Pug, SASS",
+                        "",
+                    ],
+                    link: "https://www.lg.com/global/",
+                    bg: ""
+                },
                 {
                     desc: [
                         "簡単な英語単語ツール",
@@ -183,7 +195,7 @@ var AHH = {
                         "",
                     ],
                     link: "https://rosaceaee.github.io/studyLang_en/",
-                    bg: "",
+                    bg: ""
                 },
                 {
                     desc: [
@@ -194,7 +206,7 @@ var AHH = {
                         "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
                     ],
                     link: "https://metaexam-lexile.com/meta-login",
-                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg",
+                    bg: "https://rosaceaee.github.io/static/media/meta3.904951598c3fff97aade.jpg"
                 },
                 {
                     desc: [
@@ -206,7 +218,7 @@ var AHH = {
                     ],
                     link: "https://epublic-phonics.cloubot.com/",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png",
+                    bg: "https://rosaceaee.github.io/static/media/pn1.e00496c64cf59b356fd6.png"
                 },
                 {
                     desc: [
@@ -218,19 +230,7 @@ var AHH = {
                     ],
                     link: "https://www.redcross.or.kr/main/main.do",
                     go: [""],
-                    bg: "",
-                },
-                {
-                    desc: [
-                        "LMS",
-                        "",
-                        "(内部方針で外部からアクセスが不可ですのでご了承ください) 英語塾の教師・学生向け管理者ページ(Learning manage system)",
-                        "React・SASSでUI開発及びメンテナンス(UIライブラリーとしてAntd(antDesign)使用)",
-                        "https://rosaceaee.github.io/static/media/1.6ab6e2c6b7b236116320.png",
-                    ],
-                    link: "https://culp.cloubot.com/login",
-                    go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/1.6ab6e2c6b7b236116320.png",
+                    bg: ""
                 },
                 {
                     desc: [
@@ -242,7 +242,7 @@ var AHH = {
                     ],
                     link: "https://play.google.com/store/apps/details?id=com.culpmobile.creo",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png",
+                    bg: "https://rosaceaee.github.io/static/media/creo.93394473494f6ef607ce.png"
                 },
                 {
                     desc: [
@@ -254,7 +254,7 @@ var AHH = {
                     ],
                     link: "http://bluecustoms.co.kr/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/blue1.png",
+                    bg: "https://corydalis.github.io/pt/img/blue1.png"
                 },
                 {
                     desc: [
@@ -266,7 +266,7 @@ var AHH = {
                     ],
                     link: "https://www.spectory.net/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/spec1.png",
+                    bg: "https://corydalis.github.io/pt/img/spec1.png"
                 },
                 {
                     desc: [
@@ -278,7 +278,7 @@ var AHH = {
                     ],
                     link: "https://childstudy.swu.ac.kr/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/sw1.png",
+                    bg: "https://corydalis.github.io/pt/img/sw1.png"
                 },
                 {
                     desc: [
@@ -290,7 +290,7 @@ var AHH = {
                     ],
                     link: "http://www.seastartup.kr/home/start.php",
                     go: [""],
-                    bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png",
+                    bg: "https://rosaceaee.github.io/static/media/sea.1d75ab5657470f136abb.png"
                 },
                 {
                     desc: [
@@ -302,7 +302,7 @@ var AHH = {
                     ],
                     link: "http://www.ssmedipia.com/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/ss1.png",
+                    bg: "https://corydalis.github.io/pt/img/ss1.png"
                 },
                 {
                     desc: [
@@ -313,10 +313,10 @@ var AHH = {
                     ],
                     link: "http://www.spcdoor.com/",
                     go: [""],
-                    bg: "https://corydalis.github.io/pt/img/sp1.png",
+                    bg: "https://corydalis.github.io/pt/img/sp1.png"
                 },
-            ],
-        },
+            ]
+        }
     },
     ABOUT: {
         ko: {
@@ -332,9 +332,9 @@ var AHH = {
                         "고여있는 것보다 접해보지 못한 다양한 경험을 하는 것을 좋아합니다. ",
                         "IT업계에서 근무하는 동안 UI디자인과 프론트엔드 개발에 관심이 많아 디자인과 개발 사이에서 유연하게 대응할 수 있습니다.",
                         "쉬는 날에는 주로 닌텐도 스위치게임을, 조깅 혹은 자전거 라이딩을, 친구들과 산책을 하며 재충전의 시간을 가지고 있습니다! 물론 mdn 문서를 보며 개발공부도 꾸준히 하고있습니다. ",
-                    ],
+                    ]
                 },
-            ],
+            ]
         },
         ja: {
             langs: [
@@ -349,10 +349,10 @@ var AHH = {
                         "接したことがなかった多様な経験をすることが好きです。",
                         "UIデザインとフロントエンド開発に興味深くて、今までマークアップ開発とフロントエンド開発の間で働いた経験を基づいて両方対応することができます。",
                         "休みにはNintendo Switchゲームをプレイしたり、ジョギングや自転車でらいでぃんぐをしたり、友達とお出かけをして楽しく休みます！もちろん、開発とデザインの勉強も！",
-                    ],
+                    ]
                 },
-            ],
-        },
-    },
+            ]
+        }
+    }
 };
-exports.default = AHH;
+exports["default"] = AHH;

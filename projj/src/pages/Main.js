@@ -37,7 +37,6 @@ const Main = () => {
   function LangBtn({ lang }) {
     return (
       <>
-        {" "}
         <div className="set-lang-btn" onClick={changeLang}>
           <button value="ko">한국어</button>
           <button value="ja">日本語</button>
@@ -95,7 +94,6 @@ const Main = () => {
                 <p>{subDesc} </p>
                 <p className="descText">{detailDesc}</p>
                 <a href={link} rel="noreferrer" target="_blank" className="btn">
-                  {" "}
                   Go
                 </a>
 
@@ -131,7 +129,6 @@ const Main = () => {
     return (
       <div className="aboutBox">
         <>
-          {" "}
           <img src={require("../images/profile.png")} alt="profileimg" />
           <div className="wrap">
             <h2>{name}</h2>
@@ -139,12 +136,12 @@ const Main = () => {
             <div className="cirwrap">
               <div className="cir">
                 <p>{infodesc}</p>
-              </div>{" "}
-              <div className="cir">
-                <p>{infodescTwo}</p>{" "}
               </div>
               <div className="cir">
-                <p>{infodescThree}</p>{" "}
+                <p>{infodescTwo}</p>
+              </div>
+              <div className="cir">
+                <p>{infodescThree}</p>
               </div>
             </div>
             <div className="about-desc-wrap">
@@ -265,7 +262,6 @@ const Main = () => {
   function Parent() {
     return (
       <>
-        {" "}
         <section style={{ margin: "0 1rem" }}>
           <section className="works-container">
             <h2 className="tit">Works</h2>
@@ -278,7 +274,6 @@ const Main = () => {
                   worksTit2.map((a, index, key, btnn, descc) => {
                     return (
                       <>
-                        {" "}
                         <div className="works-wrap">
                           <div
                             className="testCon"
@@ -299,7 +294,7 @@ const Main = () => {
                             dd={a[1].render}
                             bgg={a[1].bg}
                           />
-                        </div>{" "}
+                        </div>
                       </>
                     );
                   })}
@@ -343,7 +338,7 @@ const Main = () => {
           <SwiperSlide style={{ display: "none" }}>
             <img src={require("../images/creo.png")} alt="img" />
           </SwiperSlide>
-        </Swiper>{" "}
+        </Swiper>
       </>
     );
   }
@@ -364,7 +359,7 @@ const Main = () => {
           <SwiperSlide>
             <img src={require("../images/pm12.png")} alt="img" />
           </SwiperSlide>
-        </Swiper>{" "}
+        </Swiper>
       </>
     );
   }
@@ -385,7 +380,7 @@ const Main = () => {
           <SwiperSlide>
             <img src={require("../images/bookr_after.png")} alt="img" />
           </SwiperSlide>
-        </Swiper>{" "}
+        </Swiper>
       </>
     );
   }
@@ -406,7 +401,7 @@ const Main = () => {
           <SwiperSlide>
             <img src={require("../images/priv2.png")} alt="img" />
           </SwiperSlide>
-        </Swiper>{" "}
+        </Swiper>
       </>
     );
   }
@@ -433,7 +428,7 @@ const Main = () => {
           <SwiperSlide>
             <img src={require("../images/red3.png")} alt="img" />
           </SwiperSlide>
-        </Swiper>{" "}
+        </Swiper>
       </>
     );
   }
@@ -441,16 +436,14 @@ const Main = () => {
   return (
     <>
       <main id="main" className="maincon">
-        {/*<LangBoxx />*/}{" "}
+        {/*<LangBoxx />*/}
         <section className={burger ? "nav-wrap active" : "nav-wrap hide"}>
-          {" "}
           <div className="left-nav">
             <div>
               <div className="pagi" />
             </div>
-            <LangBtn setLang={setLang} />{" "}
+            <LangBtn setLang={setLang} />
             <footer>
-              {" "}
               <a href="https://github.com/rosaceaee/" target="_blank">
                 <GitHub />
               </a>
@@ -464,8 +457,8 @@ const Main = () => {
                 Next
               </button>
             </div>
-            */}{" "}
-        </section>{" "}
+            */}
+        </section>
         {}
         <Swiper
           direction={"horizontal"}
@@ -495,19 +488,15 @@ const Main = () => {
           className="main-swiper"
         >
           <SwiperSlide>
-            {" "}
             <section className="main-center-con top-main">
               <div className="me" ref={tabTop}>
-                {" "}
                 <div className="greeting">
                   <div className="desc">
                     {maindesc &&
                       maindesc.map((a) => {
                         return (
                           <>
-                            {" "}
                             <div className="about-wrap">
-                              {" "}
                               <Greeting
                                 name={a[1].desc[0]}
                                 position={a[1].desc[1]}
@@ -518,7 +507,7 @@ const Main = () => {
                                 hitokotoDesc={a[1].desc[6]}
                                 holidayDesc={a[1].desc[7]}
                               />
-                            </div>{" "}
+                            </div>
                           </>
                         );
                       })}
@@ -561,16 +550,15 @@ const Main = () => {
                           stroke-width="1.7759999999999998"
                         ></g>
                         <g id="SVGRepo_iconCarrier">
-                          {" "}
                           <path
                             d="M4 12H6.5M20 12L14 6M20 12L14 18M20 12H9.5"
                             stroke="#fff5f0"
                             stroke-width="1.536"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                          ></path>{" "}
+                          ></path>
                         </g>
-                      </svg>{" "}
+                      </svg>
                     </button>
                   </div>
                 </div>
@@ -585,7 +573,7 @@ const Main = () => {
             </section>
           </SwiperSlide>
         </Swiper>
-      </main>{" "}
+      </main>
       <button onClick={burgerr} className={burger ? "burger open" : "burger"}>
         <div></div>
       </button>
