@@ -3,6 +3,30 @@ const AHH = {
     ko: {
       langs: [
         {
+          key: "",
+          desc: [
+            "현대차 N브랜드 사이트 리뉴얼 구축",
+            "",
+            "개인 토이프로젝트, 예상 주요타겟은 기초 영단어를 공부하는 중노년층이며 계속 추가 기능 개발진행중, 모바일 화면에서만 확인 가능.",
+            "Html, css, js",
+            "",
+          ],
+          link: "https://www.hyundai-n.com/",
+          bg: "",
+        },
+        {
+          key: "",
+          desc: [
+            "LG전자 Global One Platform UI/UX 개선",
+            "",
+            "LG전자 글로벌 사이트(타이완, 헝가리, 오스트리아)의 UI/UX 개선 작업 참여. ",
+            "Pug, Scss",
+            "",
+          ],
+          link: "https://www.lg.com/jp/",
+          bg: "",
+        },
+        {
           key: 0,
           desc: [
             "영어단어장",
@@ -41,6 +65,18 @@ const AHH = {
         {
           desc: [
             "대한적십자사",
+            "",
+            "대한적십자사 사이트 내 특정 페이지 모바일 웹 최적화 작업",
+            "css의 미디어쿼리 작업",
+            "",
+          ],
+          link: "https://www.redcross.or.kr/main/main.do",
+          go: [""],
+          bg: "",
+        },
+        {
+          desc: [
+            "잡코리아",
             "",
             "대한적십자사 사이트 내 특정 페이지 모바일 웹 최적화 작업",
             "css의 미디어쿼리 작업",
