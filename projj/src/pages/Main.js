@@ -327,6 +327,12 @@ const Main = () => {
             <img src={require("../images/meta2.jpg")} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
+            <img src={require("../images/nbrand1.png")} alt="img" />
+            <img src={require("../images/nbrand2.png")} alt="img" />
+            <img src={require("../images/lge1.png")} alt="img" />
+            <img src={require("../images/lge2.png")} alt="img" />
+          </SwiperSlide>
+          <SwiperSlide>
             <img src={require("../images/meta3.jpg")} alt="img" />
           </SwiperSlide>
           <SwiperSlide>
